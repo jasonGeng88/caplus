@@ -1,0 +1,19 @@
+{
+  "name": "caplus",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jasonGeng88/caplus",
+  "authors": [
+    "jason"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "swiper": "~3.3.1"
+  }
+}

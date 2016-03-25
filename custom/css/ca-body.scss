@@ -1,0 +1,17 @@
+@import "ca-base";
+
+
+body{
+  font-family: $ff-zh-r;
+  @include font-format(1);
+  @media screen and (min-width: 769px) {
+    #page {
+      font-size: $fs-all-p;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #page {
+      font-size: $fs-all-m;
+    }
+  }
+}

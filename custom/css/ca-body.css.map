@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,IAAI;EACF,WAAW,ECkCH,yBAAyB;EAf/B,SAAS,EAZN,IAAI;EAaP,cAAc,EARP,MAAM;EDVf,oCAAqC;IACnC,UAAM;MACJ,SAAS,ECoCJ,IAAI;EDjCb,oCAAqC;IACnC,UAAM;MACJ,SAAS,EC8BJ,KAAK",
+"sources": ["ca-body.scss","ca-base.scss"],
+"names": [],
+"file": "ca-body.css"
+}

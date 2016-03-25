@@ -1,0 +1,46 @@
+//color
+$red1: #FF6666;
+$grey1: #333333;
+$grey2: #666666;
+$grey3: #999999;
+$grey4: #e6e6e6;
+$grey5: #f5f5f5;
+$white: #ffffff;
+$bule1: #8A8F99;
+
+//font-size
+$fs-1: 20px;
+$fs-2: 16px;
+$fs-3: 12px;
+
+//letter-spacing
+$letter-1: 0.03em;
+$letter-2: 0.07em;
+$letter-3: 0.1em;
+
+
+@mixin font-format($type){
+  @if($type == 1){
+    font-size: $fs-1;
+    letter-spacing: $letter-1;
+  }
+  @if($type == 2){
+    font-size: $fs-2;
+    letter-spacing: $letter-2;
+  }
+  @if($type == 3){
+    font-size: $fs-3;
+    letter-spacing: $letter-3;
+  }
+
+}
+
+//font-family
+$ff-zh-r: "Source Han Sans Regular";
+$ff-zh-b: "Source Han Sans Bold";
+$ff-en-r: "Roboto Regular";
+
+//mobile
+$fs-all-m: 62.5%;
+$fs-all-p: 100%;
+

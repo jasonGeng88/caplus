@@ -1,0 +1,12 @@
+body {
+  font-family: "Source Han Sans Regular";
+  font-size: 20px;
+  letter-spacing: 0.03em; }
+  @media screen and (min-width: 769px) {
+    body #page {
+      font-size: 100%; } }
+  @media screen and (max-width: 768px) {
+    body #page {
+      font-size: 62.5%; } }
+
+/*# sourceMappingURL=ca-body.css.map */
