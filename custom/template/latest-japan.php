@@ -1,31 +1,15 @@
-<div id="primary" class="content-area col-md-12 article-japan">
-    <div class="col-md-12 title">
-        <p>
-            <i class="fa fa-chevron-circle-left"></i>
+<div id="primary" class="content-area col-md-12 latest-japan">
+    <div class="col-md-10 col-md-offset-1 title">
+        <p>日本新銳設計賞
+            <span>
+                <a href="?page_id=62"><i class="fa fa-angle-right"></i></a>
+            </span>
         </p>
-        <p>東京展覽進行時</p>
     </div>
-
+    <div class="col-md-10 col-md-offset-1 line">
+    </div>
     <div class="col-md-10 col-md-offset-1 list">
         <?php
-        $args = array(
-            'numberposts' => 10,
-            'offset' => 0,
-            'category' => 12,
-            'orderby' => 'post_date',
-            'order' => 'DESC',
-//            'include' => ,
-//            'exclude' => ,
-//            'meta_key' => ,
-//            'meta_value' =>,
-            'post_type' => 'post',
-            'post_status' => 'publish',
-            'suppress_filters' => true
-            );
-//        $recent_posts = get_category(8 );
-        $recent_posts = wp_get_recent_posts( $args );
-        var_dump($recent_posts);die;
-
         $tag = '日本新銳設計賞'; //标签名
         $args=array(
             'tag' => $tag,
