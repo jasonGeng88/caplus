@@ -1,8 +1,19 @@
 @import "ca-base";
+#wpadminbar {
+  display: none;
+}
 
-
+html{
+  margin: 0;
+  margin-top: 0 !important;
+  padding: 0;
+}
 body{
   font-family: $ff-zh-r;
+  #content {
+    margin: 0;
+    padding: 0;
+  }
   @include font-format(1);
   @media screen and (min-width: 769px) {
     #page {

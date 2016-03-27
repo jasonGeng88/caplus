@@ -3,4 +3,45 @@
 #header-top{
   background: $white;
   height: 50px;
+  margin: 0;
+  padding: 0;
+  @include font-format(2);
+
+  .site-branding{
+    margin: 0;
+    padding: 0;
+    .site-title {
+      margin: 0;
+      padding: 0;
+      img {
+        width: 44px;
+        margin-left: 60px;
+        margin-top: 9px;
+      }
+    }
+  }
+
+  .default-nav-wrapper {
+    padding: 0;
+  }
+  #site-navigation {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    line-height: 0;
+    li {
+      margin-right: 56px;
+    }
+    li:hover > a, li.current-menu-item a{
+      border-bottom: $black solid 2px;
+      padding-bottom: 16px;
+      color: $black;
+    }
+  }
+
+
+  #top-search {
+    margin: 0;
+    padding: 0;
+  }
 }

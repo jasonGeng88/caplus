@@ -13,5 +13,7 @@
  */
 define('WP_USE_THEMES', true);
 
+define('APP_ROOT', __DIR__);
+
 /** Loads the WordPress Environment and Template */
 require( dirname( __FILE__ ) . '/wp-blog-header.php' );
