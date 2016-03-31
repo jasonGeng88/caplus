@@ -1,7 +1,9 @@
 <div id="primary" class="content-area col-md-12 latest-tokyo">
     <div class="col-md-10 col-md-offset-1 title">
         <p>東京展覽進行時
-            <span><i class="fa fa-angle-right"></i></span>
+             <span>
+                <a href="?page_id=65"><i class="fa fa-angle-right"></i></a>
+            </span>
         </p>
     </div>
     <div class="col-md-10 col-md-offset-1 line">
