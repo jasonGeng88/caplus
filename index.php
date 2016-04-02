@@ -15,5 +15,7 @@ define('WP_USE_THEMES', true);
 
 define('APP_ROOT', __DIR__);
 
+require( APP_ROOT . '/custom/config/global.php' );
+
 /** Loads the WordPress Environment and Template */
 require( dirname( __FILE__ ) . '/wp-blog-header.php' );

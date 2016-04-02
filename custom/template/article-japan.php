@@ -11,7 +11,7 @@
     <div class="col-md-10 col-md-offset-1 list">
         <?php
             require_once(APP_ROOT.'/custom/function/article.php');
-            ca_get_recent_article(11);
+            ca_get_recent_article(ARTICLE_JAPAN);
         ?>
 
 

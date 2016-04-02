@@ -53,25 +53,25 @@ function ca_get_recent_article($category)
     }
     $html = '';
     if (!empty($todayArr)) {
-        $tmp = jointHtml($todayArr, 'today');
+        $tmp = joinHtml($todayArr, 'today');
         $html .= $tmp;
     }
     if (!empty($yesterdayArr)) {
-        $tmp = jointHtml($yesterdayArr, 'yesterday');
+        $tmp = joinHtml($yesterdayArr, 'yesterday');
         $html .= $tmp;
     }
     if (!empty($weekArr)) {
-        $tmp = jointHtml($weekArr, 'in week ago');
+        $tmp = joinHtml($weekArr, 'in week ago');
         $html .= $tmp;
     }
     if (!empty($longArr)) {
-        $tmp = jointHtml($longArr, 'one week ago');
+        $tmp = joinHtml($longArr, 'one week ago');
         $html .= $tmp;
     }
     echo $html;
 }
 
-function jointHtml($dayArr, $dayDes){
+function joinHtml($dayArr, $dayDes){
     $html = '
             <div class="col-md-12 time-line">
                 <div class="time-package">
@@ -104,3 +104,5 @@ function jointHtml($dayArr, $dayDes){
     $html .= '</div>';
     return $html;
 }
+
+
