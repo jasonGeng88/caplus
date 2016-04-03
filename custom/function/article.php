@@ -6,11 +6,11 @@
  * Time: 01:01
  */
 
-function ca_get_recent_article($category)
+function get_recent_article_for_tag($category, $offset=0, $page=8)
 {
     $args = array(
-        'numberposts' => 10,
-        'offset' => 0,
+        'numberposts' => $page,
+        'offset' => $offset,
         'category' => $category,//12
         'orderby' => 'post_date',
         'order' => 'DESC',
@@ -53,25 +53,25 @@ function ca_get_recent_article($category)
     }
     $html = '';
     if (!empty($todayArr)) {
-        $tmp = joinHtml($todayArr, 'today');
+        $tmp = joinHtmlForTag($todayArr, 'today');
         $html .= $tmp;
     }
     if (!empty($yesterdayArr)) {
-        $tmp = joinHtml($yesterdayArr, 'yesterday');
+        $tmp = joinHtmlForTag($yesterdayArr, 'yesterday');
         $html .= $tmp;
     }
     if (!empty($weekArr)) {
-        $tmp = joinHtml($weekArr, 'in week ago');
+        $tmp = joinHtmlForTag($weekArr, 'in week ago');
         $html .= $tmp;
     }
     if (!empty($longArr)) {
-        $tmp = joinHtml($longArr, 'one week ago');
+        $tmp = joinHtmlForTag($longArr, 'one week ago');
         $html .= $tmp;
     }
     echo $html;
 }
 
-function joinHtml($dayArr, $dayDes){
+function joinHtmlForTag($dayArr, $dayDes){
     $html = '
             <div class="col-md-12 time-line">
                 <div class="time-package">
@@ -105,4 +105,43 @@ function joinHtml($dayArr, $dayDes){
     return $html;
 }
 
+
+function get_recent_article_for_remember($category, $offset=0, $page=8){
+    $args = array(
+        'numberposts' => $page,
+        'offset' => $offset,
+        'category' => $category,//12
+        'orderby' => 'post_date',
+        'order' => 'DESC',
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'suppress_filters' => true
+    );
+    $recent_posts = wp_get_recent_posts($args);
+    if (!empty($recent_posts)) {
+        foreach ($recent_posts as $key => &$item) {
+            $item['thumbnail'] = get_the_post_thumbnail($item['ID']);
+        }
+    }
+    $html = joinHtmlForRemember($recent_posts);
+    echo $html;
+}
+
+function joinHtmlForRemember($recent_posts){
+    $html = '';
+    if (!empty($recent_posts)) {
+        foreach ($recent_posts as $item) {
+            $html .= '<li>';
+            $html .= '<div class="pic">';
+            $html .= $item['thumbnail'];
+            $html .= '</div>';
+            $html .= '<div class="title">';
+            $html .= $item['post_title'];
+            $html .= '</div>';
+            $html .= '</li>';
+        }
+    }
+
+    return $html;
+}
 

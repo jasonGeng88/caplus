@@ -10,10 +10,9 @@
     </div>
     <div class="col-md-10 col-md-offset-1 list">
         <?php
-        $tag = '東京展覽進行時'; //标签名
         $args=array(
-            'tag' => $tag,
-//		'showposts'=>5,  //输出的文章数量
+            'category__in' => ARTICLE_TOKYO,
+		    'showposts'=>4,  //输出的文章数量
             'caller_get_posts'=>1
         );
         $my_query = new WP_Query($args);

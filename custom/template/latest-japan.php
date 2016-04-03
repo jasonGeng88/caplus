@@ -1,3 +1,4 @@
+<?php require_once(APP_ROOT.'/custom/function/article.php'); ?>
 <div id="primary" class="content-area col-md-12 latest-japan">
     <div class="col-md-10 col-md-offset-1 title">
         <p>日本新銳設計賞
@@ -12,8 +13,8 @@
         <?php
         $tag = '日本新銳設計賞'; //标签名
         $args=array(
-            'tag' => $tag,
-//		'showposts'=>5,  //输出的文章数量
+            'category__in' => ARTICLE_JAPAN,
+		    'showposts'=>6,  //输出的文章数量
             'caller_get_posts'=>1
         );
         $my_query = new WP_Query($args);

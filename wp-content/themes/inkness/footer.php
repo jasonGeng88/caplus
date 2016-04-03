@@ -12,6 +12,13 @@
 
 	<footer id="colophon" class="site-footer row" role="contentinfo">
 	<div class="container">
+		<div class="footer-menu">
+			<?php
+			wp_nav_menu( [
+				'menu' => 'menu2', // Do not fall back to first non-empty menu.
+			]);
+			?>
+		</div>
 <!--	--><?php //if ( of_get_option('credit1', true) == 0 ) { ?>
 <!--		<div class="site-info col-md-4">-->
 <!--			--><?php //do_action( 'inkness_credits' ); ?>

@@ -16,6 +16,9 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>
 <link rel="stylesheet" href="../../../custom/css/ca-main.css">
+<!--custom-main.js-->
+<script src="../custom/js/ca-main.js"></script>
+
 </head>
 
 <body <?php body_class(); ?>>

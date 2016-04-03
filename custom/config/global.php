@@ -20,3 +20,7 @@ define('REQUIREMENT', 20);
 define('SCHOOLMATE', 21);
 define('ARTS', 32);
 define('CONTACT', 34);
+
+//base
+define('LATEST_PAGE', 1);
+define('ARTICLE_PAGE', 2);

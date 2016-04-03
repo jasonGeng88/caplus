@@ -67,11 +67,11 @@ body {
     body #page {
       font-size: 62.5%; } }
 
-.page-template-latest .swiper-container {
+.home .swiper-container {
   width: 100%;
   height: 300px;
   margin: 20px auto; }
-  .page-template-latest .swiper-container .swiper-slide {
+  .home .swiper-container .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -88,93 +88,93 @@ body {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center; }
-    .page-template-latest .swiper-container .swiper-slide img {
+    .home .swiper-container .swiper-slide img {
       filter: grayscale(1);
       -webkit-filter: grayscale(1);
       width: 100%;
       height: 100%; }
-  .page-template-latest .swiper-container .swiper-slide.swiper-slide-next img {
+  .home .swiper-container .swiper-slide.swiper-slide-next img {
     filter: grayscale(0);
     -webkit-filter: grayscale(0); }
-  .page-template-latest .swiper-container .swiper-slide-active {
+  .home .swiper-container .swiper-slide-active {
     margin-left: -25%; }
-  .page-template-latest .swiper-container .swiper-button-prev {
+  .home .swiper-container .swiper-button-prev {
     height: 100%;
     width: 25%;
     background: transparent;
     left: 0;
     top: 0;
     margin: 0; }
-  .page-template-latest .swiper-container .swiper-button-next {
+  .home .swiper-container .swiper-button-next {
     height: 100%;
     width: 25%;
     background: transparent;
     right: 0;
     top: 0;
     margin: 0; }
-.page-template-latest .page-template-latest .container {
+.home .page-template-latest .container {
   margin: 0;
   padding: 0;
   max-width: 100%; }
-.page-template-latest .title {
+.home .title {
   margin-top: 30px;
   margin-bottom: 30px; }
-  .page-template-latest .title p {
+  .home .title p {
     font-size: 20px;
     letter-spacing: 0.03em;
     line-height: 40px; }
-    .page-template-latest .title p a {
+    .home .title p a {
       color: #000000; }
-    .page-template-latest .title p span {
+    .home .title p span {
       float: right;
       font-size: 40px; }
-.page-template-latest .line {
+.home .line {
   height: 2px;
   background: #e6e6e6;
   margin-bottom: 9px; }
-.page-template-latest .latest-japan .list {
+.home .latest-japan .list {
   padding: 0; }
-  .page-template-latest .latest-japan .list .item {
+  .home .latest-japan .list .item {
     padding: 0;
     margin-top: 45px; }
-    .page-template-latest .latest-japan .list .item .post-thumbnail {
+    .home .latest-japan .list .item .post-thumbnail {
       float: left;
       margin-right: 30px; }
-      .page-template-latest .latest-japan .list .item .post-thumbnail img {
+      .home .latest-japan .list .item .post-thumbnail img {
         width: 60px;
         height: 60px; }
-    .page-template-latest .latest-japan .list .item .post-title {
+    .home .latest-japan .list .item .post-title {
       line-height: 60px;
       font-size: 16px;
       letter-spacing: 0.07em;
       float: left; }
-      .page-template-latest .latest-japan .list .item .post-title a {
+      .home .latest-japan .list .item .post-title a {
         color: #000000; }
-.page-template-latest .latest-tokyo .list {
+.home .latest-tokyo .list {
   padding: 0; }
-  .page-template-latest .latest-tokyo .list .item.even .post-thumbnail {
+  .home .latest-tokyo .list .item.even .post-thumbnail {
     float: right; }
-  .page-template-latest .latest-tokyo .list .item {
+  .home .latest-tokyo .list .item {
     padding: 0;
     margin-top: 45px; }
-    .page-template-latest .latest-tokyo .list .item .post-thumbnail {
+    .home .latest-tokyo .list .item .post-thumbnail {
       width: 445px;
       float: left; }
-      .page-template-latest .latest-tokyo .list .item .post-thumbnail img {
+      .home .latest-tokyo .list .item .post-thumbnail img {
         width: 100%;
         height: 330px; }
-    .page-template-latest .latest-tokyo .list .item .post-content {
+    .home .latest-tokyo .list .item .post-content {
       padding: 0;
       line-height: 0;
       font-size: 12px;
       letter-spacing: 0.1em; }
-    .page-template-latest .latest-tokyo .list .item .post-title {
+    .home .latest-tokyo .list .item .post-title {
       padding: 0;
       line-height: 60px;
       font-size: 16px;
       letter-spacing: 0.07em;
       float: left; }
-      .page-template-latest .latest-tokyo .list .item .post-title a {
+      .home .latest-tokyo .list .item .post-title a {
         color: #000000; }
 
 .article-japan .title p {
