@@ -10,27 +10,15 @@
 
     <div class="col-md-10 col-md-offset-1 list">
         <input type="hidden" name="cat_id" value="<?= ARTICLE_TOKYO ?>">
-        <?php
-        require_once(APP_ROOT.'/custom/function/article.php');
-        get_recent_article_for_tag(ARTICLE_TOKYO, 0, ARTICLE_PAGE);
-        ?>
+        <?php include_once(APP_ROOT.'/custom/template/timeline.php'); ?>
     </div>
 
     <div class="addMore">
-        <button onclick="addMore()" class="btn-more">more</button>
+        <button onclick="addMoreForTag()" class="btn-more">more</button>
     </div>
 </div><!-- #primary -->
 
 <script>
-    var i = 0;
-    function addMore(){
-        i+=articlePage;
-        var cat_id = jQuery("input[name='cat_id']").val();
-        var url = api + '&func='+articleApi+'&cat_id='+cat_id+'&offset='+i+'&page='+articlePage;
-        jQuery.get(url, function(result){
-            if(result == '')
-                jQuery(".btn-more").css("display", "none");
-            jQuery(".article-tokyo .list").append(result);
-        });
-    };
+    var i = 0 - articlePage;
+    addMoreForTag();
 </script>

@@ -51,24 +51,32 @@ function get_recent_article_for_tag($category, $offset=0, $page=8)
             }
         }
     }
-    $html = '';
-    if (!empty($todayArr)) {
-        $tmp = joinHtmlForTag($todayArr, 'today');
-        $html .= $tmp;
-    }
-    if (!empty($yesterdayArr)) {
-        $tmp = joinHtmlForTag($yesterdayArr, 'yesterday');
-        $html .= $tmp;
-    }
-    if (!empty($weekArr)) {
-        $tmp = joinHtmlForTag($weekArr, 'in week ago');
-        $html .= $tmp;
-    }
-    if (!empty($longArr)) {
-        $tmp = joinHtmlForTag($longArr, 'one week ago');
-        $html .= $tmp;
-    }
-    echo $html;
+    $res = [
+        'today' => $todayArr,
+        'yesterday' => $yesterdayArr,
+        'week' => $weekArr,
+        'long' => $longArr,
+    ];
+    echo json_encode($res);
+//    return $res;
+//    $html = '';
+//    if (!empty($todayArr)) {
+//        $tmp = joinHtmlForTag($todayArr, 'today');
+//        $html .= $tmp;
+//    }
+//    if (!empty($yesterdayArr)) {
+//        $tmp = joinHtmlForTag($yesterdayArr, 'yesterday');
+//        $html .= $tmp;
+//    }
+//    if (!empty($weekArr)) {
+//        $tmp = joinHtmlForTag($weekArr, 'in week ago');
+//        $html .= $tmp;
+//    }
+//    if (!empty($longArr)) {
+//        $tmp = joinHtmlForTag($longArr, 'one week ago');
+//        $html .= $tmp;
+//    }
+//    echo $html;
 }
 
 function joinHtmlForTag($dayArr, $dayDes){

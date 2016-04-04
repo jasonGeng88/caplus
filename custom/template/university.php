@@ -60,9 +60,11 @@
     </div>
 
     <div class="col-md-12 university-list">
-        <?php
-        getAll(UNIVERSITY);
-        ?>
+        <ul>
+            <?php
+            getAll(UNIVERSITY);
+            ?>
+        </ul>
     </div>
 
 </div><!-- #primary -->
