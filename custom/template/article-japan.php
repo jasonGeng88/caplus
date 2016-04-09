@@ -8,7 +8,7 @@
         <p class="content">日本新銳設計賞</p>
     </div>
 
-    <div class="col-md-10 col-md-offset-1 list">
+    <div class="ca-container list">
         <input type="hidden" name="cat_id" value="<?= ARTICLE_JAPAN ?>">
         <?php include_once(APP_ROOT.'/custom/template/timeline.php'); ?>
     </div>

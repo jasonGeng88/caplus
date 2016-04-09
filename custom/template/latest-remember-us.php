@@ -5,7 +5,7 @@
     </div>
     <div class="col-md-12 list">
         <input type="hidden" name="cat_id" value="<?= ARTICLE ?>">
-        <ul>
+        <ul class="ca-container">
             <?php
             require_once(APP_ROOT.'/custom/function/article.php');
             get_recent_article_for_remember(ARTICLE, 0, LATEST_PAGE);

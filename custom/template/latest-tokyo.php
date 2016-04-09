@@ -1,14 +1,14 @@
 <div id="primary" class="content-area col-md-12 latest-tokyo">
-    <div class="col-md-10 col-md-offset-1 title">
+    <div class="ca-container title">
         <p>東京展覽進行時
              <span>
                 <a href="?page_id=65"><i class="fa fa-angle-right"></i></a>
             </span>
         </p>
     </div>
-    <div class="col-md-10 col-md-offset-1 line">
+    <div class="ca-container line">
     </div>
-    <div class="col-md-10 col-md-offset-1 list">
+    <div class="ca-container list">
         <?php
         $args=array(
             'category__in' => ARTICLE_TOKYO,

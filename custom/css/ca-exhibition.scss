@@ -1,0 +1,21 @@
+.exhibition{
+  .time-list{
+    ul{
+      li {
+        margin-bottom: 46px;
+        .item-content{
+          width: 253px;
+          .item-title{
+            a{
+              @include font-format(4);
+            }
+          }
+        }
+
+
+      }
+    }
+
+  }
+
+}

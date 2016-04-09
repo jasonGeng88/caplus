@@ -1,15 +1,15 @@
 <?php require_once(APP_ROOT.'/custom/function/article.php'); ?>
 <div id="primary" class="content-area col-md-12 latest-japan">
-    <div class="col-md-10 col-md-offset-1 title">
+    <div class="ca-container title">
         <p>日本新銳設計賞
             <span>
                 <a href="?page_id=62"><i class="fa fa-angle-right"></i></a>
             </span>
         </p>
     </div>
-    <div class="col-md-10 col-md-offset-1 line">
+    <div class="ca-container line">
     </div>
-    <div class="col-md-10 col-md-offset-1 list">
+    <div class="ca-container list">
         <?php
         $tag = '日本新銳設計賞'; //标签名
         $args=array(

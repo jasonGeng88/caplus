@@ -139,7 +139,7 @@ function joinHtmlForRemember($recent_posts){
     $html = '';
     if (!empty($recent_posts)) {
         foreach ($recent_posts as $item) {
-            $html .= '<li>';
+            $html .= '<li class="col-md-3">';
             $html .= '<div class="pic">';
             $html .= $item['thumbnail'];
             $html .= '</div>';
