@@ -1,0 +1,36 @@
+.content-area.article {
+  .title{
+    p{
+      margin-top: 60px;
+      margin-bottom: 20px;
+      padding: 0;
+      text-align: center;
+    }
+    p.content{
+      margin: 0;
+      @include font-format(3);
+    }
+  }
+
+  .time-list{
+    ul{
+      li{
+        list-style: none;
+        .item-title{
+          a{
+            @include font-format(2);
+            color: $black;
+          }
+        }
+        .item-tag{
+          span{
+            @include font-format(4);
+            background: $grey5;
+            color: $grey3;
+            padding: 7px 19px;
+          }
+        }
+      }
+    }
+  }
+}

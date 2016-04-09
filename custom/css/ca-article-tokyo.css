@@ -1,0 +1,11 @@
+.article-tokyo .time-list {
+  margin: 0;
+  padding: 0;
+  line-height: 80px; }
+  .article-tokyo .time-list .item {
+    height: 80px;
+    margin-bottom: 50px; }
+    .article-tokyo .time-list .item .item-tag {
+      display: none; }
+
+/*# sourceMappingURL=ca-article-tokyo.css.map */

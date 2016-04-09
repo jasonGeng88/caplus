@@ -1,34 +1,4 @@
 .article-japan {
-  .title {
-    p {
-      text-align: center;
-    }
-  }
-
-  .time-line {
-    @include font-format(1);
-    text-align: center;
-    height: 28px;
-    margin-bottom: 43px;
-    .time-package {
-      width: 300px;
-      height: 28px;
-      margin: auto;
-      .line {
-        width: 100px;
-        height: 1px;
-        background: $grey4;
-        float: left;
-        line-height: 28px;
-        margin-top: 14px;
-      }
-      .time {
-        float: left;
-        width: 100px;
-      }
-    }
-
-  }
 
   .time-list {
     margin: 0;

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEI,8BAAC;EACC,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,CAAC",
+"sources": ["ca-article.scss"],
+"names": [],
+"file": "ca-article.css"
+}

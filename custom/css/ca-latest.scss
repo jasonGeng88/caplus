@@ -84,28 +84,6 @@
 
   //latest-remember-us
   .latest-remember-us{
-    .title{
-      margin: 60px 0 50px 0;
-      width: 100%;
-      padding: 0;
-      p{
-        @include font-format(4);
-        width: 200px;
-        text-align: center;
-        line-height: 14px;
-        padding: 0;
-        margin: auto;
-      }
-      .title-line {
-        width: 500px;
-        height: 1px;
-        background: $grey4;
-      }
-      .title-content {
-        margin-top: -7px;
-        background: $white;
-      }
-    }
 
     .list{
       ul {

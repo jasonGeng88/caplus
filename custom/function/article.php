@@ -97,7 +97,7 @@ function joinHtmlForTag($dayArr, $dayDes){
             . $item['thumbnail'] .
             '</div>
                 <div class="item-title">
-            <a href="'.$item['url'].'">'
+            <a class="yellow" href="'.$item['url'].'">'
             . $item['post_title'] .
             '</a></div>
             </div>
@@ -143,9 +143,9 @@ function joinHtmlForRemember($recent_posts){
             $html .= '<div class="pic">';
             $html .= $item['thumbnail'];
             $html .= '</div>';
-            $html .= '<div class="title">';
+            $html .= '<div class="title"> <a class="yellow" href="'.$item['guid'].'">';
             $html .= $item['post_title'];
-            $html .= '</div>';
+            $html .= '</a></div>';
             $html .= '</li>';
         }
     }

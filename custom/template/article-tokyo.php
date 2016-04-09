@@ -1,11 +1,11 @@
-<div id="primary" class="content-area col-md-12 article-tokyo">
+<div id="primary" class="content-area col-md-12 article-tokyo article">
     <div class="col-md-12 title">
         <p>
             <a href="/">
-                <i class="fa fa-chevron-circle-left"></i>
+                <img class="arrow-back" src="/custom/images/arrow.png" alt="">
             </a>
         </p>
-        <p>東京展覽進行時</p>
+        <p class="content">東京展覽進行時</p>
     </div>
 
     <div class="col-md-10 col-md-offset-1 list">
@@ -14,11 +14,11 @@
     </div>
 
     <div class="add-more">
-        <button onclick="addMoreForTag()" class="btn-more">more</button>
+        <p><button onclick="addMoreForTag('tokyo')" class="btn-more">more</button></p>
     </div>
 </div><!-- #primary -->
 
 <script>
     var i = 0 - articlePage;
-    addMoreForTag();
+    addMoreForTag("tokyo");
 </script>

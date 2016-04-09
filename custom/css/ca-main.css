@@ -10,6 +10,8 @@
   height: 50px;
   margin: 0;
   padding: 0;
+  -webkit-box-shadow: 0px 1px 1px #e6e6e6;
+  box-shadow: 0px 1px 1px #e6e6e6;
   font-size: 14px;
   letter-spacing: 0.09em; }
   #header-top .site-branding {
@@ -41,6 +43,7 @@
 
 footer#colophon {
   margin: 0;
+  margin-top: 90px;
   padding: 0;
   border: none; }
   footer#colophon .footer-menu {
@@ -95,9 +98,24 @@ body {
   font-family: "Source Han Sans Regular";
   font-size: 20px;
   letter-spacing: 0.03em; }
+  body a {
+    color: #000000; }
+  body a:hover,
+  body a:focus,
+  body a:active {
+    color: #000000;
+    background: #ffffff;
+    text-decoration: none; }
+  body a.yellow:hover,
+  body a.yellow:focus,
+  body a.yellow:active {
+    color: #000000;
+    background: #FFFF00;
+    text-decoration: none; }
   body #content {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    margin-top: 3px; }
     body #content .container {
       padding: 0;
       margin: 0;
@@ -130,6 +148,30 @@ body {
       border-radius: 14px;
       font-size: 12px;
       letter-spacing: 0.1em; }
+  body .arrow-back {
+    width: 32px;
+    height: 32px; }
+  body .line-combo {
+    margin: 60px 0 50px 0;
+    width: 100%;
+    padding: 0; }
+    body .line-combo p {
+      font-size: 14px;
+      letter-spacing: 0.09em;
+      width: 200px;
+      text-align: center;
+      line-height: 14px;
+      padding: 0;
+      margin: auto; }
+    body .line-combo .title-line {
+      width: 500px;
+      height: 1px;
+      background: #e6e6e6; }
+    body .line-combo .title-content {
+      margin-top: -7px;
+      background: #ffffff; }
+  body .line-combo.today, body .line-combo.yesterday, body .line-combo.week, body .line-combo.long {
+    display: none; }
   body .col-xs-1, body .col-xs-2, body .col-xs-3, body .col-xs-4, body .col-xs-5, body .col-xs-6, body .col-xs-7, body .col-xs-8, body .col-xs-9, body .col-xs-10, body .col-xs-11, body .col-xs-12, body .col-sm-1, body .col-sm-2, body .col-sm-3, body .col-sm-4, body .col-sm-5, body .col-sm-6, body .col-sm-7, body .col-sm-8, body .col-sm-9, body .col-sm-10, body .col-sm-11, body .col-sm-12, body .col-md-1, body .col-md-2, body .col-md-3, body .col-md-4, body .col-md-5, body .col-md-6, body .col-md-7, body .col-md-8, body .col-md-9, body .col-md-10, body .col-md-11, body .col-md-12, body .col-lg-1, body .col-lg-2, body .col-lg-3, body .col-lg-4, body .col-lg-5, body .col-lg-6, body .col-lg-7, body .col-lg-8, body .col-lg-9, body .col-lg-10, body .col-lg-11, body .col-lg-12 {
     padding: 0; }
 
@@ -194,25 +236,6 @@ body {
   height: 2px;
   background: #e6e6e6;
   margin-bottom: 9px; }
-.home .latest-remember-us .title {
-  margin: 60px 0 50px 0;
-  width: 100%;
-  padding: 0; }
-  .home .latest-remember-us .title p {
-    font-size: 14px;
-    letter-spacing: 0.09em;
-    width: 200px;
-    text-align: center;
-    line-height: 14px;
-    padding: 0;
-    margin: auto; }
-  .home .latest-remember-us .title .title-line {
-    width: 500px;
-    height: 1px;
-    background: #e6e6e6; }
-  .home .latest-remember-us .title .title-content {
-    margin-top: -7px;
-    background: #ffffff; }
 .home .latest-remember-us .list ul {
   margin: 0;
   padding: 0;
@@ -288,28 +311,28 @@ body {
         .home #primary.latest-tokyo .list .item .post-title a {
           color: #000000; }
 
-.article-japan .title p {
+.content-area.article .title p {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding: 0;
   text-align: center; }
-.article-japan .time-line {
-  font-size: 20px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  height: 28px;
-  margin-bottom: 43px; }
-  .article-japan .time-line .time-package {
-    width: 300px;
-    height: 28px;
-    margin: auto; }
-    .article-japan .time-line .time-package .line {
-      width: 100px;
-      height: 1px;
-      background: #e6e6e6;
-      float: left;
-      line-height: 28px;
-      margin-top: 14px; }
-    .article-japan .time-line .time-package .time {
-      float: left;
-      width: 100px; }
+.content-area.article .title p.content {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: 0.07em; }
+.content-area.article .time-list ul li {
+  list-style: none; }
+  .content-area.article .time-list ul li .item-title a {
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    color: #000000; }
+  .content-area.article .time-list ul li .item-tag span {
+    font-size: 14px;
+    letter-spacing: 0.09em;
+    background: #f5f5f5;
+    color: #999999;
+    padding: 7px 19px; }
+
 .article-japan .time-list {
   margin: 0;
   padding: 0;
@@ -335,5 +358,15 @@ body {
       border-radius: 15px;
       background: #e6e6e6;
       margin-right: 10px; }
+
+.article-tokyo .time-list {
+  padding: 0;
+  line-height: 80px; }
+  .article-tokyo .time-list ul {
+    overflow: auto; }
+    .article-tokyo .time-list ul li .item {
+      margin-bottom: 50px; }
+      .article-tokyo .time-list ul li .item .item-tag {
+        display: none; }
 
 /*# sourceMappingURL=ca-main.css.map */

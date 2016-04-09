@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEE,yBAAW;EACT,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,IAAI;EACjB,+BAAM;IACJ,MAAM,EAAE,IAAI;IACZ,aAAa,EAAE,IAAI;IACnB,yCAAU;MACR,OAAO,EAAE,IAAI",
+"sources": ["ca-article-tokyo.scss"],
+"names": [],
+"file": "ca-article-tokyo.css"
+}

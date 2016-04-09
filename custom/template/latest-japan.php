@@ -25,7 +25,7 @@
                         <?php the_post_thumbnail(); ?>
                     </div>
                     <div class="post-title">
-                        <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                        <a class="yellow" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
                     </div>
                 </div>
                 <?php

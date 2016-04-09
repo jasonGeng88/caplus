@@ -1,0 +1,22 @@
+.article-tokyo {
+
+  .time-list {
+    //margin: 0;
+    padding: 0;
+    line-height: 80px;
+    ul{
+      overflow: auto;
+      li{
+        .item {
+          margin-bottom: 50px;
+          .item-tag {
+            display: none;
+          }
+        }
+      }
+    }
+
+
+  }
+
+}

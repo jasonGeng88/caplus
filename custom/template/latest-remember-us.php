@@ -1,5 +1,5 @@
 <div id="primary" class="content-area col-md-12 latest-remember-us">
-    <div class="col-md-12 title">
+    <div class="col-md-12 line-combo">
         <p class="title-line"></p>
         <p class="title-content">記住我們，我們是未來</p>
     </div>

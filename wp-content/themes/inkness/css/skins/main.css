@@ -24,7 +24,7 @@ body {
   background: #f7f7f7;
 }
 .container {
-  margin: auto;
+  /*margin: auto;*/
 }
 code {
   white-space: pre-wrap !important;
@@ -63,7 +63,7 @@ body {
   z-index: 888;
 }
 #page ::selection {
-  background: #00bac4;
+  background: #FFFF00;
   color: white;
 }
 /* 2. Header-top
@@ -83,7 +83,7 @@ body {
   position: relative;
 }
 .site-title a {
-  color: #00bac4;
+  color: #FFFF00;
   font-size: 29px;
   font-weight: 200;
 }
@@ -195,12 +195,14 @@ a:hover .social-icon {
 /* 4. Links
 ------------------------------------------------------- */
 a {
-  color: #00bac4;
+  color: #FFFF00;
 }
 a:hover,
 a:focus,
 a:active {
   color: #00d2de;
+  background: #FFFF00;
+  text-decoration: none;
 }
 /* 5. Carousel Wrapper
 ------------------------------------------------------- */
@@ -301,9 +303,9 @@ a:active {
   font-weight: lighter;
 }
 #site-navigation a:hover {
-  border-bottom: #00bac4 solid 2px;
+  border-bottom: #FFFF00 solid 2px;
   background: none;
-  color: #00bac4;
+  color: #FFFF00;
 }
 #site-navigation ul ul a {
   border-bottom: none;
@@ -313,9 +315,9 @@ a:active {
   background: none;
 }
 #site-navigation li:hover > a {
-  border-bottom: #00bac4 solid 2px;
+  border-bottom: #FFFF00 solid 2px;
   padding-bottom: 23px;
-  color: #00bac4;
+  color: #FFFF00;
 }
 #site-navigation ul ul li:hover > a {
   background: #ffffff;
@@ -352,12 +354,12 @@ a:active {
     display: none !important;
   }
   #site-navigation .navbar-default .navbar-collapse {
-    border-color: #00bac4;
+    border-color: #FFFF00;
   }
   .menu-toggle,
   .main-navigation.toggled .nav-menu {
     display: block;
-    color: #00bac4;
+    color: #FFFF00;
     font-weight: bold;
     text-transform: uppercase;
     padding: 10px;
@@ -481,7 +483,7 @@ div.slide-description {
 }
 .single .fa-clock-o:before,
 .single .fa-user:before {
-  color: #00bac4 !important;
+  color: #FFFF00 !important;
 }
 article.archive .article-rest {
   margin: auto;
@@ -548,7 +550,7 @@ article.archive .article-rest {
   display: block;
   font-size: 26px;
   color: #000000;
-  color: #00bac4;
+  color: #FFFF00;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 .archive .entry-title a:hover {
@@ -556,7 +558,7 @@ article.archive .article-rest {
 }
 .archive .entry-meta {
   font-size: small;
-  color: #00bac4;
+  color: #FFFF00;
   /* border-bottom: solid 6px lighten(@sidebar-link-color,25%); */
 
   padding-bottom: 15px;
@@ -708,7 +710,7 @@ h1.page-title {
 }
 #primary-home .entry-title a:hover {
   text-decoration: none;
-  color: #00bac4;
+  color: #FFFF00;
 }
 #primary-home .entry-meta {
   margin-top: 8px;
@@ -732,7 +734,7 @@ h1.page-title {
 }
 #primary-home .entry-meta {
   font-size: small;
-  color: #00bac4;
+  color: #FFFF00;
   border-bottom: solid 1px #d9d9d9;
   color: #999999;
 }
@@ -842,7 +844,7 @@ h1.page-title {
   border-bottom: solid 4px #d9d9d9;
   padding: 5px;
   margin-top: 0px;
-  color: #00bac4;
+  color: #FFFF00;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 24px;
   padding-bottom: 20px;
@@ -921,7 +923,7 @@ h1.page-title {
   float: right;
 }
 .pagination ul > li > a:hover {
-  color: #00bac4;
+  color: #FFFF00;
   background: #eee;
 }
 .pagination .current {

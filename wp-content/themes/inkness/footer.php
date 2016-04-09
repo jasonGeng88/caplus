@@ -11,7 +11,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer row" role="contentinfo">
-	<div class="container">
+	<div class="col-md-10 col-md-offset-1 container">
 		<div class="footer-menu">
 			<?php
 			wp_nav_menu( [

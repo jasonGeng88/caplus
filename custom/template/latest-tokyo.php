@@ -32,7 +32,7 @@
                     <div class="post-thumbnail">
                         <?php the_post_thumbnail(); ?>
                         <div class="post-title col-md-12">
-                            <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                            <a class="yellow" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
                             <div class="post-content col-md-12">
                                 <?php
                                 $span = '</span>';

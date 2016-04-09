@@ -10,9 +10,27 @@ html{
 }
 body{
   font-family: $ff-zh-r;
+  a {
+    color: $black;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    color: $black;
+    background: $white;
+    text-decoration: none;
+  }
+  a.yellow:hover,
+  a.yellow:focus,
+  a.yellow:active {
+    color: $black;
+    background: $yellow;
+    text-decoration: none;
+  }
   #content {
     margin: 0;
     padding: 0;
+    margin-top: 3px;
 
     .container {
       padding: 0;
@@ -21,10 +39,9 @@ body{
     }
     #primary {
       padding: 0;
+      //margin: 0;
       border: none;
     }
-
-
   }
   @include font-format(1);
   @media screen and (min-width: 769px) {
@@ -62,6 +79,37 @@ body{
         @include font-format(5);
       }
     }
+  }
+
+  .arrow-back {
+    width: 32px;
+    height: 32px;
+  }
+
+  .line-combo{
+    margin: 60px 0 50px 0;
+    width: 100%;
+    padding: 0;
+    p{
+      @include font-format(4);
+      width: 200px;
+      text-align: center;
+      line-height: 14px;
+      padding: 0;
+      margin: auto;
+    }
+    .title-line {
+      width: 500px;
+      height: 1px;
+      background: $grey4;
+    }
+    .title-content {
+      margin-top: -7px;
+      background: $white;
+    }
+  }
+  .line-combo.today,.line-combo.yesterday,.line-combo.week,.line-combo.long{
+    display: none;
   }
 
 
