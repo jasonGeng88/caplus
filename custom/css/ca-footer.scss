@@ -1,0 +1,60 @@
+@import "ca-base";
+footer#colophon{
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  .footer-menu {
+    margin: 0 0 40px 0;
+    @include font-format(4);
+    color: $black;
+    ul{
+      width: 100%;
+      height: 38px;
+      padding: 0;
+      margin: 0;
+
+      li{
+        padding-top: 18px;
+        list-style: none;
+        float: left;
+        margin-right: 65px;
+        a {
+          padding-top: 19px;
+          color: $black;
+        }
+        a:hover{
+          font-weight: bold;
+          text-decoration: none;
+          border-top: #000000 solid 2px;
+        }
+      }
+    }
+
+    .current-menu-item{
+      a{
+        font-weight: bold;
+        text-decoration: none;
+        border-top: #000000 solid 2px;
+      }
+    }
+  }
+
+  .site-info {
+    padding:0;
+    margin: 0;
+    @include font-format(3);
+    font-weight: bold;
+    .co-name {
+      float: left;
+    }
+    .co-date {
+      float: right;
+      color: $grey3;
+    }
+
+    p {
+      margin: 0 0 30px;
+    }
+  }
+}

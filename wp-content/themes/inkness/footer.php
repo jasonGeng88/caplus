@@ -31,8 +31,8 @@
 //			 	echo of_get_option('footertext2', true); } ?>
 <!--        </div>-->
 		<div class="site-info col-md-12">
-			<p>日本藝術留學生創造</p>
-			<p>© 2015 CAplus</p>
+			<p class="co-name">日本藝術留學生創造</p>
+			<p class="co-date">© 2015 CAplus</p>
 		</div>
 	</div>   
 	</footer><!-- #colophon -->

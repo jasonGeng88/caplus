@@ -13,7 +13,7 @@
         <?php include_once(APP_ROOT.'/custom/template/timeline.php'); ?>
     </div>
 
-    <div class="addMore">
+    <div class="add-more">
         <button onclick="addMoreForTag()" class="btn-more">more</button>
     </div>
 

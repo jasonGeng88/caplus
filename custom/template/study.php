@@ -24,7 +24,7 @@
             ?>
         </ul>
     </div>
-    <div class="addMore">
+    <div class="add-more">
         <button onclick="addMore()" class="btn-more">more</button>
     </div>
 </div><!-- #primary -->

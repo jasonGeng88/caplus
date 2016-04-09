@@ -1,19 +1,21 @@
 <div id="primary" class="content-area col-md-12 latest-remember-us">
-    <div class="col-md-10 col-md-offset-1 title">
-        <p>記住我們，我們是未來</p>
+    <div class="col-md-12 title">
+        <p class="title-line"></p>
+        <p class="title-content">記住我們，我們是未來</p>
     </div>
-    <div class="col-md-10 col-md-offset-1 line">
-    </div>
-    <div class="col-md-10 col-md-offset-1 list">
+    <div class="col-md-12 list">
         <input type="hidden" name="cat_id" value="<?= ARTICLE ?>">
-        <?php
-        require_once(APP_ROOT.'/custom/function/article.php');
-        get_recent_article_for_remember(ARTICLE, 0, LATEST_PAGE);
-        $page = 1;
-        ?>
+        <ul>
+            <?php
+            require_once(APP_ROOT.'/custom/function/article.php');
+            get_recent_article_for_remember(ARTICLE, 0, LATEST_PAGE);
+            $page = 1;
+            ?>
+        </ul>
+
     </div>
-    <div class="addMore">
-        <button onclick="addMore()" class="btn-more">more</button>
+    <div class="add-more">
+        <p><button onclick="addMore()" class="btn-more">more</button></p>
     </div>
 <!--    <main id="main" class="site-main" role="main">-->
 
@@ -32,7 +34,7 @@
         jQuery.get(url, function(result){
             if(result == '')
                 jQuery(".btn-more").css("display", "none");
-            jQuery(".latest-remember-us .list").append(result);
+            jQuery(".latest-remember-us .list ul").append(result);
         });
     };
 </script>
