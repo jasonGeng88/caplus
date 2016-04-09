@@ -1,31 +1,31 @@
 <div id="primary" class="content-area col-md-12 study">
-    <div class="col-md-12 study-university-head">
-        <p><i class="fa fa-map-marker"></i></p>
-        <p>University</p>
+    <div class="col-md-12 study-head">
+        <p><img src="/custom/images/location.png" alt=""></p>
+        <p class="content">University</p>
     </div>
     <div class="col-md-12 study-university-list">
-        <ul>
+        <ul class="ca-container">
             <?php
             require_once(APP_ROOT.'/custom/function/post.php');
-            getAll(UNIVERSITY);
+            getAll(UNIVERSITY, "university");
             ?>
         </ul>
     </div>
 
-    <div class="col-md-12 study-question-head">
-        <p><i class="fa fa-map-marker"></i></p>
-        <p>Question</p>
+    <div class="col-md-12 study-head">
+        <p><img src="/custom/images/location.png" alt=""></p>
+        <p class="content">Question</p>
     </div>
     <div class="col-md-12 study-question-list">
         <input type="hidden" name="cat_id" value="<?= QUESTION ?>">
-        <ul>
+        <ul class="ca-container">
             <?php
-            getAll(QUESTION, false, 1);
+            getAll(QUESTION, "question", false, 1);
             ?>
         </ul>
     </div>
     <div class="add-more">
-        <button onclick="addMore()" class="btn-more">more</button>
+        <p><button onclick="addMore()" class="btn-more">more</button></p>
     </div>
 </div><!-- #primary -->
 <script>

@@ -1,0 +1,125 @@
+.university{
+  .info{
+    p{
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+    .title{
+      margin-top: 40px;
+      margin-bottom: 20px;
+      @include font-format(4);
+    }
+    .second-title{
+      @include font-format(5);
+      margin-bottom: 40px;
+    }
+    .content{
+      @include font-format(5);
+      margin-top: 43px;
+      margin-bottom: 120px;
+      overflow: auto;
+      height: 145px;
+      p{
+        line-height: 28px;
+        text-align: left;
+      }
+    }
+  }
+  .course-list {
+    p.title{
+      width: 66px;
+      height:66px;
+      line-height: 66px;
+      text-align: center;
+      background: $black;
+      border-radius: 33px;
+      color: $white;
+      @include font-format(4);
+    }
+    ul{
+      margin: 0;
+      margin-top: 60px;
+      li{
+        overflow: auto;
+        list-style: none;
+        .item-name{
+          @include font-format(4);
+          width: 240px;
+          margin-right: 60px;
+          margin-bottom: 40px;
+        }
+        .item-link{
+          img{
+            width: 22px;
+          }
+        }
+        p{
+          float: left;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+
+  .requirement {
+    margin-top: 160px;
+    p{
+      text-align: center;
+    }
+    .title{
+      @include font-format(4);
+      margin-bottom: 60px;
+    }
+    .content{
+      @include font-format(5);
+    }
+    .requirement-link{
+      margin: auto;
+      margin-top: 60px;
+      margin-bottom: 150px;
+      @include font-format(4);
+      width: 150px;
+      height: 45px;
+      border-radius: 3px;
+      line-height: 45px;
+      background: $black;
+      a{
+        color: $white;
+      }
+    }
+  }
+
+  .schoolmate{
+    .title{
+      @include font-format(4);
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 90px;
+    }
+    ul{
+      margin: 0;
+      overflow: auto;
+      li{
+        list-style: none;
+        margin-bottom: 60px;
+        img {
+          width: 132px;
+          height: 132px;
+        }
+      }
+    }
+  }
+
+  .university-url{
+    @include font-format(4);
+    text-align: center;
+    margin-bottom: 120px;
+    margin-top: 60px;
+    a{
+      border-bottom: $black solid 2px;
+      padding-bottom: 16px;
+    }
+  }
+}

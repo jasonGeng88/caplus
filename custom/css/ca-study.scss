@@ -1,0 +1,72 @@
+.study{
+  .study-head{
+    p{
+      margin-top: 60px;
+      margin-bottom: 20px;
+      padding: 0;
+      text-align: center;
+      img{
+        width: 24px;
+        height: 30px;
+      }
+    }
+    p.content {
+      margin: 0;
+      @include font-format(3);
+    }
+  }
+}
+
+//university
+.study-university-list {
+  margin-top: 90px;
+  ul{
+    li{
+      list-style: none;
+      margin-bottom: 60px;
+      p{
+        float: left;
+        margin: 0;
+      }
+      .item-name{
+        width: 188px;
+        margin-right: 10px;
+        line-height: 28px;
+        @include font-format(4);
+
+      }
+      .item-link{
+        img{
+          width: 10px;
+        }
+      }
+    }
+  }
+}
+
+//question
+.study-question-list {
+  margin-top: 90px;
+  ul{
+    li{
+      list-style: none;
+      margin-bottom: 49px;
+      p{
+        float: left;
+        margin: 0;
+      }
+      .item-name{
+        width: 443px;
+        margin-right: 24px;
+        line-height: 28px;
+        @include font-format(4);
+
+      }
+      .item-link{
+        img{
+          width: 22px;
+        }
+      }
+    }
+  }
+}

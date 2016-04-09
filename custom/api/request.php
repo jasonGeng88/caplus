@@ -16,5 +16,5 @@ elseif ($_REQUEST['func'] == 'articleAct') {
     get_recent_article_for_tag($_REQUEST['cat_id'], $_REQUEST['offset'], $_REQUEST['page']);
 }
 elseif ($_REQUEST['func'] == 'questionAct') {
-    getAll($_REQUEST['cat_id'], false, $_REQUEST['offset']);
+    getAll($_REQUEST['cat_id'], "question", false, $_REQUEST['offset']);
 }

@@ -392,4 +392,151 @@ body {
       font-size: 14px;
       letter-spacing: 0.09em; }
 
+.study .study-head p {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding: 0;
+  text-align: center; }
+  .study .study-head p img {
+    width: 24px;
+    height: 30px; }
+.study .study-head p.content {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: 0.07em; }
+
+.study-university-list {
+  margin-top: 90px; }
+  .study-university-list ul li {
+    list-style: none;
+    margin-bottom: 60px; }
+    .study-university-list ul li p {
+      float: left;
+      margin: 0; }
+    .study-university-list ul li .item-name {
+      width: 188px;
+      margin-right: 10px;
+      line-height: 28px;
+      font-size: 14px;
+      letter-spacing: 0.09em; }
+    .study-university-list ul li .item-link img {
+      width: 10px; }
+
+.study-question-list {
+  margin-top: 90px; }
+  .study-question-list ul li {
+    list-style: none;
+    margin-bottom: 49px; }
+    .study-question-list ul li p {
+      float: left;
+      margin: 0; }
+    .study-question-list ul li .item-name {
+      width: 443px;
+      margin-right: 24px;
+      line-height: 28px;
+      font-size: 14px;
+      letter-spacing: 0.09em; }
+    .study-question-list ul li .item-link img {
+      width: 22px; }
+
+.university .info p {
+  padding: 0;
+  margin: 0;
+  text-align: center; }
+.university .info .title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 0.09em; }
+.university .info .second-title {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px; }
+.university .info .content {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  margin-top: 43px;
+  margin-bottom: 120px;
+  overflow: auto;
+  height: 145px; }
+  .university .info .content p {
+    line-height: 28px;
+    text-align: left; }
+.university .course-list p.title {
+  width: 66px;
+  height: 66px;
+  line-height: 66px;
+  text-align: center;
+  background: #000000;
+  border-radius: 33px;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.09em; }
+.university .course-list ul {
+  margin: 0;
+  margin-top: 60px; }
+  .university .course-list ul li {
+    overflow: auto;
+    list-style: none; }
+    .university .course-list ul li .item-name {
+      font-size: 14px;
+      letter-spacing: 0.09em;
+      width: 240px;
+      margin-right: 60px;
+      margin-bottom: 40px; }
+    .university .course-list ul li .item-link img {
+      width: 22px; }
+    .university .course-list ul li p {
+      float: left;
+      line-height: 28px; }
+.university .requirement {
+  margin-top: 160px; }
+  .university .requirement p {
+    text-align: center; }
+  .university .requirement .title {
+    font-size: 14px;
+    letter-spacing: 0.09em;
+    margin-bottom: 60px; }
+  .university .requirement .content {
+    font-size: 12px;
+    letter-spacing: 0.1em; }
+  .university .requirement .requirement-link {
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 150px;
+    font-size: 14px;
+    letter-spacing: 0.09em;
+    width: 150px;
+    height: 45px;
+    border-radius: 3px;
+    line-height: 45px;
+    background: #000000; }
+    .university .requirement .requirement-link a {
+      color: #ffffff; }
+.university .schoolmate .title {
+  font-size: 14px;
+  letter-spacing: 0.09em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 90px; }
+.university .schoolmate ul {
+  margin: 0;
+  overflow: auto; }
+  .university .schoolmate ul li {
+    list-style: none;
+    margin-bottom: 60px; }
+    .university .schoolmate ul li img {
+      width: 132px;
+      height: 132px; }
+.university .university-url {
+  font-size: 14px;
+  letter-spacing: 0.09em;
+  text-align: center;
+  margin-bottom: 120px;
+  margin-top: 60px; }
+  .university .university-url a {
+    border-bottom: #000000 solid 2px;
+    padding-bottom: 16px; }
+
 /*# sourceMappingURL=ca-main.css.map */

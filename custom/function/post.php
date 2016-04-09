@@ -6,7 +6,7 @@
  * Time: 01:01
  */
 
-function getAll($category, $noPaging=true, $offset=1 )
+function getAll($category, $type, $noPaging=true, $offset=1 )
 {
     $posts = query_posts(array(
         'category__in' => array($category),
@@ -15,7 +15,7 @@ function getAll($category, $noPaging=true, $offset=1 )
         'paged' => $offset,
         'nopaging' => $noPaging
     ));
-    echo joinHtmlForList($posts);
+    echo joinHtmlForList($posts, $type);
 }
 
 /**
@@ -54,14 +54,31 @@ function getIntersect($catArr){
     return $res;
 }
 
-function joinHtmlForList($posts){
+function joinHtmlForList($posts, $type){
     $html = '';
-    foreach ($posts as $item) {
-        $html .= '<li>';
-        $html .= '<span class="item-name">'.$item->post_title.'</span>';
-        $html .= '<span class="item-link"><a href="'.$item->guid.'"><i class="fa fa-caret-right"></i></a></span>';
-        $html .= '</li>';
+    if ($type == "university") {
+        foreach ($posts as $item) {
+            $html .= '<li class="col-md-3"><a href="'.$item->guid.'">';
+            $html .= '<p class="item-name">'.$item->post_title.'</p>';
+            $html .= '<p class="item-link"><img src="/custom/images/study-arrow-1.png" alt=""></p>';
+            $html .= '</a></li>';
+        }
+    }elseif($type == "question"){
+        foreach ($posts as $item) {
+            $html .= '<li class="col-md-6"><a href="' . $item->guid . '">';
+            $html .= '<p class="item-name">' . $item->post_title . '</p>';
+            $html .= '<p class="item-link"><img src="/custom/images/study-arrow-2.png" alt=""></p>';
+            $html .= '</a></li>';
+        }
+    }elseif($type == "course"){
+        foreach ($posts as $item) {
+            $html .= '<li class="col-md-12"><a href="' . $item->guid . '">';
+            $html .= '<p class="item-name">' . $item->post_title . '</p>';
+            $html .= '<p class="item-link"><img src="/custom/images/study-arrow-2.png" alt=""></p>';
+            $html .= '</a></li>';
+        }
     }
+
     return $html;
 }
 
