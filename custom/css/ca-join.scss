@@ -1,0 +1,62 @@
+.join{
+  .items{
+    ul{
+      li{
+        p{
+          text-align: left;
+        }
+        .line{
+          margin-bottom: 60px;
+        }
+        .title{
+          @include font-format(4);
+          margin-bottom: 40px;
+        }
+        .specific{
+          margin-bottom: 20px;
+          @include font-format(5);
+          color: $grey3;
+          p{
+            margin-bottom: 20px;
+          }
+        }
+        .des{
+          margin-bottom: 60px;
+          @include font-format(5);
+        }
+      }
+    }
+    ul li:first-child .line{
+      display: none;
+    }
+  }
+  .contact{
+    margin-bottom: 70px;
+    .single{
+      text-align: left;
+      @include font-format(5);
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.ca-container-join {
+  width: 503px;
+  margin: auto;
+  overflow: auto;
+}
+
+.offline{
+  text-align: center;
+  .link{
+    overflow: auto;
+    background-image: url("/custom/images/cooperation-back.png");
+    background-size: 100%;
+    .item{
+      height: 80px;
+      @include font-format(4);
+      color: $white;
+      line-height: 80px;
+    }
+  }
+}

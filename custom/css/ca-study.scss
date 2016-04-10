@@ -46,7 +46,13 @@
 
 //question
 .study-question-list {
+  overflow: auto;
   margin-top: 90px;
+  .title{
+    @include font-format(4);
+    text-align: center;
+    margin-bottom: 90px;
+  }
   ul{
     li{
       list-style: none;

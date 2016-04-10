@@ -423,7 +423,13 @@ body {
       width: 10px; }
 
 .study-question-list {
+  overflow: auto;
   margin-top: 90px; }
+  .study-question-list .title {
+    font-size: 14px;
+    letter-spacing: 0.09em;
+    text-align: center;
+    margin-bottom: 90px; }
   .study-question-list ul li {
     list-style: none;
     margin-bottom: 49px; }
@@ -511,7 +517,9 @@ body {
     border-radius: 3px;
     line-height: 45px;
     background: #000000; }
-    .university .requirement .requirement-link a {
+    .university .requirement .requirement-link p {
+      margin: 0;
+      padding: 0;
       color: #ffffff; }
 .university .schoolmate .title {
   font-size: 14px;
@@ -538,5 +546,226 @@ body {
   .university .university-url a {
     border-bottom: #000000 solid 2px;
     padding-bottom: 16px; }
+
+.course .info p {
+  padding: 0;
+  margin: 0;
+  text-align: center; }
+.course .info .title {
+  margin-bottom: 40px;
+  font-size: 14px;
+  letter-spacing: 0.09em; }
+.course .info .second-title {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px; }
+.course .info .content {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  margin-top: 43px;
+  margin-bottom: 120px;
+  overflow: auto;
+  height: 145px; }
+  .course .info .content p {
+    line-height: 28px;
+    text-align: left; }
+.course .exam-list p.title {
+  width: 66px;
+  height: 66px;
+  line-height: 66px;
+  text-align: center;
+  background: #000000;
+  border-radius: 33px;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.09em; }
+.course .exam-list ul {
+  margin: 0; }
+  .course .exam-list ul li {
+    overflow: auto;
+    list-style: none; }
+    .course .exam-list ul li .item-name {
+      font-size: 14px;
+      letter-spacing: 0.09em;
+      width: 240px;
+      margin-right: 60px;
+      margin-bottom: 40px; }
+    .course .exam-list ul li .item-link img {
+      width: 22px; }
+    .course .exam-list ul li p {
+      float: left;
+      line-height: 28px; }
+
+.normal-post .title {
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  margin-bottom: 40px; }
+.normal-post .content {
+  font-size: 12px;
+  letter-spacing: 0.1em; }
+
+.schoolmate p {
+  padding: 0;
+  margin: 0;
+  text-align: center; }
+.schoolmate .info {
+  margin-top: 60px;
+  margin-bottom: 270px; }
+  .schoolmate .info .avatar {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 30px; }
+    .schoolmate .info .avatar img {
+      width: 100%;
+      height: 100%; }
+  .schoolmate .info .title {
+    font-size: 16px;
+    letter-spacing: 0.07em;
+    margin-bottom: 20px; }
+  .schoolmate .info .second-title {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: #999999;
+    margin-bottom: 40px; }
+  .schoolmate .info .content {
+    font-size: 12px;
+    letter-spacing: 0.1em; }
+    .schoolmate .info .content p {
+      text-align: left; }
+.schoolmate .contact .title {
+  font-size: 16px;
+  letter-spacing: 0.07em;
+  font-weight: bold;
+  margin-bottom: 20px; }
+.schoolmate .contact .content {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px; }
+.schoolmate .contact .link {
+  margin-bottom: 90px; }
+  .schoolmate .contact .link span {
+    margin-left: 20px;
+    margin-right: 20px; }
+    .schoolmate .contact .link span img {
+      width: 20px;
+      height: 20px; }
+.schoolmate .arts {
+  margin-bottom: 120px; }
+
+.magazine .swiper-slide .pic, .magazine .swiper-slide .title {
+  text-align: center; }
+.magazine .swiper-container {
+  margin-top: 60px; }
+  .magazine .swiper-container .swiper-slide img {
+    width: 150px;
+    height: 210px;
+    margin-top: 92px; }
+  .magazine .swiper-container .swiper-slide-next img {
+    width: 280px;
+    height: 394px;
+    margin-top: 0px; }
+.magazine .swiper-slide .title {
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  display: none; }
+.magazine .swiper-slide-next .title {
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  display: block; }
+.magazine .magazine-slider-content .item {
+  margin-top: 65px;
+  margin-bottom: 85px;
+  display: none; }
+
+.about ul li {
+  list-style: none;
+  margin-bottom: 60px; }
+  .about ul li .base {
+    height: 124px;
+    margin-bottom: 28px; }
+    .about ul li .base .name {
+      font-size: 14px;
+      letter-spacing: 0.09em;
+      margin-bottom: 46px; }
+    .about ul li .base .title, .about ul li .base .identity {
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      color: #999999;
+      margin-bottom: 12px; }
+  .about ul li .des {
+    width: 295px; }
+    .about ul li .des p {
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      color: #666666; }
+  .about ul li .pic {
+    height: 124px;
+    margin-bottom: 28px; }
+    .about ul li .pic img {
+      width: 100px;
+      height: 100px; }
+
+.ca-footer-menu p {
+  text-align: center; }
+.ca-footer-menu .title {
+  margin-bottom: 30px;
+  font-size: 14px;
+  letter-spacing: 0.09em; }
+.ca-footer-menu .info {
+  margin-top: 40px;
+  margin-bottom: 120px; }
+  .ca-footer-menu .info .content {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    color: #666666; }
+
+.join .items ul li p {
+  text-align: left; }
+.join .items ul li .line {
+  margin-bottom: 60px; }
+.join .items ul li .title {
+  font-size: 14px;
+  letter-spacing: 0.09em;
+  margin-bottom: 40px; }
+.join .items ul li .specific {
+  margin-bottom: 20px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: #999999; }
+  .join .items ul li .specific p {
+    margin-bottom: 20px; }
+.join .items ul li .des {
+  margin-bottom: 60px;
+  font-size: 12px;
+  letter-spacing: 0.1em; }
+.join .items ul li:first-child .line {
+  display: none; }
+.join .contact {
+  margin-bottom: 70px; }
+  .join .contact .single {
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px; }
+
+.ca-container-join {
+  width: 503px;
+  margin: auto;
+  overflow: auto; }
+
+.offline {
+  text-align: center; }
+  .offline .link {
+    overflow: auto;
+    background-image: url("/custom/images/cooperation-back.png");
+    background-size: 100%; }
+    .offline .link .item {
+      height: 80px;
+      font-size: 14px;
+      letter-spacing: 0.09em;
+      color: #ffffff;
+      line-height: 80px; }
 
 /*# sourceMappingURL=ca-main.css.map */

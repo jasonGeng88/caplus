@@ -1,0 +1,56 @@
+.about{
+  ul{
+    li{
+      list-style: none;
+      margin-bottom: 60px;
+      .base{
+        height: 124px;
+        margin-bottom: 28px;
+        .name{
+          @include font-format(4);
+          margin-bottom: 46px;
+        }
+        .title,.identity{
+          @include font-format(5);
+          color: $grey3;
+          margin-bottom: 12px;
+        }
+      }
+
+      .des{
+        width: 295px;
+        p{
+          @include font-format(5);
+          color: $grey2;
+        }
+      }
+      .pic{
+        height: 124px;
+        margin-bottom: 28px;
+        img{
+          width: 100px;
+          height:100px;
+        }
+      }
+
+    }
+  }
+}
+
+.ca-footer-menu{
+  p{
+    text-align: center;
+  }
+  .title{
+    margin-bottom: 30px;
+    @include font-format(4);
+  }
+  .info{
+    margin-top: 40px;
+    margin-bottom: 120px;
+    .content{
+      @include font-format(5);
+      color: $grey2;
+    }
+  }
+}

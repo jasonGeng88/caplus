@@ -8,29 +8,30 @@
             $catId = get_cat_ID($post->post_title);
         ?>
         <p class="title"><?=$post->post_title ?></p>
-        <p class="second-title"><?=$tag[0]->name ?></p>
         <p class="pic"><img src="<?=$imageUrl ?>" alt=""></p>
-        <p class="content"><?=$post->post_content ?></p>
+        <div class="content ca-container"><?=$post->post_content ?></div>
     </div>
 
-    <div class="col-md-12 exam-list">
-        <?php
-        $posts = getAll($catId);
-        echo $html;
-        ?>
+    <div class="col-md-12 exam-list ca-container">
+        <ul>
+            <?php
+            $posts = getAll($catId, 'course', 1);
+            echo $html;
+            ?>
+        </ul>
     </div>
 
     <div class="col-md-12 study-question-list">
         <input type="hidden" name="cat_id" value="<?= QUESTION ?>">
-        <p>本科相關資訊</p>
+        <p class="title">本科相關資訊</p>
         <ul>
             <?php
-            getAll(QUESTION, false, 1);
+            getAll(QUESTION, 'question', false, 1);
             ?>
         </ul>
     </div>
     <div class="add-more">
-        <button onclick="addMore()" class="btn-more">more</button>
+        <p><button onclick="addMore()" class="btn-more">more</button></p>
     </div>
 </div><!-- #primary -->
 <script>

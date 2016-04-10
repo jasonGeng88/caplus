@@ -1,13 +1,16 @@
-<div id="primary" class="content-area col-md-12 cooperation">
+<div id="primary" class="content-area col-md-12 cooperation join ca-footer-menu">
     <div class="col-md-12 info">
-        <p>業務合作</p>
-        <p>经过ca内部的激烈讨论，也为了确保微信群可以效益最大化，我们决定先建立一个定员20人的群进行试运行！ca内部成员也在群里所以可以提供较于微博更直接的帮助~不论你是喜欢日本设计还是想要留学日本！就请私信我们，告诉我们你关注我们的理由！我们会根据私信内容选择成员~谢谢大家</p>
+        <p class="title">業務合作</p>
+        <div class="content ca-container">经过ca内部的激烈讨论，也为了确保微信群可以效益最大化，我们决定先建立一个定员20人的群进行试运行！ca内部成员也在群里所以可以提供较于微博更直接的帮助~不论你是喜欢日本设计还是想要留学日本！就请私信我们，告诉我们你关注我们的理由！我们会根据私信内容选择成员~谢谢大家</div>
     </div>
 
-    <div class="col-md-12 project">
-        <p>項目</p>
-        <ul>
+    <div class="col-md-12 items">
+        <p class="title">項目</p>
+        <ul class="ca-container-join">
             <li>
+                <div class="line">
+                    <img src="/custom/images/curve.png" alt="">
+                </div>
                 <div class="title">
                     留學申請代辦
                 </div>
@@ -26,6 +29,9 @@
                 </div>
             </li>
             <li>
+                <div class="line">
+                    <img src="/custom/images/curve.png" alt="">
+                </div>
                 <div class="title">
                     留學資訊
                 </div>
@@ -46,10 +52,10 @@
         </ul>
     </div>
 
-    <div class="col-md-12 contact">
-        <p>聯繫我們</p>
-        <p>微博 / 微信：CA-plus</p>
-        <p>郵箱：chen@caplus.com</p>
+    <div class="col-md-12 contact ca-container-join">
+        <p class="title">聯繫我們</p>
+        <p class="single">微博 / 微信：CA-plus</p>
+        <p class="single">郵箱：chen@caplus.com</p>
     </div>
 
 

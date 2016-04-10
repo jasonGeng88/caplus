@@ -15,6 +15,8 @@ define('WP_USE_THEMES', true);
 
 define('APP_ROOT', __DIR__);
 
+$GLOBALS['ca-index'] = 0;
+
 require( APP_ROOT . '/custom/config/global.php' );
 
 /** Loads the WordPress Environment and Template */

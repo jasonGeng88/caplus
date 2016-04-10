@@ -33,7 +33,7 @@
         <?php
         $requirementTag = wp_get_post_tags($requirement[0]->ID);
             if (!empty($requirementTag)) {
-                $html = '<p class="requirement-link"><a href="'.$requirementTag[0]->name.'">相關頁面</a></p>';
+                $html = '<div class="requirement-link"><a href="'.$requirementTag[0]->name.'" target="_blank"><p>相關頁面</p></a></div>';
                 echo $html;
             }
         ?>

@@ -1,0 +1,63 @@
+.course{
+  .info{
+    p{
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+    .title{
+      margin-bottom: 40px;
+      @include font-format(4);
+    }
+    .second-title{
+      @include font-format(5);
+      margin-bottom: 40px;
+    }
+    .content{
+      @include font-format(5);
+      margin-top: 43px;
+      margin-bottom: 120px;
+      overflow: auto;
+      height: 145px;
+      p{
+        line-height: 28px;
+        text-align: left;
+      }
+    }
+  }
+
+  .exam-list {
+    p.title{
+      width: 66px;
+      height:66px;
+      line-height: 66px;
+      text-align: center;
+      background: $black;
+      border-radius: 33px;
+      color: $white;
+      @include font-format(4);
+    }
+    ul{
+      margin: 0;
+      li{
+        overflow: auto;
+        list-style: none;
+        .item-name{
+          @include font-format(4);
+          width: 240px;
+          margin-right: 60px;
+          margin-bottom: 40px;
+        }
+        .item-link{
+          img{
+            width: 22px;
+          }
+        }
+        p{
+          float: left;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+}

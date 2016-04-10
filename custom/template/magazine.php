@@ -6,7 +6,6 @@
             $p->img_url = $tmpUrl;
         }
     }
-var_dump($posts);
 ?>
 <div id="primary" class="content-area col-md-12 magazine">
 
@@ -17,9 +16,14 @@ var_dump($posts);
         <div class="swiper-wrapper">
             <?php
             $html = '';
-            foreach ($posts as $item) {
-                $html .= '<div class="swiper-slide">
+            foreach ($posts as $key => $item) {
+                $html .= '<div class="swiper-slide" ca-slider-index="'.$key.'">
+                        <div class="pic">
                         <img src="'.$item->img_url.'"/>
+                        </div>
+                        <div class="title">
+                        '.$item->post_title.'
+                        </div>
                         </div>';
             }
             echo $html;
@@ -30,6 +34,18 @@ var_dump($posts);
         <!-- Add Arrows -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
+    </div>
+
+    <div class="magazine-slider-content">
+        <?php
+        $html = '';
+        foreach ($posts as $key => $item) {
+            $html .= '<div class="item magazine-item-'.$key.'">
+                      '.$item->post_content.'
+                        </div>';
+        }
+        echo $html;
+        ?>
     </div>
 
     <!-- Swiper JS -->
@@ -72,12 +88,10 @@ var_dump($posts);
 
 
         sliderCustomer = function(){
-            var width = jQuery(".swiper-slide").width();
-            jQuery(".swiper-slide").css("width", width);
-            jQuery(".swiper-slide-next").css("width","50%");
-            jQuery(".swiper-slide-active").css("width", "50%");
-            jQuery(".swiper-slide-next").next().css("width", "50%");
-
+            var index = jQuery(".swiper-slide-next").attr("ca-slider-index");
+            console.log(index);
+            jQuery(".magazine-slider-content .item").css("display", "none");
+            jQuery(".magazine-item-"+index).css("display", "block");
         }
         jQuery(".swiper-button-next").click(function(){
 //        swiper.unlockSwipes();

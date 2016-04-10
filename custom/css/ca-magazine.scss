@@ -1,0 +1,39 @@
+.magazine{
+  .swiper-slide .pic,.swiper-slide .title{
+    text-align: center;
+  }
+  .swiper-container{
+    margin-top: 60px;
+    .swiper-slide{
+      img{
+        width: 150px;
+        height: 210px;
+        margin-top: 92px;
+      }
+    }
+    .swiper-slide-next{
+      img{
+        width: 280px;
+        height: 394px;
+        margin-top: 0px;
+      }
+    }
+
+  }
+  .swiper-slide .title{
+    @include font-format(2);
+    display: none;
+  }
+  .swiper-slide-next .title{
+    @include font-format(2);
+    display: block;
+  }
+  .magazine-slider-content{
+    .item{
+      margin-top: 65px;
+      margin-bottom: 85px;
+      display: none;
+    }
+
+  }
+}

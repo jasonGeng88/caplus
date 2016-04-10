@@ -1,0 +1,10 @@
+.normal-post{
+  .title{
+    @include font-format(1);
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  .content{
+    @include font-format(5);
+  }
+}
