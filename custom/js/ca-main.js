@@ -105,3 +105,13 @@ function joinHtmlForTag(obj, type, timeType){
 
     return html;
 }
+
+function search(){
+    jQuery(".thumbnail-search").css("display", "none");
+    jQuery("#top-search form").css("display", "block");
+}
+
+function search_close(){
+    jQuery("#top-search form").css("display", "none");
+    jQuery(".thumbnail-search").css("display", "block");
+}

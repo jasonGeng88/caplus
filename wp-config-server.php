@@ -17,22 +17,18 @@
  *
  * @package WordPress
  */
-if (php_uname('n') != 'cc-m.local') {
-	require_once(ABSPATH . 'wp-config-server.php');
-}else{
-
 // ** MySQL settings - You can get this info from your web host ** //
 	/** The name of the database for WordPress */
-	define('DB_NAME', 'caplus');
+	define('DB_NAME', 'sq_chinhuo');
 
 	/** MySQL database username */
-	define('DB_USER', 'root');
+	define('DB_USER', 'sq_chinhuo');
 
 	/** MySQL database password */
-	define('DB_PASSWORD', '111111');
+	define('DB_PASSWORD', 'cp1994');
 
 	/** MySQL hostname */
-	define('DB_HOST', '127.0.0.1');
+	define('DB_HOST', 'mysql.sql77.eznowdata.com');
 
 	/** Database Charset to use in creating database tables. */
 	define('DB_CHARSET', 'utf8');
@@ -66,7 +62,7 @@ if (php_uname('n') != 'cc-m.local') {
 	 * You can have multiple installations in one database if you give each
 	 * a unique prefix. Only numbers, letters, and underscores please!
 	 */
-	$table_prefix  = 'wp_';
+	$table_prefix  = 'cazh_';
 
 	/**
 	 * For developers: WordPress debugging mode.
@@ -90,5 +86,4 @@ if (php_uname('n') != 'cc-m.local') {
 
 	/** Sets up WordPress vars and included files. */
 	require_once(ABSPATH . 'wp-settings.php');
-}
 

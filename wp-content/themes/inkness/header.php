@@ -53,6 +53,9 @@
 			</div>
 
 			<div id="top-search" class="col-md-3 col-xs-12">
+				<a href="javascript:search();" class="thumbnail-search">
+					<img src="/custom/images/search.png" alt="">
+				</a>
 				<?php get_search_form(); ?>
 			</div>
 			
