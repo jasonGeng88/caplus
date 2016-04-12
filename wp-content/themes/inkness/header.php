@@ -18,6 +18,9 @@
 <link rel="stylesheet" href="../../../custom/css/ca-main.css">
 <!--custom-main.js-->
 <script src="../custom/js/ca-main.js"></script>
+<script>
+	var api = '<?=APP_URL ?>/?page_id=146';
+</script>
 
 </head>
 

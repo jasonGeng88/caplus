@@ -19,5 +19,11 @@ $GLOBALS['ca-index'] = 0;
 
 require( APP_ROOT . '/custom/config/global.php' );
 
+if (php_uname('n') == 'cc-m.local') {
+    define('APP_URL', 'http://www.localca.com');
+}else{
+    define('APP_URL', 'http://45.63.121.127');
+}
+
 /** Loads the WordPress Environment and Template */
 require( dirname( __FILE__ ) . '/wp-blog-header.php' );
