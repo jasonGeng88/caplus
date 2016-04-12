@@ -10,6 +10,7 @@ var articlePage = 1;//add more page
 var rememberApi = 'rememberAct';
 var articleApi = 'articleAct';
 var questionApi = 'questionAct';
+var searchApi = 'searchAct';
 
 function addMoreForTag(type){
     i+=articlePage;
@@ -108,10 +109,27 @@ function joinHtmlForTag(obj, type, timeType){
 
 function search(){
     jQuery(".thumbnail-search").css("display", "none");
-    jQuery("#top-search form").css("display", "block");
+    jQuery("#top-search .form").css("display", "block");
 }
 
 function search_close(){
-    jQuery("#top-search form").css("display", "none");
+    jQuery("#top-search .form").css("display", "none");
     jQuery(".thumbnail-search").css("display", "block");
 }
+
+function search_posts(query){
+    var url = api + '&func='+searchApi+'&search='+query;
+    jQuery.get(url, function(result){
+        result = JSON.parse(result);
+        var html = '';
+        jQuery(".search-result").html(html);
+        for(var x=0; x < result.length; x++){
+            console.log(x);
+            if(x >= 5)
+                break;
+            html += '<a href="'+result[x].guid+'"><p>'+ result[x].post_title + '</p></a>';
+        }
+        jQuery(".search-result").append(html);
+        console.log(result);
+    });
+};

@@ -5,21 +5,24 @@
  * @package Inkness
  */
 ?>
-<form role="search" method="get" class="row search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+<div class="row search-form form">
 	<div class="search-form">
 	<label>
 		<span class="screen-reader-text"><?php _ex( 'Search for:', 'label', 'inkness' ); ?></span>
 		<input type="text" class="search-field" placeholder="<?php echo esc_attr_x( 'Search...', 'placeholder', 'inkness' ); ?>" value="<?php echo esc_attr( get_search_query() ); ?>" name="s">
 	</label>
-	<button type="button" onclick="javascript:search_close();" class="btn btn-default search-submit"><i class="fa fa-times"> </i></button>
-	<button type="submit" class="btn btn-default search-submit"><i class="fa fa-times"> </i></button>
-	</div>
-</form>
+	<button type="button" onclick="javascript:search_close();" class="btn btn-default"><i class="fa fa-times"> </i></button>
+</div>
+<div class="search-result">
+</div>
 <script>
-	jQuery("#top-search form label input").keypress(function(e) {
+	jQuery("#top-search .form label input").keydown(function(e) {
 		// 回车键事件
-		if(e.which == 13) {
-			jQuery(".search-submit").click();
-		}
+//		if(e.which == 13) {
+			console.log(1);
+			var s = jQuery("input[name='s']").val();
+			search_posts(s);
+			console.log(2);
+//		}
 	});
 </script>

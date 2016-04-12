@@ -59,7 +59,7 @@
         margin-right: 60px;
       }
     }
-    form{
+    .form{
       display: none;
       height: 50px;
       margin: 0;
@@ -86,6 +86,20 @@
         button[type="submit"]{
           display: none;
         }
+      }
+      .search-result{
+        background: $white;
+        margin-top: 50px;
+        width: 240px;
+        text-align: center;
+        @include font-format(5);
+        color: $grey3;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        p{
+          margin-bottom: 20px;
+        }
+
       }
     }
   }

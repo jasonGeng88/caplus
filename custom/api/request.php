@@ -18,3 +18,6 @@ elseif ($_REQUEST['func'] == 'articleAct') {
 elseif ($_REQUEST['func'] == 'questionAct') {
     getAll($_REQUEST['cat_id'], "question", false, $_REQUEST['offset']);
 }
+elseif ($_REQUEST['func'] == 'searchAct') {
+    queryPosts('s='.$_REQUEST['search']);
+}

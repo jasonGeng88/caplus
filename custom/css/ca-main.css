@@ -49,13 +49,13 @@
       float: right;
       margin-top: 16px;
       margin-right: 60px; }
-    #header-top #top-search form {
+    #header-top #top-search .form {
       display: none;
       height: 50px;
       margin: 0; }
-      #header-top #top-search form .search-form {
+      #header-top #top-search .form .search-form {
         margin-top: 11px; }
-        #header-top #top-search form .search-form input {
+        #header-top #top-search .form .search-form input {
           font-size: 12px;
           letter-spacing: 0.1em;
           color: #000000;
@@ -65,13 +65,25 @@
           border-radius: 14px;
           padding: 8px 14px;
           border: none; }
-        #header-top #top-search form .search-form button i {
+        #header-top #top-search .form .search-form button i {
           margin-top: 5px;
           font-size: 16px;
           letter-spacing: 0.07em;
           color: #999999; }
-        #header-top #top-search form .search-form button[type="submit"] {
+        #header-top #top-search .form .search-form button[type="submit"] {
           display: none; }
+      #header-top #top-search .form .search-result {
+        background: #ffffff;
+        margin-top: 50px;
+        width: 240px;
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        color: #999999;
+        padding-top: 20px;
+        padding-bottom: 20px; }
+        #header-top #top-search .form .search-result p {
+          margin-bottom: 20px; }
   #header-top #top-search ::-webkit-input-placeholder {
     color: #000000; }
   #header-top #top-search :-moz-placeholder {

@@ -18,6 +18,12 @@ function getAll($category, $type, $noPaging=true, $offset=1 )
     echo joinHtmlForList($posts, $type);
 }
 
+function queryPosts($query)
+{
+    $posts = query_posts($query);
+    echo json_encode($posts);
+}
+
 /**
  * 根据category 获取交集信息
  * @param $catArr
