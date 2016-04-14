@@ -16,7 +16,7 @@
 <div class="search-result">
 </div>
 <script>
-	jQuery("#top-search .form label input").keydown(function(e) {
+	jQuery("#top-search .form label input").keyup(function(e) {
 		// 回车键事件
 //		if(e.which == 13) {
 			console.log(1);

@@ -20,7 +20,14 @@ function getAll($category, $type, $noPaging=true, $offset=1 )
 
 function queryPosts($query)
 {
+//    var_dump($query);die;
     $posts = query_posts($query);
+    $arr = [];
+    foreach ($posts as $key => $item) {
+        if (strpos($item->post_title, $query['s']) != false) {
+            $arr[$key] = $item->post_title;
+        }
+    }
     echo json_encode($posts);
 }
 
