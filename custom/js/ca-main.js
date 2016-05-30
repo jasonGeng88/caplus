@@ -12,6 +12,17 @@ var articleApi = 'articleAct';
 var questionApi = 'questionAct';
 var searchApi = 'searchAct';
 
+function createApi(action, data, callback){
+    var url = api + '&func='+action;
+    if (data != undefined){
+        for (var key in data){
+            url += '&' + key + '=' + data[key];
+        }
+    }
+    //return url;
+    jQuery.get(url, callback);
+}
+
 function addMoreForTag(type){
     i+=articlePage;
     var cat_id = jQuery("input[name='cat_id']").val();

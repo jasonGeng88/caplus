@@ -208,3 +208,80 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * 自定义字段
+ */
+$new_meta_boxes =
+	array(
+			"create_time" => array(
+					"name" => "_create_time",
+					"std" => "分类为文章时需填写",
+					"title" => "创作时间:"),
+
+			"author_name" => array(
+					"name" => "_author_name",
+					"std" => "CHEN PENG",
+//					"std" => "分类为文章时需填写",
+					"title" => "作者名称:"),
+
+			"author_education" => array(
+					"name" => "_author_education",
+					"std" => "Science of Design Musashino Art University",
+//					"std" => "分类为文章时需填写",
+					"title" => "作者学历:"),
+			"author_weibo" => array(
+					"name" => "_author_weibo",
+					"std" => "http://weibo.com",
+//					"std" => "分类为文章时需填写",
+					"title" => "作者微博:"),
+			"author_facebook" => array(
+					"name" => "_author_facebook",
+					"std" => "http://facebook.com",
+//					"std" => "分类为文章时需填写",
+					"title" => "作者Facebook:"),
+			"author_instagram" => array(
+					"name" => "_author_instagram",
+					"std" => "http://instagram.com",
+//					"std" => "分类为文章时需填写",
+					"title" => "作者Instagram:"),
+	);
+
+function new_meta_boxes() {
+	global $post, $new_meta_boxes;
+	foreach($new_meta_boxes as $meta_box) {
+		$meta_box_value = get_post_meta($post->ID, $meta_box['name'].'_value', true);
+		if($meta_box_value == "")
+			$meta_box_value = $meta_box['std'];
+		// 自定义字段标题
+		echo'<h4>'.$meta_box['title'].'</h4>';
+		// 自定义字段输入框
+		echo '<textarea cols="60" rows="3" name="'.$meta_box['name'].'_value">'.$meta_box_value.'</textarea><br />';
+	}
+	echo '<input type="hidden" name="ludou_metaboxes_nonce" id="ludou_metaboxes_nonce" value="'.wp_create_nonce( plugin_basename(__FILE__) ).'" />';
+}
+
+function create_meta_box() {
+	global $theme_name;
+	if ( function_exists('add_meta_box') ) {
+		add_meta_box( 'new-meta-boxes', '自定义模块', 'new_meta_boxes', 'post', 'normal', 'high' );
+	}
+}
+
+function save_postdata( $post_id ) {
+	global $new_meta_boxes;
+	if ( !wp_verify_nonce( $_POST['ludou_metaboxes_nonce'], plugin_basename(__FILE__) ))
+		return;
+	if ( !current_user_can( 'edit_posts', $post_id ))
+		return;
+	foreach($new_meta_boxes as $meta_box) {
+		$data = $_POST[$meta_box['name'].'_value'];
+		if($data == "")
+			delete_post_meta($post_id, $meta_box['name'].'_value', get_post_meta($post_id, $meta_box['name'].'_value', true));
+		else
+			update_post_meta($post_id, $meta_box['name'].'_value', $data);
+	}
+}
+
+add_action('admin_menu', 'create_meta_box');
+add_action('save_post', 'save_postdata');

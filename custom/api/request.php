@@ -9,18 +9,81 @@ require_once(__DIR__.'/../config/global.php');
 require_once(__DIR__.'/../function/article.php');
 require_once(__DIR__.'/../function/post.php');
 
-if ($_REQUEST['func'] == 'rememberAct') {
-    get_recent_article_for_remember($_REQUEST['cat_id'], $_REQUEST['offset'], $_REQUEST['page']);
+call_user_func($_REQUEST['func']);
+//
+//if ($_REQUEST['func'] == 'recentPostAct') {
+////    get_recent_article_for_remember($_REQUEST['cat_id'], $_REQUEST['offset'], $_REQUEST['page']);
+//}
+//elseif ($_REQUEST['func'] == 'articleAct') {
+//    get_recent_article_for_tag($_REQUEST['cat_id'], $_REQUEST['offset'], $_REQUEST['page']);
+//}
+//elseif ($_REQUEST['func'] == 'questionAct') {
+//    getAll($_REQUEST['cat_id'], "question", false, $_REQUEST['offset']);
+//}
+//elseif ($_REQUEST['func'] == 'searchAct') {
+//    queryPosts([
+//        's'=>$_REQUEST['search'],
+//        'category__in' => [EXHIBITION, ARTICLE]
+//    ]);
+//}
+
+/**
+ * 根据分类ID获取最近的文章
+ * @param $category
+ * @param int $offset
+ * @param int $num
+ */
+function recentPostAct(){
+    $catId = $_REQUEST['cat_id'];
+    $offset = isset($_REQUEST['offset']) ? $_REQUEST['offset'] : 0;
+    $num = isset($_REQUEST['num']) ? $_REQUEST['num'] : 0;
+    $args = array(
+        'numberposts' => $num,
+        'offset' => $offset,
+        'category' => $catId,
+        'orderby' => 'post_date',
+        'order' => 'DESC',
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'suppress_filters' => true
+    );
+    $recent_posts = wp_get_recent_posts($args);
+    success($recent_posts);
 }
-elseif ($_REQUEST['func'] == 'articleAct') {
-    get_recent_article_for_tag($_REQUEST['cat_id'], $_REQUEST['offset'], $_REQUEST['page']);
+
+/**
+ * 获取文章分类下的二级分类及最近文章
+ */
+function articleRecentPostAct(){
+    $res = [];
+    $cats = get_term_children(ARTICLE, 'category');
+    foreach ($cats as $item) {
+        $data = [];
+        $args = array(
+            'numberposts' => 6,
+            'category' => $item,
+            'orderby' => 'post_date',
+            'order' => 'DESC',
+            'post_type' => 'post',
+            'post_status' => 'publish',
+            'suppress_filters' => true
+        );
+        $data['data'] = wp_get_recent_posts($args);
+        if (!empty($data['data'])) {
+            $data['name'] = get_cat_name($item);
+            foreach ($data['data'] as &$d) {
+                $d['_create_time'] = get_post_meta($d['ID'], '_create_time_value', true);
+                $d['thumbnail'] = get_the_post_thumbnail($d['ID']);
+            }
+            $res[] = $data;
+        }
+    }
+    success($res);
 }
-elseif ($_REQUEST['func'] == 'questionAct') {
-    getAll($_REQUEST['cat_id'], "question", false, $_REQUEST['offset']);
-}
-elseif ($_REQUEST['func'] == 'searchAct') {
-    queryPosts([
-        's'=>$_REQUEST['search'],
-        'category__in' => [EXHIBITION, ARTICLE]
+
+function success($data){
+    echo json_encode([
+        'code' =>200,
+        'data' => $data
     ]);
 }

@@ -13,7 +13,7 @@
 
 get_header();
 
-include_once(APP_ROOT.'/custom/template/latest.php');
+include_once(APP_ROOT.'/custom/template/home.php');
 
 ?>
 

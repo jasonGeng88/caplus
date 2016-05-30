@@ -6,6 +6,7 @@
  *
  * @package Inkness
  */
+require_once(APP_ROOT.'/custom/config/global.php');
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
