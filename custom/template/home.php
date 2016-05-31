@@ -4,7 +4,10 @@ Template Name: Latest
 */
 
 get_header();
-
+?>
+<!--分類文章-->
+<div class="col-lg-12 home-articles">
+<?php
 $cats = get_term_children(ARTICLE, 'category');
 foreach ($cats as $item) {
     $data = [];
@@ -30,8 +33,12 @@ foreach ($cats as $item) {
 <?php foreach ($data['data'] as $d) { ?>
         <div class="col-lg-12 item">
             <div class="col-lg-4">
-                <img src="<?=get_the_post_thumbnail_url($d['ID']);?>" alt="">
-                <p><?=$d['post_title'];?></p>
+                <a href="<?=$d['guid'];?>">
+                    <img src="<?=get_the_post_thumbnail_url($d['ID']);?>" alt="">
+                </a>
+                <p>
+                    <a href="<?=$d['guid'];?>"><span><?=$d['post_title'];?></span></a>
+                </p>
                 <?php
                     $tags = [];
                     foreach (wp_get_post_tags($d['ID']) as $t) {
@@ -49,8 +56,45 @@ foreach ($cats as $item) {
     }
 }
 ?>
+</div>
+<!--分類文章 end-->
 
+<!--百人計劃-->
+<div class="col-lg-12 home-hundred">
+<?php
+    $data = [];
+    $args = array(
+        'numberposts' => 100,
+        'category' => HUNDRED_ID,
+        'orderby' => 'post_date',
+        'order' => 'DESC',
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'suppress_filters' => true
+    );
+    $data['data'] = wp_get_recent_posts($args);
+    if (!empty($data['data'])) {
+        foreach ($data['data'] as $k => $d){
+            if ($k%5 ==0) {
+?>
+                <div class="col-lg-2 item col-lg-offset-1">
+<?php
+            }else{
+?>
+                <div class="col-lg-2 item">
+<?php
+            }
+?>
+        <a href="<?=$d['guid'];?>">
+            <img src="<?=get_the_post_thumbnail_url($d['ID']);?>" alt="">
+        </a>
+    </div>
+<?php
+        }
+    }
+?>
 
+</div>
 <script>
 //    init();
 //    function init(){

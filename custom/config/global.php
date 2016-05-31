@@ -21,6 +21,7 @@ define('CONTACT', 34);
 define('EXHIBITION_ID', 38);
 define('MEDIA_ID', 39);
 define('RECORD_ID', 40);
+define('HUNDRED_ID', 47);
 
 //base
 define('LATEST_PAGE', 1);
@@ -28,7 +29,7 @@ define('ARTICLE_PAGE', 2);
 define('QUESTION_PAGE', 1);
 
 //url
-define('ARTICLE_LIST_URL', 'http://www.localca.com/?page_id=212');
+define('ARTICLE_LIST_URL', APP_URL.'/?page_id=212');
 
 //action
 define('RECENT_POST_ACT', 'recentPostAct');
