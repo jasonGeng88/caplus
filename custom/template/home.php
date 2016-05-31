@@ -6,7 +6,7 @@ Template Name: Latest
 get_header();
 ?>
 <!--分類文章-->
-<div class="col-lg-12 home-articles">
+<div class="col-lg-12 home-articles ca-block">
 <?php
 $cats = get_term_children(ARTICLE, 'category');
 foreach ($cats as $item) {
@@ -23,7 +23,7 @@ foreach ($cats as $item) {
     $data['data'] = wp_get_recent_posts($args);
     if (!empty($data['data'])) {
 ?>
-<div class="col-lg-12 column">
+<div class="col-lg-12 column ca-block">
     <div class="col-lg-12 title">
         <a href="<?=ARTICLE_LIST_URL;?>&cat_id=<?=$item;?>">
             <?=get_cat_name($item);?>
@@ -31,23 +31,21 @@ foreach ($cats as $item) {
     </div>
     <div class="col-lg-12 items">
 <?php foreach ($data['data'] as $d) { ?>
-        <div class="col-lg-12 item">
-            <div class="col-lg-4">
-                <a href="<?=$d['guid'];?>">
-                    <img src="<?=get_the_post_thumbnail_url($d['ID']);?>" alt="">
-                </a>
-                <p>
-                    <a href="<?=$d['guid'];?>"><span><?=$d['post_title'];?></span></a>
-                </p>
-                <?php
-                    $tags = [];
-                    foreach (wp_get_post_tags($d['ID']) as $t) {
-                        $tags[] = $t->name;
-                    }
-                ?>
-                <p><?=implode('，', $tags);?></p>
-                <p><?=get_post_meta($d['ID'], '_create_time_value', true);?></p>
-            </div>
+        <div class="col-lg-4 item">
+            <a href="<?=$d['guid'];?>">
+                <img src="<?=get_the_post_thumbnail_url($d['ID']);?>" alt="">
+            </a>
+            <p>
+                <a href="<?=$d['guid'];?>"><span><?=$d['post_title'];?></span></a>
+            </p>
+            <?php
+                $tags = [];
+                foreach (wp_get_post_tags($d['ID']) as $t) {
+                    $tags[] = $t->name;
+                }
+            ?>
+            <p><?=implode('，', $tags);?></p>
+            <p><?=get_post_meta($d['ID'], '_create_time_value', true);?></p>
         </div>
 <?php } ?>
     </div>
@@ -60,7 +58,7 @@ foreach ($cats as $item) {
 <!--分類文章 end-->
 
 <!--百人計劃-->
-<div class="col-lg-12 home-hundred">
+<div class="col-lg-12 home-hundred ca-block">
 <?php
     $data = [];
     $args = array(

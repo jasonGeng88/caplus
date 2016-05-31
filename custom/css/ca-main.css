@@ -233,6 +233,8 @@ body {
     width: 1102px;
     margin: auto;
     overflow: auto; }
+  body .ca-block {
+    overflow: hidden; }
 
 .home .swiper-container {
   width: 100%;
