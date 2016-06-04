@@ -31,7 +31,7 @@ require_once(APP_ROOT.'/custom/config/global.php');
 	<?php do_action( 'inkness_before' ); ?>
 	<div id="header-top">
 		<header id="masthead" class="site-header row container" role="banner">
-			<div class="site-branding col-md-3 col-xs-12">
+			<div class="site-branding col-md-1 col-xs-12">
 
 				<?php if((of_get_option('logo', true) != "") && (of_get_option('logo', true) != 1) ) { ?>
 
@@ -45,7 +45,7 @@ require_once(APP_ROOT.'/custom/config/global.php');
 			}
 			?>
 			</div>
-			<div class="default-nav-wrapper col-md-6 col-xs-12">
+			<div class="default-nav-wrapper col-md-7 col-md-offset-1 col-xs-12">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div id="nav-container">
 						<h1 class="menu-toggle"></h1>

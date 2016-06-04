@@ -44,17 +44,4 @@ $articleUrl = $tmp[0]['guid'];
 
 </div>
 
-<script>
-//    init();
-//    function init(){
-//        createApi('<?//=ARTICLE_RECENT_POST_ACT?>//', {}, function (result) {
-//            result = JSON.parse(result);
-//            if (result.code == 200){
-//                console.log(result);
-//            }
-//        });
-//    }
-
-</script>
-
 <?php get_footer(); ?>
