@@ -114,9 +114,9 @@ get_header();
             ?>
             <div class="col-lg-2 item">
                 <a href="">
-                    <div class="join-us">
-                        Join us
-                    </div>
+                    <a href="<?=ABOUT_URL;?>">
+                        <div class="join-us">Join us</div>
+                    </a>
                 </a>
             </div>
         </div>

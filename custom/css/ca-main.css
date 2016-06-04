@@ -5,6 +5,94 @@
   font-style: normal;
   src: url("../font/roboto-regular-webfont.eot");
   src: url("../font/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../font/roboto-regular-webfont.woff") format("woff"), url("../font/roboto-regular-webfont.ttf") format("truetype"), url("../font/roboto-regular-webfont.svg#Roboto Regular") format("svg"); }
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?9nfnng");
+  src: url("../fonts/icomoon.eot?9nfnng#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?9nfnng") format("truetype"), url("../fonts/icomoon.woff?9nfnng") format("woff"), url("../fonts/icomoon.svg?9nfnng#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-abroad:before {
+  content: "\e912"; }
+
+.icon-video:before {
+  content: "\e900"; }
+
+.icon-offline:before {
+  content: "\e911"; }
+
+.icon-mag:before {
+  content: "\e913"; }
+
+.icon-media:before {
+  content: "\e914"; }
+
+.icon-workshop:before {
+  content: "\e915"; }
+
+.icon-arrow-right:before {
+  content: "\e916"; }
+
+.icon-drop:before {
+  content: "\e904"; }
+
+.icon-close:before {
+  content: "\e901"; }
+
+.icon-continue:before {
+  content: "\e902"; }
+
+.icon-download:before {
+  content: "\e903"; }
+
+.icon-facebook:before {
+  content: "\e905"; }
+
+.icon-global:before {
+  content: "\e906"; }
+
+.icon-instagram:before {
+  content: "\e907"; }
+
+.icon-link:before {
+  content: "\e908"; }
+
+.icon-mail:before {
+  content: "\e909"; }
+
+.icon-menu:before {
+  content: "\e90a"; }
+
+.icon-more:before {
+  content: "\e90b"; }
+
+.icon-pinterest:before {
+  content: "\e90c"; }
+
+.icon-rewind:before {
+  content: "\e90d"; }
+
+.icon-search:before {
+  content: "\e90e"; }
+
+.icon-twitter:before {
+  content: "\e90f"; }
+
+.icon-weibo:before {
+  content: "\e910"; }
+
 #header-top {
   background: #ffffff;
   height: 50px;
@@ -345,6 +433,49 @@ body {
 .articles .article-items {
   margin-top: 60px;
   margin-bottom: 120px; }
+
+.offline .offline-pic {
+  margin-top: 120px;
+  width: 630px; }
+.offline .offline-content {
+  margin-top: 120px;
+  padding-left: 50px; }
+  .offline .offline-content .name {
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px; }
+  .offline .offline-content .text {
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    color: #666666;
+    line-height: 2;
+    width: 320px;
+    margin-bottom: 35px; }
+  .offline .offline-content .see-more {
+    margin-bottom: 20px; }
+    .offline .offline-content .see-more button {
+      width: 200px;
+      height: 40px;
+      border-radius: 2px;
+      background-color: #333333;
+      box-shadow: none;
+      text-shadow: none;
+      color: #ffffff;
+      font-size: 12px;
+      line-height: 1;
+      letter-spacing: 0.1em; }
+  .offline .offline-content .time, .offline .offline-content .address {
+    font-size: 14px;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.09em;
+    line-height: 1.7;
+    text-align: justify;
+    color: #666666; }
 
 .study .study-head p {
   margin-top: 60px;
@@ -745,19 +876,5 @@ body {
   width: 503px;
   margin: auto;
   overflow: auto; }
-
-.offline {
-  text-align: center; }
-  .offline .link {
-    overflow: auto;
-    background-image: url("/custom/images/cooperation-back.png");
-    background-size: 100%; }
-    .offline .link .item {
-      height: 80px;
-      font-size: 14px;
-      line-height: 1;
-      letter-spacing: 0.09em;
-      color: #ffffff;
-      line-height: 80px; }
 
 /*# sourceMappingURL=ca-main.css.map */

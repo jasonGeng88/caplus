@@ -21,6 +21,9 @@ if ($GLOBALS['ca-index'] == 1) {
         case HUNDRED_ID:
             include_once(APP_ROOT.'/custom/template/schoolmate.php');
             break;
+        case OFFLINE_INTRO_ID:
+            include_once(APP_ROOT.'/custom/template/offline.php');
+            break;
 
         default:
             include_once(APP_ROOT.'/custom/template/normal-post.php');

@@ -22,6 +22,9 @@ define('EXHIBITION_ID', 38);
 define('MEDIA_ID', 39);
 define('RECORD_ID', 40);
 define('HUNDRED_ID', 47);
+define('OFFLINE_INTRO_ID', 48);
+define('OFFLINE_ARTICLE_ID', 49);
+
 
 //base
 define('LATEST_PAGE', 1);
@@ -30,6 +33,7 @@ define('QUESTION_PAGE', 1);
 
 //url
 define('ARTICLE_LIST_URL', APP_URL.'/?page_id=212');
+define('ABOUT_URL', APP_URL.'/?page_id=79');
 
 //action
 define('RECENT_POST_ACT', 'recentPostAct');

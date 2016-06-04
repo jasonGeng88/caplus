@@ -26,7 +26,7 @@ require_once(APP_ROOT.'/custom/config/global.php');
 </head>
 
 <body <?php body_class(); ?>>
-<div id="parallax-bg"></div>
+<!--<div id="parallax-bg"></div>-->
 <div id="page" class="hfeed site">
 	<?php do_action( 'inkness_before' ); ?>
 	<div id="header-top">

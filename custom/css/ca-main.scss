@@ -1,5 +1,6 @@
 @import "ca-font";
 @include font-face("Roboto Regular","../font/roboto-regular-webfont");
+@import "ca-icon";
 
 @import "ca-base";
 @import "ca-header";
@@ -7,8 +8,8 @@
 @import "ca-body";
 
 @import "home/ca-home";
-
 @import "articles/ca-articles";
+@import "offline/ca-offline";
 
 //@import "ca-latest";
 //@import "ca-article";
