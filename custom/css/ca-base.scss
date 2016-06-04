@@ -28,22 +28,27 @@ $letter-5: 0.1em;
 @mixin font-format($type){
   @if($type == 1){
     font-size: $fs-1;
+    line-height: 1;
     letter-spacing: $letter-1;
   }
   @if($type == 2){
     font-size: $fs-2;
+    line-height: 1;
     letter-spacing: $letter-2;
   }
   @if($type == 3){
     font-size: $fs-3;
+    line-height: 1;
     letter-spacing: $letter-3;
   }
   @if($type == 4){
     font-size: $fs-4;
+    line-height: 1;
     letter-spacing: $letter-4;
   }
   @if($type == 5){
     font-size: $fs-5;
+    line-height: 1;
     letter-spacing: $letter-5;
   }
 

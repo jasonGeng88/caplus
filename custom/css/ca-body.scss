@@ -14,11 +14,12 @@ body{
   a {
     color: $black;
   }
+  background: $white;
   a:hover,
   a:focus,
   a:active {
     color: $black;
-    background: $white;
+    background: $yellow;
     text-decoration: none;
   }
   a.yellow:hover,
@@ -31,7 +32,6 @@ body{
   #content {
     margin: 0;
     padding: 0;
-    margin-top: 3px;
 
     .container {
       padding: 0;

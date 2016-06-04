@@ -6,12 +6,16 @@
 @import "ca-footer";
 @import "ca-body";
 
-@import "ca-latest";
-@import "ca-article";
+@import "home/ca-home";
 
-@import "ca-article-japan";
-@import "ca-article-tokyo";
-@import "ca-exhibition";
+@import "articles/ca-articles";
+
+//@import "ca-latest";
+//@import "ca-article";
+
+//@import "ca-article-japan";
+//@import "ca-article-tokyo";
+//@import "ca-exhibition";
 
 @import "ca-study";
 @import "ca-university";

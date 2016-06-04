@@ -13,6 +13,7 @@
   -webkit-box-shadow: 0px 1px 1px #e6e6e6;
   box-shadow: 0px 1px 1px #e6e6e6;
   font-size: 14px;
+  line-height: 1;
   letter-spacing: 0.09em; }
   #header-top header {
     max-width: 100%; }
@@ -57,6 +58,7 @@
         margin-top: 11px; }
         #header-top #top-search .form .search-form input {
           font-size: 12px;
+          line-height: 1;
           letter-spacing: 0.1em;
           color: #000000;
           width: 240px;
@@ -68,6 +70,7 @@
         #header-top #top-search .form .search-form button i {
           margin-top: 5px;
           font-size: 16px;
+          line-height: 1;
           letter-spacing: 0.07em;
           color: #999999; }
         #header-top #top-search .form .search-form button[type="submit"] {
@@ -78,6 +81,7 @@
         width: 240px;
         text-align: center;
         font-size: 12px;
+        line-height: 1;
         letter-spacing: 0.1em;
         color: #999999;
         padding-top: 20px;
@@ -103,6 +107,7 @@ footer#colophon {
   footer#colophon .footer-menu {
     margin: 0 0 40px 0;
     font-size: 14px;
+    line-height: 1;
     letter-spacing: 0.09em;
     color: #000000; }
     footer#colophon .footer-menu ul {
@@ -130,6 +135,7 @@ footer#colophon {
     padding: 0;
     margin: 0;
     font-size: 16px;
+    line-height: 1;
     letter-spacing: 0.07em;
     font-weight: bold; }
     footer#colophon .site-info .co-name {
@@ -151,7 +157,9 @@ html {
 
 body {
   font-family: "Source Han Sans Regular";
+  background: #ffffff;
   font-size: 20px;
+  line-height: 1;
   letter-spacing: 0.03em; }
   body a {
     color: #000000; }
@@ -159,7 +167,7 @@ body {
   body a:focus,
   body a:active {
     color: #000000;
-    background: #ffffff;
+    background: #FFFF00;
     text-decoration: none; }
   body a.yellow:hover,
   body a.yellow:focus,
@@ -169,8 +177,7 @@ body {
     text-decoration: none; }
   body #content {
     margin: 0;
-    padding: 0;
-    margin-top: 3px; }
+    padding: 0; }
     body #content .container {
       padding: 0;
       margin: 0;
@@ -202,6 +209,7 @@ body {
       height: 28px;
       border-radius: 14px;
       font-size: 12px;
+      line-height: 1;
       letter-spacing: 0.1em; }
   body .arrow-back {
     width: 32px;
@@ -212,6 +220,7 @@ body {
     padding: 0; }
     body .line-combo p {
       font-size: 14px;
+      line-height: 1;
       letter-spacing: 0.09em;
       width: 200px;
       text-align: center;
@@ -236,217 +245,106 @@ body {
   body .ca-block {
     overflow: hidden; }
 
-.home .swiper-container {
-  width: 100%;
-  height: 300px;
-  margin: 0px auto; }
-  .home .swiper-container .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center; }
-    .home .swiper-container .swiper-slide img {
-      filter: grayscale(1);
-      -webkit-filter: grayscale(1);
-      width: 100%;
-      height: 100%; }
-  .home .swiper-container .swiper-slide.swiper-slide-next img {
-    filter: grayscale(0);
-    -webkit-filter: grayscale(0); }
-  .home .swiper-container .swiper-slide-active {
-    margin-left: -25%; }
-  .home .swiper-container .swiper-button-prev {
-    height: 100%;
-    width: 25%;
-    background: transparent;
-    left: 0;
-    top: 0;
-    margin: 0; }
-  .home .swiper-container .swiper-button-next {
-    height: 100%;
-    width: 25%;
-    background: transparent;
-    right: 0;
-    top: 0;
-    margin: 0; }
 .home .title {
-  margin-top: 30px;
-  margin-bottom: 30px; }
-  .home .title p {
-    font-size: 20px;
-    letter-spacing: 0.03em;
-    line-height: 40px; }
-    .home .title p a {
-      color: #000000; }
-    .home .title p span {
-      float: right;
-      font-size: 40px; }
-.home .line {
-  height: 2px;
-  background: #e6e6e6;
-  margin-bottom: 54px; }
-.home .latest-remember-us .list ul {
-  padding: 0;
-  overflow: auto; }
-  .home .latest-remember-us .list ul li {
-    width: 253px;
-    height: 204px;
-    list-style: none;
-    margin-right: 30px;
-    float: left; }
-    .home .latest-remember-us .list ul li .pic {
-      margin-bottom: 20px; }
-      .home .latest-remember-us .list ul li .pic img {
-        width: 253px;
-        height: 128px; }
-    .home .latest-remember-us .list ul li .title {
-      font-size: 14px;
-      letter-spacing: 0.09em;
-      margin: 0;
-      padding: 0; }
-  .home .latest-remember-us .list ul li:nth-child(4n) {
-    margin-right: 0px; }
-.home #primary.latest-japan {
-  margin-top: 20px; }
-  .home #primary.latest-japan .list {
-    padding: 0;
-    margin-bottom: 90px; }
-    .home #primary.latest-japan .list .item {
-      padding: 0;
-      margin-bottom: 45px; }
-      .home #primary.latest-japan .list .item .post-thumbnail {
-        float: left;
-        margin-right: 30px; }
-        .home #primary.latest-japan .list .item .post-thumbnail img {
-          width: 60px;
-          height: 60px; }
-      .home #primary.latest-japan .list .item .post-title {
-        line-height: 60px;
-        font-size: 18px;
-        letter-spacing: 0.05em;
-        float: left; }
-        .home #primary.latest-japan .list .item .post-title a {
-          color: #000000; }
-.home #primary.latest-tokyo {
-  margin-top: 20px; }
-  .home #primary.latest-tokyo .list {
-    padding: 0;
-    margin-bottom: 90px; }
-    .home #primary.latest-tokyo .list .item.even .post-thumbnail {
-      float: right; }
-    .home #primary.latest-tokyo .list .item {
-      padding: 0;
-      margin-bottom: 45px; }
-      .home #primary.latest-tokyo .list .item .post-thumbnail {
-        width: 445px;
-        float: left; }
-        .home #primary.latest-tokyo .list .item .post-thumbnail img {
-          width: 100%;
-          height: 330px; }
-      .home #primary.latest-tokyo .list .item .post-content {
-        padding: 0;
-        line-height: 0;
-        font-size: 16px;
-        letter-spacing: 0.07em; }
-      .home #primary.latest-tokyo .list .item .post-title {
-        padding: 0;
-        line-height: 60px;
-        font-size: 18px;
-        letter-spacing: 0.05em;
-        float: left; }
-        .home #primary.latest-tokyo .list .item .post-title a {
-          color: #000000; }
+  height: 20px;
+  margin-bottom: 60px; }
+  .home .title .name {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    background: #ffffff;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.09em;
+    margin: 0 auto;
+    width: 180px; }
+    .home .title .name a {
+      color: #666666; }
+  .home .title .line {
+    text-decoration: line-through;
+    height: 2px;
+    width: 500px;
+    background: #e6e6e6;
+    margin: 0 auto;
+    margin-top: -9px;
+    position: relative;
+    z-index: 1; }
+.home .home-pic {
+  margin-bottom: 60px; }
+  .home .home-pic img {
+    width: 100%; }
+.home .home-articles .column {
+  margin-bottom: 70px; }
+.home .home-hundred {
+  margin-bottom: 130px; }
+  .home .home-hundred .item {
+    text-align: center;
+    margin-bottom: 30px; }
+    .home .home-hundred .item img {
+      width: 88px;
+      height: 88px; }
+    .home .home-hundred .item a:hover {
+      background: #ffffff; }
+    .home .home-hundred .item .join-us {
+      font-size: 12px;
+      line-height: 1;
+      letter-spacing: 0.1em;
+      font-weight: bold;
+      width: 88px;
+      height: 88px;
+      margin: 0 auto;
+      border: 1px solid #000000;
+      border-radius: 44px;
+      line-height: 88px; }
 
-.content-area.article .title p {
-  margin-top: 60px;
-  margin-bottom: 20px;
-  padding: 0;
-  text-align: center; }
-.content-area.article .title p.content {
-  margin: 0;
-  font-size: 16px;
-  letter-spacing: 0.07em; }
-.content-area.article .time-list {
-  overflow: auto; }
-  .content-area.article .time-list ul {
-    margin: 0; }
-    .content-area.article .time-list ul li {
-      list-style: none; }
-      .content-area.article .time-list ul li .item-title a {
-        font-size: 18px;
-        letter-spacing: 0.05em;
-        color: #000000; }
-      .content-area.article .time-list ul li .item-tag span {
-        font-size: 14px;
-        letter-spacing: 0.09em;
-        background: #f5f5f5;
-        color: #999999;
-        padding: 7px 19px; }
-
-.article-japan .time-list {
-  margin: 0;
-  padding: 0;
-  line-height: 80px; }
-  .article-japan .time-list .item {
-    height: 80px;
-    margin-bottom: 50px; }
-    .article-japan .time-list .item .item-thumbnail {
-      width: 80px;
-      height: 80px;
-      margin-right: 30px;
-      float: left; }
-      .article-japan .time-list .item .item-thumbnail img {
+.article-items .item {
+  margin-bottom: 20px; }
+  .article-items .item .content {
+    width: 300px;
+    height: 246px;
+    border-radius: 1.7px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    border: solid 0.9px #e6e6e6;
+    margin: 0 auto; }
+    .article-items .item .content .pic {
+      width: 300px;
+      height: 150px;
+      border-radius: 1.7px; }
+      .article-items .item .content .pic img {
         width: 100%;
         height: 100%; }
-    .article-japan .time-list .item .item-title {
-      font-size: 18px;
-      letter-spacing: 0.05em; }
-    .article-japan .time-list .item .item-tag span {
+      .article-items .item .content .pic a:hover {
+        background: #ffffff; }
+    .article-items .item .content .name {
       font-size: 16px;
+      line-height: 1;
       letter-spacing: 0.07em;
-      padding: 5px 10px;
-      border-radius: 15px;
-      background: #e6e6e6;
-      margin-right: 10px; }
+      color: #333333;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      margin-left: 20px; }
+    .article-items .item .content .tag, .article-items .item .content .time {
+      font-size: 12px;
+      line-height: 1;
+      letter-spacing: 0.1em;
+      color: #999999;
+      margin-bottom: 10px;
+      margin-left: 20px; }
 
-.article-tokyo .time-list {
-  padding: 0;
-  line-height: 80px; }
-  .article-tokyo .time-list ul {
-    margin: 0;
-    overflow: auto; }
-    .article-tokyo .time-list ul .item-content {
-      width: 445px; }
-    .article-tokyo .time-list ul .item-content.odd {
-      float: left; }
-    .article-tokyo .time-list ul .item-content.even {
-      float: right; }
-    .article-tokyo .time-list ul li .item {
-      margin-bottom: 50px; }
-      .article-tokyo .time-list ul li .item img {
-        width: 100%; }
-      .article-tokyo .time-list ul li .item .item-tag {
-        display: none; }
-
-.exhibition .time-list ul li {
-  margin-bottom: 46px; }
-  .exhibition .time-list ul li .item-content {
-    width: 253px; }
-    .exhibition .time-list ul li .item-content .item-title a {
-      font-size: 14px;
-      letter-spacing: 0.09em; }
+.articles .title {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.07em;
+  font-weight: bold;
+  color: #333333;
+  text-align: center; }
+  .articles .title .icon {
+    margin-top: 60px;
+    margin-bottom: 20px; }
+.articles .article-items {
+  margin-top: 60px;
+  margin-bottom: 120px; }
 
 .study .study-head p {
   margin-top: 60px;
@@ -459,6 +357,7 @@ body {
 .study .study-head p.content {
   margin: 0;
   font-size: 16px;
+  line-height: 1;
   letter-spacing: 0.07em; }
 
 .study-university-list {
@@ -474,6 +373,7 @@ body {
       margin-right: 10px;
       line-height: 28px;
       font-size: 14px;
+      line-height: 1;
       letter-spacing: 0.09em; }
     .study-university-list ul li .item-link img {
       width: 10px; }
@@ -483,6 +383,7 @@ body {
   margin-top: 90px; }
   .study-question-list .title {
     font-size: 14px;
+    line-height: 1;
     letter-spacing: 0.09em;
     text-align: center;
     margin-bottom: 90px; }
@@ -497,6 +398,7 @@ body {
       margin-right: 24px;
       line-height: 28px;
       font-size: 14px;
+      line-height: 1;
       letter-spacing: 0.09em; }
     .study-question-list ul li .item-link img {
       width: 22px; }
@@ -509,13 +411,16 @@ body {
   margin-top: 40px;
   margin-bottom: 20px;
   font-size: 14px;
+  line-height: 1;
   letter-spacing: 0.09em; }
 .university .info .second-title {
   font-size: 12px;
+  line-height: 1;
   letter-spacing: 0.1em;
   margin-bottom: 40px; }
 .university .info .content {
   font-size: 12px;
+  line-height: 1;
   letter-spacing: 0.1em;
   margin-top: 43px;
   margin-bottom: 120px;
@@ -533,6 +438,7 @@ body {
   border-radius: 33px;
   color: #ffffff;
   font-size: 14px;
+  line-height: 1;
   letter-spacing: 0.09em; }
 .university .course-list ul {
   margin: 0;
@@ -542,6 +448,7 @@ body {
     list-style: none; }
     .university .course-list ul li .item-name {
       font-size: 14px;
+      line-height: 1;
       letter-spacing: 0.09em;
       width: 240px;
       margin-right: 60px;
@@ -557,16 +464,19 @@ body {
     text-align: center; }
   .university .requirement .title {
     font-size: 14px;
+    line-height: 1;
     letter-spacing: 0.09em;
     margin-bottom: 60px; }
   .university .requirement .content {
     font-size: 12px;
+    line-height: 1;
     letter-spacing: 0.1em; }
   .university .requirement .requirement-link {
     margin: auto;
     margin-top: 60px;
     margin-bottom: 150px;
     font-size: 14px;
+    line-height: 1;
     letter-spacing: 0.09em;
     width: 150px;
     height: 45px;
@@ -579,6 +489,7 @@ body {
       color: #ffffff; }
 .university .schoolmate .title {
   font-size: 14px;
+  line-height: 1;
   letter-spacing: 0.09em;
   text-align: center;
   margin: 0;
@@ -595,6 +506,7 @@ body {
       height: 132px; }
 .university .university-url {
   font-size: 14px;
+  line-height: 1;
   letter-spacing: 0.09em;
   text-align: center;
   margin-bottom: 120px;
@@ -610,13 +522,16 @@ body {
 .course .info .title {
   margin-bottom: 40px;
   font-size: 14px;
+  line-height: 1;
   letter-spacing: 0.09em; }
 .course .info .second-title {
   font-size: 12px;
+  line-height: 1;
   letter-spacing: 0.1em;
   margin-bottom: 40px; }
 .course .info .content {
   font-size: 12px;
+  line-height: 1;
   letter-spacing: 0.1em;
   margin-top: 43px;
   margin-bottom: 120px;
@@ -634,6 +549,7 @@ body {
   border-radius: 33px;
   color: #ffffff;
   font-size: 14px;
+  line-height: 1;
   letter-spacing: 0.09em; }
 .course .exam-list ul {
   margin: 0; }
@@ -642,6 +558,7 @@ body {
     list-style: none; }
     .course .exam-list ul li .item-name {
       font-size: 14px;
+      line-height: 1;
       letter-spacing: 0.09em;
       width: 240px;
       margin-right: 60px;
@@ -654,11 +571,13 @@ body {
 
 .normal-post .title {
   font-size: 20px;
+  line-height: 1;
   letter-spacing: 0.03em;
   font-weight: bold;
   margin-bottom: 40px; }
 .normal-post .content {
   font-size: 12px;
+  line-height: 1;
   letter-spacing: 0.1em; }
 
 .schoolmate p {
@@ -678,25 +597,30 @@ body {
       height: 100%; }
   .schoolmate .info .title {
     font-size: 16px;
+    line-height: 1;
     letter-spacing: 0.07em;
     margin-bottom: 20px; }
   .schoolmate .info .second-title {
     font-size: 12px;
+    line-height: 1;
     letter-spacing: 0.1em;
     color: #999999;
     margin-bottom: 40px; }
   .schoolmate .info .content {
     font-size: 12px;
+    line-height: 1;
     letter-spacing: 0.1em; }
     .schoolmate .info .content p {
       text-align: left; }
 .schoolmate .contact .title {
   font-size: 16px;
+  line-height: 1;
   letter-spacing: 0.07em;
   font-weight: bold;
   margin-bottom: 20px; }
 .schoolmate .contact .content {
   font-size: 12px;
+  line-height: 1;
   letter-spacing: 0.1em;
   margin-bottom: 40px; }
 .schoolmate .contact .link {
@@ -724,10 +648,12 @@ body {
     margin-top: 0px; }
 .magazine .swiper-slide .title {
   font-size: 18px;
+  line-height: 1;
   letter-spacing: 0.05em;
   display: none; }
 .magazine .swiper-slide-next .title {
   font-size: 18px;
+  line-height: 1;
   letter-spacing: 0.05em;
   display: block; }
 .magazine .magazine-slider-content .item {
@@ -743,10 +669,12 @@ body {
     margin-bottom: 28px; }
     .about ul li .base .name {
       font-size: 14px;
+      line-height: 1;
       letter-spacing: 0.09em;
       margin-bottom: 46px; }
     .about ul li .base .title, .about ul li .base .identity {
       font-size: 12px;
+      line-height: 1;
       letter-spacing: 0.1em;
       color: #999999;
       margin-bottom: 12px; }
@@ -754,6 +682,7 @@ body {
     width: 295px; }
     .about ul li .des p {
       font-size: 12px;
+      line-height: 1;
       letter-spacing: 0.1em;
       color: #666666; }
   .about ul li .pic {
@@ -768,12 +697,14 @@ body {
 .ca-footer-menu .title {
   margin-bottom: 30px;
   font-size: 14px;
+  line-height: 1;
   letter-spacing: 0.09em; }
 .ca-footer-menu .info {
   margin-top: 40px;
   margin-bottom: 120px; }
   .ca-footer-menu .info .content {
     font-size: 12px;
+    line-height: 1;
     letter-spacing: 0.1em;
     color: #666666; }
 
@@ -783,11 +714,13 @@ body {
   margin-bottom: 60px; }
 .join .items ul li .title {
   font-size: 14px;
+  line-height: 1;
   letter-spacing: 0.09em;
   margin-bottom: 40px; }
 .join .items ul li .specific {
   margin-bottom: 20px;
   font-size: 12px;
+  line-height: 1;
   letter-spacing: 0.1em;
   color: #999999; }
   .join .items ul li .specific p {
@@ -795,6 +728,7 @@ body {
 .join .items ul li .des {
   margin-bottom: 60px;
   font-size: 12px;
+  line-height: 1;
   letter-spacing: 0.1em; }
 .join .items ul li:first-child .line {
   display: none; }
@@ -803,6 +737,7 @@ body {
   .join .contact .single {
     text-align: left;
     font-size: 12px;
+    line-height: 1;
     letter-spacing: 0.1em;
     margin-bottom: 20px; }
 
@@ -820,6 +755,7 @@ body {
     .offline .link .item {
       height: 80px;
       font-size: 14px;
+      line-height: 1;
       letter-spacing: 0.09em;
       color: #ffffff;
       line-height: 80px; }

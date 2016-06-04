@@ -1,0 +1,16 @@
+.articles{
+  .title{
+    @include font-format(3);
+    font-weight: bold;
+    color: $grey1;
+    text-align: center;
+    .icon {
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+  }
+  .article-items{
+    margin-top: 60px;
+    margin-bottom: 120px;
+  }
+}
