@@ -34,6 +34,7 @@ define('QUESTION_PAGE', 1);
 //url
 define('ARTICLE_LIST_URL', APP_URL.'/?page_id=212');
 define('ABOUT_URL', APP_URL.'/?page_id=79');
+define('STUDIO_DETAIL_URL', APP_URL.'/?page_id=247');
 
 //action
 define('RECENT_POST_ACT', 'recentPostAct');

@@ -5,7 +5,7 @@ get_header();
 <div class="col-lg-12 studio ca-block">
     <div class="col-lg-12 studio-entry ca-block">
         <div class="col-lg-5 col-lg-offset-1 pic">
-            <button>美大入試指導</button>
+            <button onclick="location.href='<?=STUDIO_DETAIL_URL;?>'">美大入試指導</button>
             <img src="<?=APP_URL.'/custom/images/studio_bg.png';?>" alt="">
             <button>設計工作室&BAR</button>
         </div>

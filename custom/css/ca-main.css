@@ -483,7 +483,9 @@ body {
   .studio .studio-entry .pic img {
     width: 100%;
     margin-top: -20px;
-    margin-bottom: -20px; }
+    margin-bottom: -20px;
+    position: relative;
+    z-index: 1; }
   .studio .studio-entry .pic button {
     width: 230px;
     height: 30px;
@@ -499,7 +501,9 @@ body {
     text-shadow: none;
     box-shadow: none;
     border-radius: 0;
-    margin-left: 10%; }
+    margin-left: 10%;
+    position: relative;
+    z-index: 3; }
   .studio .studio-entry .content {
     width: 300px;
     color: #ffffff;
@@ -598,6 +602,56 @@ body {
     letter-spacing: 0.1em;
     line-height: 24px;
     text-align: center; }
+
+.studio-detail .tab-title {
+  margin-top: 60px;
+  clear: both; }
+  .studio-detail .tab-title .name {
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.09em;
+    margin-right: 56px;
+    float: left; }
+    .studio-detail .tab-title .name a {
+      color: #999999; }
+  .studio-detail .tab-title .name.active a {
+    color: #333333;
+    background: #ffffff; }
+  .studio-detail .tab-title a:hover {
+    background: #ffffff;
+    color: #333333; }
+.studio-detail .tab-content {
+  margin-top: 65px; }
+.studio-detail .item-1 .part-1 .title {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.07em;
+  color: #333333;
+  margin-bottom: 20px; }
+.studio-detail .item-1 .part-1 .content {
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: #666666; }
+.studio-detail .item-1 .part-2 {
+  margin-top: 90px; }
+.studio-detail .item-1 .part-3 {
+  margin-top: 100px;
+  position: relative; }
+  .studio-detail .item-1 .part-3 .right {
+    position: absolute;
+    bottom: 0;
+    left: calc(100% / 6); }
+    .studio-detail .item-1 .part-3 .right p {
+      font-size: 12px;
+      line-height: 1;
+      letter-spacing: 0.1em;
+      color: #666666;
+      line-height: 2;
+      margin: 0;
+      padding: 0; }
+.studio-detail .item-1 .part-4 {
+  margin-top: 60px; }
 
 .study .study-head p {
   margin-top: 60px;
