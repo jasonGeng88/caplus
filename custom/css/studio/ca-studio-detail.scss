@@ -23,20 +23,6 @@
     margin-top: 65px;
   }
   .item-1{
-    .part-1{
-      .title{
-        @include font-format(3);
-        color: $grey1;
-        margin-bottom: 20px;
-      }
-      .content{
-        @include font-format(5);
-        color: $grey2;
-      }
-    }
-    .part-2{
-      margin-top: 90px;
-    }
     .part-3{
       margin-top: 100px;
       position: relative;
@@ -55,6 +41,81 @@
     }
     .part-4{
       margin-top: 60px;
+      #map{
+        height: 235px;
+      }
+    }
+  }
+
+  .item-2{
+    .part-2{
+      .brief:nth-child(1){
+        padding-right: 45px;
+      }
+      .brief:nth-child(2){
+        padding-left: 45px;
+      }
+      .brief{
+        margin-bottom: 150px;
+        .head{
+          position: relative;
+          margin-bottom: 20px;
+          .pic{
+            width: 240px;
+            height: 160px;
+          }
+          .title{
+            position: absolute;
+            left: 317px;
+            bottom: 0;
+            .name{
+              @include font-format(4);
+              font-weight: bold;
+              color: $grey1;
+              line-height: 2.0;
+            }
+            .line {
+              width: 186px;
+              height: 1.5px;
+              border: solid 1.5px $grey1;
+            }
+            .study{
+              @include font-format(5);
+              line-height: 2.0;
+              color: $grey3;
+              span{
+                font-weight: bold;
+                color: $grey1;
+              }
+            }
+          }
+        }
+        .content{
+          @include font-format(5);
+          color: $grey2;
+          line-height: 2.0;
+          text-align: justify;
+        }
+      }
+    }
+  }
+
+  .item-1,.item-2{
+    .part-1{
+      .title{
+        @include font-format(3);
+        color: $grey1;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+      .content{
+        @include font-format(5);
+        color: $grey2;
+        line-height: 2;
+      }
+    }
+    .part-2{
+      margin-top: 90px;
     }
   }
 }
