@@ -1,5 +1,13 @@
 <?php
 get_header();
+//$tmp = the_attachment_link(227);
+$attachments = get_attached_media( 'image', 247 );
+$tmp = get_post()->post_content;
+preg_match_all("/\<img(.*)src\=\"(.*)\.png(.*)\/\>/", $tmp, $matches);
+$urls = $matches[2];
+foreach ($urls as &$item) {
+    $item = substr($item, 0, strpos($item, '-300')).'.png';
+}
 ?>
 
 <div class="col-lg-12 studio-detail ca-block">
@@ -156,6 +164,50 @@ get_header();
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="col-lg-10 col-lg-offset-1 tab-content item-3">
+        <div class="part-1 col-lg-12 ca-block">
+            <p class="title">日本各大美術大學學部年日程</p>
+            <p class="content">我們将为每一位真心想来日本完成艺术梦想的孩子提供最专业的日本美术大学的个性化进学指导课程。号称“东京五美”的武藏野美术大学、多摩美術大学、女子美術大学、東京造形大学、日本大学芸術学部，远至京都方面的美术院校都有 CAplus 的成员。丰富的成员资源也为我们提供个性化培训提供了强有力的基础。我们没有后台也没有分红合作的机构，只是一群在日本学美术的年轻人聚集在一起，如果你要来留学，请先来CAplus工作室瞧瞧。</p>
+        </div>
+        <div class="part-2 col-lg-12 ca-block">
+            <div class="col-lg-7">
+                <img class="pic-1" src="<?=$urls[0];?>" alt="">
+            </div>
+            <div class="col-lg-12">
+                <img class="pic-2" src="<?=$urls[1];?>" alt="">
+            </div>
+            <div class="col-lg-10">
+                <img class="pic-3" src="<?=$urls[2];?>" alt="">
+                <p class="annotation">＊  此表格為 2015 年數據，實際情況請參考官方網站</p>
+            </div>
+        </div>
+        <div class="part-3 col-lg-12 ca-block">
+            <p class="title">CA+ 工作室美術進學班日程表</p>
+            <div class="course">
+                <p class="name">春 季 課 程</p>
+                <img src="<?=$urls[3];?>" alt="">
+                <p class="annotation">＊  美術用語：由前新宿美術學院講師來教大家美術日語<br>藝術概論：和學生一起分享設計經驗和設計思維</p>
+            </div>
+            <div class="course">
+                <p class="name">夏 季 特 別 課 程</p>
+                <img src="<?=$urls[4];?>" alt="">
+                <p class="annotation">＊  夏季特別課程：根據情況各種日本美術大學生來給大家帶來日本美大第一體驗</p>
+            </div>
+            <div class="course">
+                <p class="name">考 試 季 課 程</p>
+                <img src="<?=$urls[5];?>" alt="">
+                <p class="annotation">＊  僅為參考，具體詳情請聯繫我們</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-10 col-lg-offset-1 tab-content item-4">
+        <div class="part-1 col-lg-12 ca-block">
+            <p class="title">ok 先來找我們玩呀!<br>一日無料體驗課 </p>
+            <p class="content">我們将为每一位真心想来日本完成艺术梦想的孩子提供最专业的日本美术大学的个性化进学指导课程。号称“东京五美”的武藏野美术大学、多摩美術大学、女子美術大学、東京造形大学、日本大学芸術学部，远至京都方面的美术院校都有CAplus的成员。丰富的成员资源也为我们提供个性化培训提供了强有力的基础。我们没有后台也没有分红合作的机构，只是一群在日本学美术的年轻人聚集在一起如果你要来留学，请先来CAplus工作室瞧瞧。</p>
+        </div>
+        <div class="part-2 col-lg-12 ca-block">
         </div>
     </div>
 </div>

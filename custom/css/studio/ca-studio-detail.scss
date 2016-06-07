@@ -100,13 +100,48 @@
     }
   }
 
-  .item-1,.item-2{
+  .item-3{
+    .annotation{
+      margin-top: 20px;
+      @include font-format(5);
+      color: $grey3;
+      line-height: 2;
+    }
+    .part-2{
+      margin-bottom: 190px;
+      .pic-2{
+        margin-top: 90px;
+      }
+      .pic-3{
+        margin-top: 120px;
+      }
+    }
+    .part-3{
+      .title{
+        @include font-format(3);
+        color: $grey1;
+        margin-bottom: 60px;
+        font-weight: bold;
+      }
+      .course{
+        margin-bottom: 90px;
+        .name{
+          @include font-format(3);
+          color: $grey1;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .item-1,.item-2,.item-3,.item-4{
     .part-1{
       .title{
         @include font-format(3);
         color: $grey1;
         margin-bottom: 20px;
         font-weight: bold;
+
       }
       .content{
         @include font-format(5);

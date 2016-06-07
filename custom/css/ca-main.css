@@ -684,20 +684,48 @@ body {
     color: #666666;
     line-height: 2.0;
     text-align: justify; }
-.studio-detail .item-1 .part-1 .title, .studio-detail .item-2 .part-1 .title {
+.studio-detail .item-3 .annotation {
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: #999999;
+  line-height: 2; }
+.studio-detail .item-3 .part-2 {
+  margin-bottom: 190px; }
+  .studio-detail .item-3 .part-2 .pic-2 {
+    margin-top: 90px; }
+  .studio-detail .item-3 .part-2 .pic-3 {
+    margin-top: 120px; }
+.studio-detail .item-3 .part-3 .title {
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.07em;
+  color: #333333;
+  margin-bottom: 60px;
+  font-weight: bold; }
+.studio-detail .item-3 .part-3 .course {
+  margin-bottom: 90px; }
+  .studio-detail .item-3 .part-3 .course .name {
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.07em;
+    color: #333333;
+    margin-bottom: 20px; }
+.studio-detail .item-1 .part-1 .title, .studio-detail .item-2 .part-1 .title, .studio-detail .item-3 .part-1 .title, .studio-detail .item-4 .part-1 .title {
   font-size: 16px;
   line-height: 1;
   letter-spacing: 0.07em;
   color: #333333;
   margin-bottom: 20px;
   font-weight: bold; }
-.studio-detail .item-1 .part-1 .content, .studio-detail .item-2 .part-1 .content {
+.studio-detail .item-1 .part-1 .content, .studio-detail .item-2 .part-1 .content, .studio-detail .item-3 .part-1 .content, .studio-detail .item-4 .part-1 .content {
   font-size: 12px;
   line-height: 1;
   letter-spacing: 0.1em;
   color: #666666;
   line-height: 2; }
-.studio-detail .item-1 .part-2, .studio-detail .item-2 .part-2 {
+.studio-detail .item-1 .part-2, .studio-detail .item-2 .part-2, .studio-detail .item-3 .part-2, .studio-detail .item-4 .part-2 {
   margin-top: 90px; }
 
 .study .study-head p {
