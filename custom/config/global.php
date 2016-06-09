@@ -39,3 +39,4 @@ define('STUDIO_DETAIL_URL', APP_URL.'/?page_id=247');
 //action
 define('RECENT_POST_ACT', 'recentPostAct');
 define('ARTICLE_RECENT_POST_ACT', 'articleRecentPostAct');
+define('EMAIL_ACT', 'emailAct');

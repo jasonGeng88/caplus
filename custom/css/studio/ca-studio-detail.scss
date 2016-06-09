@@ -133,6 +133,68 @@
       }
     }
   }
+  .item-4{
+    @include font-format(5);
+    color: $grey3;
+    line-height: 30px;
+    .part-2{
+      background-color: $grey5;
+      padding-top: 60px;
+    }
+
+    input{
+      color: $grey2;
+      margin: 0;
+      padding: 0 30px;
+      width: 300px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: $white;
+      margin-bottom: 30px;
+      border: none;
+    }
+
+    textarea{
+      color: $grey2;
+      margin: 0;
+      padding: 20px 30px;
+      width: 563px;
+      height: 589px;
+      border-radius: 20px;
+      background-color: $white;
+      margin-bottom: 30px;
+      border: none;
+      line-height: 2;
+    }
+
+    .btn-email{
+      margin: 0;
+      padding:0;
+      width: 100px;
+      height: 30px;
+      border-radius: 20px;
+      background-color: $grey2;
+      text-shadow: none;
+      box-shadow: none;
+      color: $white;
+      margin-left: 463px;
+      margin-bottom: 150px;
+    }
+    .contact-info{
+      margin-bottom: 90px;
+      p {
+        @include font-format(5);
+        color: $grey2;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+        span{
+          @include font-format(1);
+          margin-right: 30px;
+        }
+      }
+    }
+  }
 
   .item-1,.item-2,.item-3,.item-4{
     .part-1{

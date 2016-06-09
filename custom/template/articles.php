@@ -17,11 +17,14 @@ $args = array(
     'suppress_filters' => true
 );
 $data['data'] = wp_get_recent_posts($args);
-
+if (isset($_REQUEST['cat_id']) && $_REQUEST['cat_id'] == RECORD_ID)
+    $iconStr = '<span class="icon-video">';
+else
+    $iconStr = '<span class="icon-media">';
 ?>
 <div class="col-lg-12 articles ca-block">
     <div class="col-lg-12 title ca-block">
-        <div class="icon"><i class="fa fa-angle-right"></i></div>
+        <div class="icon"><?=$iconStr;?></div>
         <div class="name"><?=get_cat_name($catId);?></div>
     </div>
     <div class="col-lg-12 article-items ca-block">

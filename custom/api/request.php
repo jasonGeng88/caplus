@@ -10,22 +10,25 @@ require_once(__DIR__.'/../function/article.php');
 require_once(__DIR__.'/../function/post.php');
 
 call_user_func($_REQUEST['func']);
-//
-//if ($_REQUEST['func'] == 'recentPostAct') {
-////    get_recent_article_for_remember($_REQUEST['cat_id'], $_REQUEST['offset'], $_REQUEST['page']);
-//}
-//elseif ($_REQUEST['func'] == 'articleAct') {
-//    get_recent_article_for_tag($_REQUEST['cat_id'], $_REQUEST['offset'], $_REQUEST['page']);
-//}
-//elseif ($_REQUEST['func'] == 'questionAct') {
-//    getAll($_REQUEST['cat_id'], "question", false, $_REQUEST['offset']);
-//}
-//elseif ($_REQUEST['func'] == 'searchAct') {
-//    queryPosts([
-//        's'=>$_REQUEST['search'],
-//        'category__in' => [EXHIBITION, ARTICLE]
-//    ]);
-//}
+
+if ($_REQUEST['func'] == 'recentPostAct') {
+//    get_recent_article_for_remember($_REQUEST['cat_id'], $_REQUEST['offset'], $_REQUEST['page']);
+}
+elseif ($_REQUEST['func'] == 'articleAct') {
+    get_recent_article_for_tag($_REQUEST['cat_id'], $_REQUEST['offset'], $_REQUEST['page']);
+}
+elseif ($_REQUEST['func'] == 'questionAct') {
+    getAll($_REQUEST['cat_id'], "question", false, $_REQUEST['offset']);
+}
+elseif ($_REQUEST['func'] == 'searchAct') {
+    queryPosts([
+        's'=>$_REQUEST['search'],
+        'category__in' => [EXHIBITION, ARTICLE]
+    ]);
+}
+elseif ($_REQUEST['func'] == 'emailAct') {
+    emailAct();
+}
 
 /**
  * 根据分类ID获取最近的文章
@@ -81,9 +84,28 @@ function articleRecentPostAct(){
     success($res);
 }
 
+function emailAct(){
+    $name = $_REQUEST['eName'];
+    $phone = $_REQUEST['ePhone'];
+    $address = $_REQUEST['eAddress'];
+    $content = $_REQUEST['eContent'];
+    $str = "名字:$name\n聯係電話:$phone\n地址:$address\n內容:$content";
+    $res = wp_mail(EMAIL_ADDRESS, "website反饋", $str);
+    if ($res)
+        success($res);
+    error($res);
+}
+
 function success($data){
     echo json_encode([
         'code' =>200,
         'data' => $data
-    ]);
+    ]);die;
+}
+
+function error($data){
+    echo json_encode([
+        'code' =>400,
+        'data' => $data
+    ]);die;
 }

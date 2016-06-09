@@ -11,18 +11,20 @@ foreach ($urls as &$item) {
 ?>
 
 <div class="col-lg-12 studio-detail ca-block">
-    <div class="col-lg-10 col-lg-offset-1 tab-title ca-block">
-        <div class="name">
-            <a href="javascript:toggleTab(1)">環境&地點</a>
-        </div>
-        <div class="name">
-            <a href="javascript:toggleTab(2)">講師團隊</a>
-        </div>
-        <div class="name">
-            <a href="javascript:toggleTab(3)">课程安排</a>
-        </div>
-        <div class="name">
-            <a href="javascript:toggleTab(4)">無料體驗</a>
+    <div class="col-lg-12 tab-title ca-block">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="name">
+                <a href="javascript:toggleTab(1)">環境&地點</a>
+            </div>
+            <div class="name">
+                <a href="javascript:toggleTab(2)">講師團隊</a>
+            </div>
+            <div class="name">
+                <a href="javascript:toggleTab(3)">课程安排</a>
+            </div>
+            <div class="name">
+                <a href="javascript:toggleTab(4)">無料體驗</a>
+            </div>
         </div>
     </div>
     <div class="col-lg-10 col-lg-offset-1 tab-content item-1">
@@ -202,18 +204,45 @@ foreach ($urls as &$item) {
             </div>
         </div>
     </div>
-    <div class="col-lg-10 col-lg-offset-1 tab-content item-4">
+    <div class="col-lg-12 tab-content item-4 ca-block">
         <div class="part-1 col-lg-12 ca-block">
-            <p class="title">ok 先來找我們玩呀!<br>一日無料體驗課 </p>
-            <p class="content">我們将为每一位真心想来日本完成艺术梦想的孩子提供最专业的日本美术大学的个性化进学指导课程。号称“东京五美”的武藏野美术大学、多摩美術大学、女子美術大学、東京造形大学、日本大学芸術学部，远至京都方面的美术院校都有CAplus的成员。丰富的成员资源也为我们提供个性化培训提供了强有力的基础。我们没有后台也没有分红合作的机构，只是一群在日本学美术的年轻人聚集在一起如果你要来留学，请先来CAplus工作室瞧瞧。</p>
+            <div class="col-lg-10 col-lg-offset-1">
+                <p class="title">ok 先來找我們玩呀!<br>一日無料體驗課 </p>
+                <p class="content">我們将为每一位真心想来日本完成艺术梦想的孩子提供最专业的日本美术大学的个性化进学指导课程。号称“东京五美”的武藏野美术大学、多摩美術大学、女子美術大学、東京造形大学、日本大学芸術学部，远至京都方面的美术院校都有CAplus的成员。丰富的成员资源也为我们提供个性化培训提供了强有力的基础。我们没有后台也没有分红合作的机构，只是一群在日本学美术的年轻人聚集在一起如果你要来留学，请先来CAplus工作室瞧瞧。</p>
+            </div>
         </div>
         <div class="part-2 col-lg-12 ca-block">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="input-group">
+                    <input type="text" class="email_name" name="email_name" placeholder="名字">
+                </div>
+                <div class="input-group">
+                    <input type="text" class="email_phone" name="email_phone" placeholder="聯係電話">
+                </div>
+                <div class="input-group">
+                    <input type="text" class="email_address" name="email_address" placeholder="郵件地址">
+                </div>
+                <div class="input-group">
+                    <textarea class="email_content" name="email_content" id="" cols="30" rows="10" placeholder="親愛的 CAplus 團隊："></textarea>
+                </div>
+                <div class="input-group">
+                    <button onclick="email()" class="btn-email">送信</button>
+                </div>
+                <div class="contact-info ca-block">
+                    <p>電話我們：M O N A : 080-3710-6088</p>
+                    <p>私信我們：微博/微信 CA-plus</p>
+                    <p>
+                        <span class="icon-weibo"></span>
+                        <span class="icon-wechat"></span>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <script>
-    toggleTab(1);
+    toggleTab(4);
     function toggleTab(index){
         jQuery(".tab-title .name").removeClass("active");
         jQuery(".tab-title .name").eq(index-1).addClass("active");
@@ -225,6 +254,27 @@ foreach ($urls as &$item) {
         map = new google.maps.Map(document.getElementById('map'), {
             center: {lat: -34.397, lng: 150.644},
             zoom: 8
+        });
+    }
+
+    function email(){
+        var name = jQuery("input[name='email_name']").val();
+        var phone = jQuery("input[name='email_phone']").val();
+        var address = jQuery("input[name='email_address']").val();
+        var content = jQuery("textarea[name='email_content']").val();
+        createApi('<?=EMAIL_ACT?>', {
+                eName: name,
+                ePhone: phone,
+                eAddress: address,
+                eContent: content
+            }, function (result) {
+            result = JSON.parse(result);
+            if (result.code == 200){
+                console.log(result);
+                alert("發送成功");
+            }
+            else
+                alert("發送失敗");
         });
     }
 </script>

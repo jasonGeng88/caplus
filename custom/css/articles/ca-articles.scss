@@ -1,5 +1,12 @@
 .articles{
   .title{
+    .icon{
+      span{
+        font-size: 30px;
+        border: solid 1px $black;
+        border-radius: 50%;
+      }
+    }
     @include font-format(3);
     font-weight: bold;
     color: $grey1;

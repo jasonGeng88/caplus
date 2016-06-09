@@ -15,6 +15,8 @@ define('WP_USE_THEMES', true);
 
 define('APP_ROOT', __DIR__);
 
+define('EMAIL_ADDRESS', '372922638@qq.com');
+
 $GLOBALS['ca-index'] = 0;
 
 if (php_uname('n') == 'cc-m.local') {
