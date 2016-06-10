@@ -51,7 +51,8 @@
     <!-- Swiper JS -->
     <script src="../bower_components/swiper/dist/js/swiper.min.js"></script>
     <script>
-
+        jQuery(".swiper-button-next").append('<span class="icon-continue"></span>');
+        jQuery(".swiper-button-prev").append('<span class="icon-back"></span>');
         var sliderCustomer = function(){};
         <!-- Initialize Swiper -->
         var appendNumber = 3;
@@ -89,7 +90,7 @@
 
         sliderCustomer = function(){
             var index = jQuery(".swiper-slide-next").attr("ca-slider-index");
-            console.log(index);
+//            console.log(index);
             jQuery(".magazine-slider-content .item").css("display", "none");
             jQuery(".magazine-item-"+index).css("display", "block");
         }

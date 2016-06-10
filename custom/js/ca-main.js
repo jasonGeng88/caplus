@@ -7,7 +7,6 @@ var latestPage = 1;//add more page
 
 var articlePage = 1;//add more page
 
-var rememberApi = 'rememberAct';
 var articleApi = 'articleAct';
 var questionApi = 'questionAct';
 var searchApi = 'searchAct';

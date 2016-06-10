@@ -13,6 +13,12 @@
     max-width: 100%;
   }
 
+  .logo-container{
+    a:hover{
+      background: $white;
+    }
+  }
+
   .site-branding{
     margin: 0;
     padding: 0;
@@ -36,11 +42,19 @@
     height: 50px;
     line-height: 0;
     li {
-      margin-right: 56px;
+      margin-right: 48px;
+    }
+    a{
+      line-height: 50px;
+      padding: 0;
+      span{
+        font-size: 24px;
+        vertical-align: middle;
+      }
     }
     li:hover > a, li.current-menu-item a{
       border-bottom: $black solid 2px;
-      padding-bottom: 16px;
+      //padding-bottom: 16px;
       color: $black;
     }
   }
@@ -88,6 +102,7 @@
         }
       }
       .search-result{
+        display: none;
         background: $white;
         margin-top: 50px;
         width: 240px;

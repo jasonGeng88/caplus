@@ -30,12 +30,12 @@
     p.title{
       width: 66px;
       height:66px;
-      line-height: 66px;
       text-align: center;
       background: $black;
       border-radius: 33px;
       color: $white;
       @include font-format(4);
+      line-height: 66px;
     }
     ul{
       margin: 0;

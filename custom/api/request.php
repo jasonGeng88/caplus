@@ -11,24 +11,13 @@ require_once(__DIR__.'/../function/post.php');
 
 call_user_func($_REQUEST['func']);
 
-if ($_REQUEST['func'] == 'recentPostAct') {
-//    get_recent_article_for_remember($_REQUEST['cat_id'], $_REQUEST['offset'], $_REQUEST['page']);
-}
-elseif ($_REQUEST['func'] == 'articleAct') {
+if ($_REQUEST['func'] == 'articleAct') {
     get_recent_article_for_tag($_REQUEST['cat_id'], $_REQUEST['offset'], $_REQUEST['page']);
 }
 elseif ($_REQUEST['func'] == 'questionAct') {
     getAll($_REQUEST['cat_id'], "question", false, $_REQUEST['offset']);
 }
-elseif ($_REQUEST['func'] == 'searchAct') {
-    queryPosts([
-        's'=>$_REQUEST['search'],
-        'category__in' => [EXHIBITION, ARTICLE]
-    ]);
-}
-elseif ($_REQUEST['func'] == 'emailAct') {
-    emailAct();
-}
+
 
 /**
  * 根据分类ID获取最近的文章
@@ -94,6 +83,21 @@ function emailAct(){
     if ($res)
         success($res);
     error($res);
+}
+
+function searchAct(){
+    $query = [
+        's'=>$_REQUEST['search'],
+        'category__in' => [ARTICLE, UNIVERSITY, SCHOOLMATE, HUNDRED_ID]
+    ];
+    $posts = query_posts($query);
+    $arr = [];
+    foreach ($posts as $key => $item) {
+        if (strpos($item->post_title, $query['s']) != false) {
+            $arr[$key] = $item->post_title;
+        }
+    }
+     success($posts);
 }
 
 function success($data){

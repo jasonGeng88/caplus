@@ -111,6 +111,8 @@
   letter-spacing: 0.09em; }
   #header-top header {
     max-width: 100%; }
+  #header-top .logo-container a:hover {
+    background: #ffffff; }
   #header-top .site-branding {
     margin: 0;
     padding: 0; }
@@ -129,10 +131,15 @@
     height: 50px;
     line-height: 0; }
     #header-top #site-navigation li {
-      margin-right: 56px; }
+      margin-right: 48px; }
+    #header-top #site-navigation a {
+      line-height: 50px;
+      padding: 0; }
+      #header-top #site-navigation a span {
+        font-size: 24px;
+        vertical-align: middle; }
     #header-top #site-navigation li:hover > a, #header-top #site-navigation li.current-menu-item a {
       border-bottom: #000000 solid 2px;
-      padding-bottom: 16px;
       color: #000000; }
   #header-top #top-search {
     margin: 0;
@@ -170,6 +177,7 @@
         #header-top #top-search .form .search-form button[type="submit"] {
           display: none; }
       #header-top #top-search .form .search-result {
+        display: none;
         background: #ffffff;
         margin-top: 50px;
         width: 240px;
@@ -278,6 +286,7 @@ body {
       max-width: 100%; }
     body #content #primary {
       padding: 0;
+      margin-top: 2px;
       border: none; }
   @media screen and (min-width: 769px) {
     body #page {
@@ -881,14 +890,14 @@ body {
 .university .course-list p.title {
   width: 66px;
   height: 66px;
-  line-height: 66px;
   text-align: center;
   background: #000000;
   border-radius: 33px;
   color: #ffffff;
   font-size: 14px;
   line-height: 1;
-  letter-spacing: 0.09em; }
+  letter-spacing: 0.09em;
+  line-height: 66px; }
 .university .course-list ul {
   margin: 0;
   margin-top: 60px; }
@@ -1023,11 +1032,31 @@ body {
   line-height: 1;
   letter-spacing: 0.03em;
   font-weight: bold;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  margin-top: 60px; }
 .normal-post .content {
   font-size: 12px;
   line-height: 1;
-  letter-spacing: 0.1em; }
+  letter-spacing: 0.1em;
+  margin-bottom: 150px; }
+.normal-post .contact .name {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.07em;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 20px; }
+.normal-post .contact .education {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: #333333;
+  margin-bottom: 40px; }
+.normal-post .contact .links {
+  text-align: center;
+  margin-bottom: 150px; }
 
 .schoolmate p {
   padding: 0;
@@ -1095,6 +1124,19 @@ body {
     width: 280px;
     height: 394px;
     margin-top: 0px; }
+  .magazine .swiper-container .swiper-button-prev, .magazine .swiper-container .swiper-button-next {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #999999; }
+    .magazine .swiper-container .swiper-button-prev span, .magazine .swiper-container .swiper-button-next span {
+      line-height: 60px;
+      font-size: 40px;
+      color: #ffffff; }
+  .magazine .swiper-container .swiper-button-prev span {
+    margin-left: 6px; }
+  .magazine .swiper-container .swiper-button-next span {
+    margin-left: 12px; }
 .magazine .swiper-slide .title {
   font-size: 18px;
   line-height: 1;
