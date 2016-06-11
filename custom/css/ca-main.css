@@ -279,7 +279,8 @@ body {
     text-decoration: none; }
   body #content {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    margin-top: 2px; }
     body #content .container {
       padding: 0;
       margin: 0;

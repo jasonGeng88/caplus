@@ -43,5 +43,3 @@ $articleUrl = $tmp[0]['guid'];
     <!--content end-->
 
 </div>
-
-<?php get_footer(); ?>
