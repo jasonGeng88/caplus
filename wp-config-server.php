@@ -19,16 +19,20 @@
  */
 // ** MySQL settings - You can get this info from your web host ** //
 	/** The name of the database for WordPress */
-	define('DB_NAME', 'sq_chinhuo');
+//	define('DB_NAME', 'sq_chinhuo');
+	define('DB_NAME', 'caplus');
 
 	/** MySQL database username */
-	define('DB_USER', 'sq_chinhuo');
+//	define('DB_USER', 'sq_chinhuo');
+	define('DB_USER', 'root');
 
 	/** MySQL database password */
-	define('DB_PASSWORD', 'cp1994');
+//	define('DB_PASSWORD', 'cp1994');
+	define('DB_PASSWORD', '111111');
 
 	/** MySQL hostname */
-	define('DB_HOST', 'mysql.sql77.eznowdata.com');
+//	define('DB_HOST', 'mysql.sql77.eznowdata.com');
+	define('DB_HOST', '127.0.0.1');
 
 	/** Database Charset to use in creating database tables. */
 	define('DB_CHARSET', 'utf8');
