@@ -242,7 +242,7 @@ foreach ($urls as &$item) {
 </div>
 
 <script>
-    toggleTab(4);
+    toggleTab(1);
     function toggleTab(index){
         jQuery(".tab-title .name").removeClass("active");
         jQuery(".tab-title .name").eq(index-1).addClass("active");
