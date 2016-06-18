@@ -6,6 +6,7 @@
       @include font-format(4);
       margin-right: 56px;
       float: left;
+      font-weight: bold;
       a{
         color: $grey3;
       }
@@ -15,7 +16,6 @@
       background: $white;
     }
     a:hover{
-      background: $white;
       color: $grey1;
     }
   }
@@ -137,6 +137,9 @@
     @include font-format(5);
     color: $grey3;
     line-height: 30px;
+    input,textarea{
+      outline: none;
+    }
     .part-2{
       background-color: $grey5;
       padding-top: 60px;
@@ -203,7 +206,7 @@
         color: $grey1;
         margin-bottom: 20px;
         font-weight: bold;
-
+        line-height: 24px;
       }
       .content{
         @include font-format(5);

@@ -50,7 +50,7 @@ $letter-5: 0.1em;
   }
   @if($type == 5){
     font-size: $fs-5;
-    line-height: 1;
+    //line-height: 1;
     letter-spacing: $letter-5;
   }
 

@@ -29,8 +29,8 @@ foreach ($urls as &$item) {
     </div>
     <div class="col-lg-10 col-lg-offset-1 tab-content item-1">
         <div class="part-1 col-lg-12 ca-block">
-            <p class="title">SOHO 設計事務所兼畫室<br>美大零距離體驗 coffee & music 和聚餐 一個不能少</p>
-            <p class="content">我們将为每一位真心想来日本完成艺术梦想的孩子提供最专业的日本美术大学的个性化进学指导课 程。号称“东京五美”的武藏野美术大学、多摩美術大学、女子美術大学、東京造形大学、日本大学芸術学部，远至京都方面的美术院校都有CAplus的成员。丰富的成员资源也为我们提供个性化培训提供 了强有力的基础。我们没有后台也没有分红合作的机构，只是一群在日本学美术的年轻人聚集在一起，如果你要来留学，请先来CAplus工作室瞧瞧</p>
+            <p class="title ca-line">SOHO 設計事務所兼畫室<br>美大零距離體驗 coffee & music 和聚餐 一個不能少</p>
+            <p class="content ca-line">我們将为每一位真心想来日本完成艺术梦想的孩子提供最专业的日本美术大学的个性化进学指导课 程。号称“东京五美”的武藏野美术大学、多摩美術大学、女子美術大学、東京造形大学、日本大学芸術学部，远至京都方面的美术院校都有CAplus的成员。丰富的成员资源也为我们提供个性化培训提供 了强有力的基础。我们没有后台也没有分红合作的机构，只是一群在日本学美术的年轻人聚集在一起，如果你要来留学，请先来CAplus工作室瞧瞧</p>
         </div>
         <div class="part-2 col-lg-12 ca-block">
             <img src="<?=APP_URL.'/custom/images/studio-item-011.png';?>" alt="">
@@ -39,7 +39,7 @@ foreach ($urls as &$item) {
             <div class="col-lg-2 left">
                 <img src="<?=APP_URL.'/custom/images/studio-item-012.png';?>" alt="">
             </div>
-            <div class="col-lg-8 col-lg-offset-2 right">
+            <div class="col-lg-8 col-lg-offset-2 right ca-line">
                 <p>
                     MONA:080-3710-6088<br>
                     地下鉄東西線高田馬場駅早稲田口 4分<br>
@@ -59,7 +59,7 @@ foreach ($urls as &$item) {
     <div class="col-lg-10 col-lg-offset-1 tab-content item-2">
         <div class="part-1 col-lg-12 ca-block">
             <p class="title">漂亮話不多說<br>找老師還是靠譜得好</p>
-            <p class="content">我們将为每一位真心想来日本完成艺术梦想的孩子提供最专业的日本美术大学的个性化进学指导课 程。号称“东京五美”的武藏野美术大学、多摩美術大学、女子美術大学、東京造形大学、日本大学芸術 学部,远至京都方面的美术院校都有 CAplus 的成员。丰富的成员资源也为我们提供个性化培训提供 了强有力的基础。我们没有后台也没有分红合作的机构，只是一群在日本学美术的年轻人聚集在一起，如果你要来留学，请先來 CAplus 工作室瞧瞧。</p>
+            <p class="content ca-line">我們将为每一位真心想来日本完成艺术梦想的孩子提供最专业的日本美术大学的个性化进学指导课 程。号称“东京五美”的武藏野美术大学、多摩美術大学、女子美術大学、東京造形大学、日本大学芸術 学部,远至京都方面的美术院校都有 CAplus 的成员。丰富的成员资源也为我们提供个性化培训提供 了强有力的基础。我们没有后台也没有分红合作的机构，只是一群在日本学美术的年轻人聚集在一起，如果你要来留学，请先來 CAplus 工作室瞧瞧。</p>
         </div>
         <div class="part-2 col-lg-12 ca-block">
             <div class="col-lg-12 ca-block">
@@ -252,7 +252,7 @@ foreach ($urls as &$item) {
     var map;
     function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -34.397, lng: 150.644},
+            center: {lat: 35.7115984, lng: 139.6994836},
             zoom: 8
         });
     }

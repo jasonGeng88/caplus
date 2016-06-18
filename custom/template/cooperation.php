@@ -1,7 +1,7 @@
 <div id="primary" class="content-area col-md-12 cooperation join ca-footer-menu">
     <div class="col-md-12 info">
         <p class="title">業務合作</p>
-        <div class="content ca-container">经过ca内部的激烈讨论，也为了确保微信群可以效益最大化，我们决定先建立一个定员20人的群进行试运行！ca内部成员也在群里所以可以提供较于微博更直接的帮助~不论你是喜欢日本设计还是想要留学日本！就请私信我们，告诉我们你关注我们的理由！我们会根据私信内容选择成员~谢谢大家</div>
+        <div class="content ca-container ca-line">经过ca内部的激烈讨论，也为了确保微信群可以效益最大化，我们决定先建立一个定员20人的群进行试运行！ca内部成员也在群里所以可以提供较于微博更直接的帮助~不论你是喜欢日本设计还是想要留学日本！就请私信我们，告诉我们你关注我们的理由！我们会根据私信内容选择成员~谢谢大家</div>
     </div>
 
     <div class="col-md-12 items">
@@ -19,7 +19,7 @@
                     <p>內容：準備日本各大藝校的申請資料</p>
                     <p>收費：2 萬人民幣</p>
                 </div>
-                <div class="des">
+                <div class="des ca-line">
                     <p>
                         负责公司产品日常及专题的策划以及上线；<br>
                         撰写、发布微信公众号等运营账号的内容；<br>
@@ -40,7 +40,7 @@
                     <p>內容：日本藝術大學</p>
                     <p>收費：面談</p>
                 </div>
-                <div class="des">
+                <div class="des ca-line">
                     <p>
                         负责公司产品日常及专题的策划以及上线；<br>
                         撰写、发布微信公众号等运营账号的内容；<br>

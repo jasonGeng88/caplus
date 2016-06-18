@@ -14,9 +14,6 @@ call_user_func($_REQUEST['func']);
 if ($_REQUEST['func'] == 'articleAct') {
     get_recent_article_for_tag($_REQUEST['cat_id'], $_REQUEST['offset'], $_REQUEST['page']);
 }
-elseif ($_REQUEST['func'] == 'questionAct') {
-    getAll($_REQUEST['cat_id'], "question", false, $_REQUEST['offset']);
-}
 
 
 /**
@@ -98,6 +95,10 @@ function searchAct(){
         }
     }
      success($posts);
+}
+
+function questionAct(){
+    getAll($_REQUEST['cat_id'], "question", false, $_REQUEST['offset']);
 }
 
 function success($data){

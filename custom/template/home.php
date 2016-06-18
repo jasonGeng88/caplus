@@ -5,10 +5,18 @@ Template Name: Latest
 
 get_header();
 ?>
+<link rel="stylesheet" href="<?=APP_URL;?>/custom/lib/pic_effect/css/default.css">
+<link rel="stylesheet" href="<?=APP_URL;?>/custom/lib/pic_effect/css/tilteffect.css">
 <div class="col-lg-12 home ca-block">
     <!--home pic-->
     <div class="col-lg-12 home-pic ca-block">
-        <img src="<?=APP_URL.'/wp-content/uploads/2016/06/home.png';?>" alt="">
+        <ul class="grid grid--examples">
+            <li class="grid__item">
+                <div class="grid__img grid__img--example-1" >
+                    <img src="<?=APP_URL;?>/custom/images/home.jpg" class="tilt-effect" alt="grid01" data-tilt-options='{ "opacity" : 0.3, "extraImgs" : 3, "movement": { "perspective" : 1200, "translateX" : -5, "translateY" : -5, "rotateX" : -5, "rotateY" : -5 } }' />
+                </div>
+            </li>
+        </ul>
     </div>
     <!--home pic end-->
     <!--分類文章-->
@@ -42,13 +50,15 @@ get_header();
                         <?php foreach ($data['data'] as $d) { ?>
                             <div class="col-lg-4 item">
                                 <div class="content">
-                                    <div class="pic">
-                                        <a href="<?=$d['guid'];?>">
-                                            <img src="<?=get_the_post_thumbnail_url($d['ID']);?>" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="name">
-                                        <a href="<?=$d['guid'];?>"><span><?=$d['post_title'];?></span></a>
+                                    <div class="ca-portfolio">
+                                        <div class="pic">
+                                            <a href="<?=$d['guid'];?>">
+                                                <img src="<?=get_the_post_thumbnail_url($d['ID']);?>" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="name">
+                                            <a href="<?=$d['guid'];?>"><span><?=$d['post_title'];?></span></a>
+                                        </div>
                                     </div>
                                     <div class="tag">
                                         <?php
@@ -94,20 +104,12 @@ get_header();
         $data['data'] = wp_get_recent_posts($args);
         if (!empty($data['data'])) {
         foreach ($data['data'] as $k => $d){
-        if ($k%5 ==0) {
         ?>
-        <div class="col-lg-2 item col-lg-offset-1">
-            <?php
-            }else{
-            ?>
-            <div class="col-lg-2 item">
-                <?php
-                }
-                ?>
-                <a href="<?=$d['guid'];?>">
-                    <img src="<?=get_the_post_thumbnail_url($d['ID']);?>" alt="">
-                </a>
-            </div>
+        <div class="col-lg-2 item">
+            <a href="<?=$d['guid'];?>">
+                <img src="<?=get_the_post_thumbnail_url($d['ID']);?>" alt="">
+            </a>
+        </div>
             <?php
             }
             }
@@ -124,6 +126,8 @@ get_header();
 </div>
 
 <script>
+    ca_portfolio();
+
 //    init();
 //    function init(){
 //        createApi('<?//=ARTICLE_RECENT_POST_ACT?>//', {}, function (result) {
@@ -135,5 +139,6 @@ get_header();
 //    }
 
 </script>
+<script src="<?=APP_URL;?>/custom/lib/pic_effect/js/tiltfx.js"></script>
 
 <?php get_footer(); ?>

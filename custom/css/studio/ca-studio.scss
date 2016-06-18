@@ -27,6 +27,10 @@
         position: relative;
         z-index: 3;
       }
+      button:hover{
+        color: $grey1;
+        border: 2px solid $grey1;
+      }
     }
     .content{
       width: 300px;

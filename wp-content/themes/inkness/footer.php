@@ -31,7 +31,7 @@
 //			 	echo of_get_option('footertext2', true); } ?>
 <!--        </div>-->
 		<div class="site-info col-md-12">
-			<p class="co-name">日本藝術留學生創造</p>
+			<p class="co-name">旅日青年设计师创造</p>
 			<p class="co-date">© 2015 CAplus</p>
 		</div>
 	</div>   

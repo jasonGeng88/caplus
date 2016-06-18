@@ -40,7 +40,7 @@
         <?php
         $html = '';
         foreach ($posts as $key => $item) {
-            $html .= '<div class="item magazine-item-'.$key.'">
+            $html .= '<div class="item magazine-item-'.$key.' ca-line">
                       '.$item->post_content.'
                         </div>';
         }

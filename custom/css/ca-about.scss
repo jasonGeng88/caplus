@@ -9,6 +9,7 @@
         .name{
           @include font-format(4);
           margin-bottom: 46px;
+          font-weight: bold;
         }
         .title,.identity{
           @include font-format(5);
@@ -44,6 +45,7 @@
   .title{
     margin-bottom: 30px;
     @include font-format(4);
+    font-weight: bold;
   }
   .info{
     margin-top: 40px;

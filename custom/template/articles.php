@@ -27,34 +27,40 @@ else
         <div class="icon"><?=$iconStr;?></div>
         <div class="name"><?=get_cat_name($catId);?></div>
     </div>
-    <div class="col-lg-12 article-items ca-block">
+    <div class="col-lg-10 col-lg-offset-1 article-items ca-block">
         <?php foreach ($data['data'] as $d) { ?>
             <div class="col-lg-4 item">
                 <div class="content">
-                    <div class="pic">
-                        <a href="<?=$d['guid'];?>">
-                            <img src="<?=get_the_post_thumbnail_url($d['ID']);?>" alt="">
-                        </a>
+                    <div class="ca-portfolio">
+                        <div class="pic">
+                            <a href="<?=$d['guid'];?>">
+                                <img src="<?=get_the_post_thumbnail_url($d['ID']);?>" alt="">
+                            </a>
+                        </div>
                         <div class="name">
                             <a href="<?=$d['guid'];?>"><span><?=$d['post_title'];?></span></a>
                         </div>
-                        <div class="tag">
-                            <?php
-                            $tags = [];
-                            foreach (wp_get_post_tags($d['ID']) as $t) {
-                                $tags[] = $t->name;
-                            }
-                            ?>
-                            <?=implode('，', $tags);?>
-                        </div>
-                        <div class="time">
-                            <?=get_post_meta($d['ID'], '_create_time_value', true);?>
-                        </div>
+                    </div>
+                    <div class="tag">
+                        <?php
+                        $tags = [];
+                        foreach (wp_get_post_tags($d['ID']) as $t) {
+                            $tags[] = $t->name;
+                        }
+                        ?>
+                        <?=implode('，', $tags);?>
+                    </div>
+                    <div class="time">
+                        <?=get_post_meta($d['ID'], '_create_time_value', true);?>
                     </div>
                 </div>
             </div>
         <?php } ?>
     </div>
 </div>
+
+<script>
+    ca_portfolio();
+</script>
 
 <?php get_footer(); ?>

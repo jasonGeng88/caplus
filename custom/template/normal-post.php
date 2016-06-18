@@ -5,7 +5,7 @@
         $post =get_post();
         ?>
         <div class="title col-lg-12"><?=$post->post_title ?></div>
-        <div class="content col-lg-12"><?=$post->post_content ?></div>
+        <div class="content col-lg-12  ca-line"><?=$post->post_content ?></div>
         <div class="contact col-lg-12">
             <div class="name col-lg-12">
                 <?=get_post_meta($post->ID, '_author_name_value', true);?>

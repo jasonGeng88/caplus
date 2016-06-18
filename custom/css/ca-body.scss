@@ -81,6 +81,10 @@ body{
         border-radius: 14px;
         @include font-format(5);
       }
+      .btn-more:hover{
+        background: $black;
+        color: $white;
+      }
     }
   }
 
@@ -130,5 +134,12 @@ body{
     overflow: hidden;
   }
 
+  button{
+    outline: none;
+  }
+
+  .ca-line{
+    line-height: 24px;
+  }
 
 }

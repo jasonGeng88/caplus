@@ -11,7 +11,7 @@
 		<span class="screen-reader-text"><?php _ex( 'Search for:', 'label', 'inkness' ); ?></span>
 		<input type="text" class="search-field" placeholder="<?php echo esc_attr_x( 'Search...', 'placeholder', 'inkness' ); ?>" value="<?php echo esc_attr( get_search_query() ); ?>" name="s">
 	</label>
-	<button type="button" onclick="javascript:search_close();" class="btn btn-default"><i class="fa fa-times"> </i></button>
+	<button type="button" onclick="javascript:search_close();" class="btn btn-default"><span class="icon-close"></span></button>
 </div>
 <div class="search-result">
 </div>

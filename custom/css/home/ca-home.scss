@@ -41,12 +41,21 @@
 
   .home-hundred{
     margin-bottom: 130px;
+    .title{
+      .name{
+        color: $grey3;
+      }
+    }
     .item{
       text-align: center;
       margin-bottom: 30px;
       img{
         width: 88px;
         height: 88px;
+        border-radius: 44px;
+      }
+      img:hover{
+        border: 1px solid $black;
       }
       a:hover{
         background: $white;
@@ -60,6 +69,10 @@
         border: 1px solid $black;
         border-radius: 44px;
         line-height: 88px;
+      }
+      .join-us:hover{
+        background: $black;
+        color: $white;
       }
     }
   }
@@ -89,7 +102,7 @@
       .name{
         @include font-format(3);
         color: $grey1;
-        margin-top: 10px;
+        margin-top: 15px;
         margin-bottom: 15px;
         margin-left: 20px;
       }

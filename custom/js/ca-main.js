@@ -143,3 +143,21 @@ function search_posts(query){
         console.log(result);
     });
 };
+
+//portfolio hover
+function ca_portfolio(){
+    jQuery(".ca-portfolio").mouseover(function(){
+        jQuery(this).children(".name").children("a").css("background", "#FFFF00")
+    });
+    jQuery(".ca-portfolio").mouseout(function(){
+        jQuery(this).children(".name").children("a").css("background", "#ffffff")
+    });
+    jQuery(".article-items .item .content").mouseover(function(){
+        jQuery(this).css("box-shadow", "0 4px 4px 0 rgba(0, 0, 0, 0.1)");
+    });
+    jQuery(".article-items .item .content").mouseout(function(){
+        jQuery(this).css("box-shadow", "0 2px 2px 0 rgba(0, 0, 0, 0.1)");
+    });
+}
+
+

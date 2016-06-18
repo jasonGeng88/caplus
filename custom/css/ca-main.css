@@ -120,9 +120,9 @@
       margin: 0;
       padding: 0; }
       #header-top .site-branding .site-title img {
-        width: 44px;
+        width: 32px;
         margin-left: 60px;
-        margin-top: 9px; }
+        margin-top: 4px; }
   #header-top .default-nav-wrapper {
     padding: 0; }
   #header-top #site-navigation {
@@ -133,14 +133,15 @@
     #header-top #site-navigation li {
       margin-right: 48px; }
     #header-top #site-navigation a {
-      line-height: 50px;
-      padding: 0; }
+      line-height: 30px;
+      padding: 0;
+      margin-top: 10px; }
       #header-top #site-navigation a span {
         font-size: 24px;
         vertical-align: middle; }
     #header-top #site-navigation li:hover > a, #header-top #site-navigation li.current-menu-item a {
-      border-bottom: #000000 solid 2px;
-      color: #000000; }
+      color: #000000;
+      background: #FFFF00; }
   #header-top #top-search {
     margin: 0;
     padding: 0;
@@ -159,7 +160,6 @@
         margin-top: 11px; }
         #header-top #top-search .form .search-form input {
           font-size: 12px;
-          line-height: 1;
           letter-spacing: 0.1em;
           color: #000000;
           width: 240px;
@@ -168,12 +168,16 @@
           border-radius: 14px;
           padding: 8px 14px;
           border: none; }
-        #header-top #top-search .form .search-form button i {
-          margin-top: 5px;
-          font-size: 16px;
-          line-height: 1;
-          letter-spacing: 0.07em;
-          color: #999999; }
+        #header-top #top-search .form .search-form button {
+          color: #000000; }
+          #header-top #top-search .form .search-form button span {
+            vertical-align: middle; }
+          #header-top #top-search .form .search-form button i {
+            margin-top: 5px;
+            font-size: 16px;
+            line-height: 1;
+            letter-spacing: 0.07em;
+            color: #999999; }
         #header-top #top-search .form .search-form button[type="submit"] {
           display: none; }
       #header-top #top-search .form .search-result {
@@ -183,7 +187,6 @@
         width: 240px;
         text-align: center;
         font-size: 12px;
-        line-height: 1;
         letter-spacing: 0.1em;
         color: #999999;
         padding-top: 20px;
@@ -208,6 +211,7 @@ footer#colophon {
   border: none; }
   footer#colophon .footer-menu {
     margin: 0 0 40px 0;
+    margin-top: 4px;
     font-size: 14px;
     line-height: 1;
     letter-spacing: 0.09em;
@@ -226,9 +230,10 @@ footer#colophon {
           padding-top: 19px;
           color: #000000; }
         footer#colophon .footer-menu ul li a:hover {
+          border-top: #000000 solid 2px;
           font-weight: bold;
           text-decoration: none;
-          border-top: #000000 solid 2px; }
+          background: #ffffff; }
     footer#colophon .footer-menu .current-menu-item a {
       font-weight: bold;
       text-decoration: none;
@@ -313,8 +318,10 @@ body {
       height: 28px;
       border-radius: 14px;
       font-size: 12px;
-      line-height: 1;
       letter-spacing: 0.1em; }
+    body .add-more p .btn-more:hover {
+      background: #000000;
+      color: #ffffff; }
   body .arrow-back {
     width: 32px;
     height: 32px; }
@@ -348,6 +355,10 @@ body {
     overflow: auto; }
   body .ca-block {
     overflow: hidden; }
+  body button {
+    outline: none; }
+  body .ca-line {
+    line-height: 24px; }
 
 .home .title {
   height: 20px;
@@ -381,17 +392,21 @@ body {
   margin-bottom: 70px; }
 .home .home-hundred {
   margin-bottom: 130px; }
+  .home .home-hundred .title .name {
+    color: #999999; }
   .home .home-hundred .item {
     text-align: center;
     margin-bottom: 30px; }
     .home .home-hundred .item img {
       width: 88px;
-      height: 88px; }
+      height: 88px;
+      border-radius: 44px; }
+    .home .home-hundred .item img:hover {
+      border: 1px solid #000000; }
     .home .home-hundred .item a:hover {
       background: #ffffff; }
     .home .home-hundred .item .join-us {
       font-size: 12px;
-      line-height: 1;
       letter-spacing: 0.1em;
       font-weight: bold;
       width: 88px;
@@ -400,6 +415,9 @@ body {
       border: 1px solid #000000;
       border-radius: 44px;
       line-height: 88px; }
+    .home .home-hundred .item .join-us:hover {
+      background: #000000;
+      color: #ffffff; }
 
 .article-items .item {
   margin-bottom: 20px; }
@@ -425,12 +443,11 @@ body {
       line-height: 1;
       letter-spacing: 0.07em;
       color: #333333;
-      margin-top: 10px;
+      margin-top: 15px;
       margin-bottom: 15px;
       margin-left: 20px; }
     .article-items .item .content .tag, .article-items .item .content .time {
       font-size: 12px;
-      line-height: 1;
       letter-spacing: 0.1em;
       color: #999999;
       margin-bottom: 10px;
@@ -446,7 +463,8 @@ body {
   .articles .title .icon span {
     font-size: 30px;
     border: solid 1px #000000;
-    border-radius: 50%; }
+    border-radius: 50%;
+    padding: 4px; }
   .articles .title .icon {
     margin-top: 60px;
     margin-bottom: 20px; }
@@ -466,10 +484,10 @@ body {
     letter-spacing: 0.03em;
     font-size: 26px;
     font-weight: bold;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    font-family: lantinghei Sc; }
   .offline .offline-content .text {
     font-size: 12px;
-    line-height: 1;
     letter-spacing: 0.1em;
     color: #666666;
     line-height: 2;
@@ -486,8 +504,9 @@ body {
       text-shadow: none;
       color: #ffffff;
       font-size: 12px;
-      line-height: 1;
       letter-spacing: 0.1em; }
+    .offline .offline-content .see-more button:hover {
+      background: #999999; }
   .offline .offline-content .time, .offline .offline-content .address {
     font-size: 14px;
     font-size: 14px;
@@ -524,11 +543,13 @@ body {
     margin-left: 10%;
     position: relative;
     z-index: 3; }
+  .studio .studio-entry .pic button:hover {
+    color: #333333;
+    border: 2px solid #333333; }
   .studio .studio-entry .content {
     width: 300px;
     color: #ffffff;
     font-size: 12px;
-    line-height: 1;
     letter-spacing: 0.1em;
     line-height: 24px; }
 .studio .studio-history {
@@ -618,7 +639,6 @@ body {
     height: 24px;
     padding: 0;
     font-size: 12px;
-    line-height: 1;
     letter-spacing: 0.1em;
     line-height: 24px;
     text-align: center; }
@@ -631,14 +651,14 @@ body {
     line-height: 1;
     letter-spacing: 0.09em;
     margin-right: 56px;
-    float: left; }
+    float: left;
+    font-weight: bold; }
     .studio-detail .tab-title .name a {
       color: #999999; }
   .studio-detail .tab-title .name.active a {
     color: #333333;
     background: #ffffff; }
   .studio-detail .tab-title a:hover {
-    background: #ffffff;
     color: #333333; }
 .studio-detail .tab-content {
   margin-top: 65px; }
@@ -651,7 +671,6 @@ body {
     left: calc(100% / 6); }
     .studio-detail .item-1 .part-3 .right p {
       font-size: 12px;
-      line-height: 1;
       letter-spacing: 0.1em;
       color: #666666;
       line-height: 2;
@@ -690,7 +709,6 @@ body {
         border: solid 1.5px #333333; }
       .studio-detail .item-2 .part-2 .brief .head .title .study {
         font-size: 12px;
-        line-height: 1;
         letter-spacing: 0.1em;
         line-height: 2.0;
         color: #999999; }
@@ -699,7 +717,6 @@ body {
           color: #333333; }
   .studio-detail .item-2 .part-2 .brief .content {
     font-size: 12px;
-    line-height: 1;
     letter-spacing: 0.1em;
     color: #666666;
     line-height: 2.0;
@@ -707,7 +724,6 @@ body {
 .studio-detail .item-3 .annotation {
   margin-top: 20px;
   font-size: 12px;
-  line-height: 1;
   letter-spacing: 0.1em;
   color: #999999;
   line-height: 2; }
@@ -734,10 +750,11 @@ body {
     margin-bottom: 20px; }
 .studio-detail .item-4 {
   font-size: 12px;
-  line-height: 1;
   letter-spacing: 0.1em;
   color: #999999;
   line-height: 30px; }
+  .studio-detail .item-4 input, .studio-detail .item-4 textarea {
+    outline: none; }
   .studio-detail .item-4 .part-2 {
     background-color: #f5f5f5;
     padding-top: 60px; }
@@ -778,7 +795,6 @@ body {
     margin-bottom: 90px; }
     .studio-detail .item-4 .contact-info p {
       font-size: 12px;
-      line-height: 1;
       letter-spacing: 0.1em;
       color: #666666;
       margin: 0;
@@ -795,10 +811,10 @@ body {
   letter-spacing: 0.07em;
   color: #333333;
   margin-bottom: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  line-height: 24px; }
 .studio-detail .item-1 .part-1 .content, .studio-detail .item-2 .part-1 .content, .studio-detail .item-3 .part-1 .content, .studio-detail .item-4 .part-1 .content {
   font-size: 12px;
-  line-height: 1;
   letter-spacing: 0.1em;
   color: #666666;
   line-height: 2; }
@@ -836,6 +852,8 @@ body {
       letter-spacing: 0.09em; }
     .study-university-list ul li .item-link img {
       width: 10px; }
+    .study-university-list ul li a:hover {
+      color: #999999; }
 
 .study-question-list {
   overflow: auto;
@@ -845,22 +863,27 @@ body {
     line-height: 1;
     letter-spacing: 0.09em;
     text-align: center;
-    margin-bottom: 90px; }
-  .study-question-list ul li {
-    list-style: none;
-    margin-bottom: 49px; }
-    .study-question-list ul li p {
-      float: left;
-      margin: 0; }
-    .study-question-list ul li .item-name {
-      width: 443px;
-      margin-right: 24px;
-      line-height: 28px;
-      font-size: 14px;
-      line-height: 1;
-      letter-spacing: 0.09em; }
-    .study-question-list ul li .item-link img {
-      width: 22px; }
+    margin-bottom: 90px;
+    font-weight: bold; }
+  .study-question-list ul {
+    margin: 0; }
+    .study-question-list ul li {
+      list-style: none;
+      margin-bottom: 49px; }
+      .study-question-list ul li p {
+        float: left;
+        margin: 0; }
+      .study-question-list ul li .item-name {
+        width: 443px;
+        margin-right: 24px;
+        line-height: 28px;
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0.09em; }
+      .study-question-list ul li .item-link img {
+        width: 22px; }
+      .study-question-list ul li a:hover {
+        color: #999999; }
 
 .university .info p {
   padding: 0;
@@ -871,15 +894,15 @@ body {
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1;
-  letter-spacing: 0.09em; }
+  letter-spacing: 0.09em;
+  font-weight: bold; }
 .university .info .second-title {
   font-size: 12px;
-  line-height: 1;
   letter-spacing: 0.1em;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  font-weight: bold; }
 .university .info .content {
   font-size: 12px;
-  line-height: 1;
   letter-spacing: 0.1em;
   margin-top: 43px;
   margin-bottom: 120px;
@@ -898,13 +921,15 @@ body {
   font-size: 14px;
   line-height: 1;
   letter-spacing: 0.09em;
-  line-height: 66px; }
+  line-height: 66px;
+  font-weight: bold; }
 .university .course-list ul {
   margin: 0;
   margin-top: 60px; }
   .university .course-list ul li {
     overflow: auto;
-    list-style: none; }
+    list-style: none;
+    font-weight: bold; }
     .university .course-list ul li .item-name {
       font-size: 14px;
       line-height: 1;
@@ -925,23 +950,24 @@ body {
     font-size: 14px;
     line-height: 1;
     letter-spacing: 0.09em;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    font-weight: bold; }
   .university .requirement .content {
     font-size: 12px;
-    line-height: 1;
-    letter-spacing: 0.1em; }
+    letter-spacing: 0.1em;
+    line-height: 24px; }
   .university .requirement .requirement-link {
     margin: auto;
     margin-top: 60px;
     margin-bottom: 150px;
-    font-size: 14px;
-    line-height: 1;
-    letter-spacing: 0.09em;
+    font-size: 12px;
+    letter-spacing: 0.1em;
     width: 150px;
     height: 45px;
     border-radius: 3px;
     line-height: 45px;
-    background: #000000; }
+    background: #000000;
+    font-weight: bold; }
     .university .requirement .requirement-link p {
       margin: 0;
       padding: 0;
@@ -953,16 +979,24 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 90px; }
+  margin-bottom: 90px;
+  font-weight: bold; }
 .university .schoolmate ul {
   margin: 0;
   overflow: auto; }
   .university .schoolmate ul li {
     list-style: none;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    text-align: center; }
     .university .schoolmate ul li img {
-      width: 132px;
-      height: 132px; }
+      width: 88px;
+      height: 88px;
+      border-radius: 44px; }
+    .university .schoolmate ul li img:hover {
+      border: 1px solid #000000;
+      background: #ffffff; }
+    .university .schoolmate ul li a:hover {
+      background: #ffffff; }
 .university .university-url {
   font-size: 14px;
   line-height: 1;
@@ -970,7 +1004,7 @@ body {
   text-align: center;
   margin-bottom: 120px;
   margin-top: 60px; }
-  .university .university-url a {
+  .university .university-url a span {
     border-bottom: #000000 solid 2px;
     padding-bottom: 16px; }
 
@@ -979,18 +1013,18 @@ body {
   margin: 0;
   text-align: center; }
 .course .info .title {
+  margin-top: 40px;
   margin-bottom: 40px;
   font-size: 14px;
   line-height: 1;
-  letter-spacing: 0.09em; }
+  letter-spacing: 0.09em;
+  font-weight: bold; }
 .course .info .second-title {
   font-size: 12px;
-  line-height: 1;
   letter-spacing: 0.1em;
   margin-bottom: 40px; }
 .course .info .content {
   font-size: 12px;
-  line-height: 1;
   letter-spacing: 0.1em;
   margin-top: 43px;
   margin-bottom: 120px;
@@ -999,34 +1033,36 @@ body {
   .course .info .content p {
     line-height: 28px;
     text-align: left; }
-.course .exam-list p.title {
-  width: 66px;
-  height: 66px;
-  line-height: 66px;
-  text-align: center;
-  background: #000000;
-  border-radius: 33px;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 1;
-  letter-spacing: 0.09em; }
-.course .exam-list ul {
-  margin: 0; }
-  .course .exam-list ul li {
-    overflow: auto;
-    list-style: none; }
-    .course .exam-list ul li .item-name {
-      font-size: 14px;
-      line-height: 1;
-      letter-spacing: 0.09em;
-      width: 240px;
-      margin-right: 60px;
-      margin-bottom: 40px; }
-    .course .exam-list ul li .item-link img {
-      width: 22px; }
-    .course .exam-list ul li p {
-      float: left;
-      line-height: 28px; }
+.course .exam-list {
+  font-weight: bold; }
+  .course .exam-list p.title {
+    width: 66px;
+    height: 66px;
+    line-height: 66px;
+    text-align: center;
+    background: #000000;
+    border-radius: 33px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.09em; }
+  .course .exam-list ul {
+    margin: 0; }
+    .course .exam-list ul li {
+      overflow: auto;
+      list-style: none; }
+      .course .exam-list ul li .item-name {
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0.09em;
+        width: 240px;
+        margin-right: 60px;
+        margin-bottom: 40px; }
+      .course .exam-list ul li .item-link img {
+        width: 22px; }
+      .course .exam-list ul li p {
+        float: left;
+        line-height: 28px; }
 
 .normal-post .title {
   font-size: 20px;
@@ -1037,7 +1073,6 @@ body {
   margin-top: 60px; }
 .normal-post .content {
   font-size: 12px;
-  line-height: 1;
   letter-spacing: 0.1em;
   margin-bottom: 150px; }
 .normal-post .contact .name {
@@ -1051,7 +1086,6 @@ body {
 .normal-post .contact .education {
   text-align: center;
   font-size: 12px;
-  line-height: 1;
   letter-spacing: 0.1em;
   color: #333333;
   margin-bottom: 40px; }
@@ -1081,13 +1115,11 @@ body {
     margin-bottom: 20px; }
   .schoolmate .info .second-title {
     font-size: 12px;
-    line-height: 1;
     letter-spacing: 0.1em;
     color: #999999;
     margin-bottom: 40px; }
   .schoolmate .info .content {
     font-size: 12px;
-    line-height: 1;
     letter-spacing: 0.1em; }
     .schoolmate .info .content p {
       text-align: left; }
@@ -1099,7 +1131,6 @@ body {
   margin-bottom: 20px; }
 .schoolmate .contact .content {
   font-size: 12px;
-  line-height: 1;
   letter-spacing: 0.1em;
   margin-bottom: 40px; }
 .schoolmate .contact .link {
@@ -1163,10 +1194,10 @@ body {
       font-size: 14px;
       line-height: 1;
       letter-spacing: 0.09em;
-      margin-bottom: 46px; }
+      margin-bottom: 46px;
+      font-weight: bold; }
     .about ul li .base .title, .about ul li .base .identity {
       font-size: 12px;
-      line-height: 1;
       letter-spacing: 0.1em;
       color: #999999;
       margin-bottom: 12px; }
@@ -1174,7 +1205,6 @@ body {
     width: 295px; }
     .about ul li .des p {
       font-size: 12px;
-      line-height: 1;
       letter-spacing: 0.1em;
       color: #666666; }
   .about ul li .pic {
@@ -1190,13 +1220,13 @@ body {
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1;
-  letter-spacing: 0.09em; }
+  letter-spacing: 0.09em;
+  font-weight: bold; }
 .ca-footer-menu .info {
   margin-top: 40px;
   margin-bottom: 120px; }
   .ca-footer-menu .info .content {
     font-size: 12px;
-    line-height: 1;
     letter-spacing: 0.1em;
     color: #666666; }
 
@@ -1212,7 +1242,6 @@ body {
 .join .items ul li .specific {
   margin-bottom: 20px;
   font-size: 12px;
-  line-height: 1;
   letter-spacing: 0.1em;
   color: #999999; }
   .join .items ul li .specific p {
@@ -1220,7 +1249,6 @@ body {
 .join .items ul li .des {
   margin-bottom: 60px;
   font-size: 12px;
-  line-height: 1;
   letter-spacing: 0.1em; }
 .join .items ul li:first-child .line {
   display: none; }
@@ -1229,7 +1257,6 @@ body {
   .join .contact .single {
     text-align: left;
     font-size: 12px;
-    line-height: 1;
     letter-spacing: 0.1em;
     margin-bottom: 20px; }
 

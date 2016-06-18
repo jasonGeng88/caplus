@@ -73,21 +73,21 @@ function joinHtmlForList($posts, $type){
         foreach ($posts as $item) {
             $html .= '<li class="col-md-3"><a href="'.$item->guid.'">';
             $html .= '<p class="item-name">'.$item->post_title.'</p>';
-            $html .= '<p class="item-link"><img src="/custom/images/study-arrow-1.png" alt=""></p>';
+            $html .= '<p class="item-link"><span class="icon-more"></span></p>';
             $html .= '</a></li>';
         }
     }elseif($type == "question"){
         foreach ($posts as $item) {
             $html .= '<li class="col-md-6"><a href="' . $item->guid . '">';
             $html .= '<p class="item-name">' . $item->post_title . '</p>';
-            $html .= '<p class="item-link"><img src="/custom/images/study-arrow-2.png" alt=""></p>';
+            $html .= '<p class="item-link"><span class="icon-arrow-right"></span></p>';
             $html .= '</a></li>';
         }
     }elseif($type == "course"){
         foreach ($posts as $item) {
             $html .= '<li class="col-md-12"><a href="' . $item->guid . '">';
             $html .= '<p class="item-name">' . $item->post_title . '</p>';
-            $html .= '<p class="item-link"><img src="/custom/images/study-arrow-2.png" alt=""></p>';
+            $html .= '<p class="item-link"><span class="icon-arrow-right"></span></p>';
             $html .= '</a></li>';
         }
     }
