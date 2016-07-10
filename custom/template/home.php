@@ -7,9 +7,9 @@ get_header();
 ?>
 <link rel="stylesheet" href="<?=APP_URL;?>/custom/lib/pic_effect/css/default.css">
 <link rel="stylesheet" href="<?=APP_URL;?>/custom/lib/pic_effect/css/tilteffect.css">
-<div class="col-lg-12 home ca-block">
+<div class="col-md-12 home ca-block">
     <!--home pic-->
-    <div class="col-lg-12 home-pic ca-block">
+    <div class="col-md-12 home-pic ca-block">
         <ul class="grid grid--examples">
             <li class="grid__item">
                 <div class="grid__img grid__img--example-1" >
@@ -20,7 +20,7 @@ get_header();
     </div>
     <!--home pic end-->
     <!--分類文章-->
-    <div class="col-lg-10 col-lg-offset-1 home-articles ca-block">
+    <div class="col-md-10 col-md-offset-1 home-articles ca-block">
         <?php
         $cats = get_term_children(ARTICLE, 'category');
         foreach ($cats as $item) {
@@ -37,8 +37,8 @@ get_header();
             $data['data'] = wp_get_recent_posts($args);
             if (!empty($data['data'])) {
                 ?>
-                <div class="col-lg-12 column ca-block">
-                    <div class="col-lg-12 title">
+                <div class="col-md-12 column ca-block">
+                    <div class="col-md-12 title">
                         <div class="name">
                             <a href="<?=ARTICLE_LIST_URL;?>&cat_id=<?=$item;?>">
                                 <?=get_cat_name($item);?>
@@ -46,9 +46,9 @@ get_header();
                         </div>
                         <div class="line"></div>
                     </div>
-                    <div class="col-lg-12 article-items">
+                    <div class="col-xs-12 col-md-12 article-items">
                         <?php foreach ($data['data'] as $d) { ?>
-                            <div class="col-lg-4 item">
+                            <div class="col-xs-6 col-md-4 item">
                                 <div class="content">
                                     <div class="ca-portfolio">
                                         <div class="pic">
@@ -60,7 +60,7 @@ get_header();
                                             <a href="<?=$d['guid'];?>"><span><?=$d['post_title'];?></span></a>
                                         </div>
                                     </div>
-                                    <div class="tag">
+                                    <div class="tag ca-pc">
                                         <?php
                                         $tags = [];
                                         foreach (wp_get_post_tags($d['ID']) as $t) {
@@ -69,7 +69,7 @@ get_header();
                                         ?>
                                         <?=implode('，', $tags);?>
                                     </div>
-                                    <div class="time">
+                                    <div class="time ca-pc">
                                         <?=get_post_meta($d['ID'], '_create_time_value', true);?>
                                     </div>
                                 </div>
@@ -85,8 +85,8 @@ get_header();
     <!--分類文章 end-->
 
     <!--百人計劃-->
-    <div class="col-lg-10 col-lg-offset-1 home-hundred ca-block">
-        <div class="col-lg-12 title">
+    <div class="col-xs-12 col-md-10 col-md-offset-1 home-hundred ca-block">
+        <div class="col-md-12 title">
             <div class="name">留日百人計劃</div>
             <div class="line"></div>
         </div>
@@ -105,7 +105,7 @@ get_header();
         if (!empty($data['data'])) {
         foreach ($data['data'] as $k => $d){
         ?>
-        <div class="col-lg-2 item">
+        <div class="col-xs-4 col-md-2 item">
             <a href="<?=$d['guid'];?>">
                 <img src="<?=get_the_post_thumbnail_url($d['ID']);?>" alt="">
             </a>
@@ -114,7 +114,7 @@ get_header();
             }
             }
             ?>
-            <div class="col-lg-2 item">
+            <div class="col-xs-4 col-md-2 item">
                 <a href="">
                     <a href="<?=ABOUT_URL;?>">
                         <div class="join-us">Join us</div>

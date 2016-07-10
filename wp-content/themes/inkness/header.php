@@ -29,7 +29,8 @@ require_once(APP_ROOT.'/custom/config/global.php');
 <!--<div id="parallax-bg"></div>-->
 <div id="page" class="hfeed site">
 	<?php do_action( 'inkness_before' ); ?>
-	<div id="header-top">
+	<!--pc header-->
+	<div id="header-top" class="ca-pc">
 		<header id="masthead" class="site-header row container" role="banner">
 			<div class="site-branding col-md-1 col-xs-12">
 
@@ -46,7 +47,7 @@ require_once(APP_ROOT.'/custom/config/global.php');
 			?>
 			</div>
 			<div class="default-nav-wrapper col-md-7 col-md-offset-1 col-xs-12">
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+				<nav id="site-navigation" class="main-navigation col-md-12" role="navigation">
 					<div id="nav-container">
 						<h1 class="menu-toggle"></h1>
 						<div class="screen-reader-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'inkness' ); ?>"><?php _e( 'Skip to content', 'inkness' ); ?></a></div>
@@ -56,7 +57,7 @@ require_once(APP_ROOT.'/custom/config/global.php');
 				</nav><!-- #site-navigation -->
 			</div>
 
-			<div id="top-search" class="col-md-3 col-xs-12">
+			<div id="top-search" class="col-md-3 col-xs-12 ca-pc">
 				<a href="javascript:search();" class="thumbnail-search">
 					<img src="/custom/images/search.png" alt="">
 				</a>
@@ -65,7 +66,40 @@ require_once(APP_ROOT.'/custom/config/global.php');
 
 		</header><!-- #masthead -->
 	</div>
-	
+	<!--pc header end-->
+
+	<!--mobile header-->
+	<div id="header-top" class="ca-mobile">
+		<header id="masthead" class="ca-mobile col-xs-12" role="banner">
+			<div class="site-branding col-xs-12">
+
+				<?php if((of_get_option('logo', true) != "") && (of_get_option('logo', true) != 1) ) { ?>
+
+				<div class="menu-logo col-xs-2">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<?php
+						echo "<img src='".of_get_option('logo', true)."' title='".esc_attr(get_bloginfo( 'name','display' ) )."'>";
+						}
+						?>
+					</a>
+				</div>
+				<div class="col-xs-8 menu-content"></div>
+				<div class="col-xs-2 menu-btn">
+					<a onclick="javascript:openMaskMenu();">
+						<span class="icon-menu"></span>
+					</a>
+				</div>
+		</header><!-- #masthead -->
+	</div>
+	<!--mobile header end-->
+
+	<!--		search mobile-->
+	<div id="header-search" class="mobile-search ca-mobile">
+		<a onclick="javascript:openMaskSearch();">
+			<span class="icon-search"></span>
+		</a>
+	</div>
+
 	<?php
 	if ( (function_exists( 'of_get_option' )) && (of_get_option('slidetitle5',true) !=1) ) {
 	if ( ( of_get_option('slider_enabled') != 0 ) && (is_home())  )  
@@ -102,4 +136,13 @@ require_once(APP_ROOT.'/custom/config/global.php');
 		}
 		?>
 		<div id="content" class="site-content row clearfix clear">
-		<div class="container col-md-12"> 
+		<div class="container col-md-12">
+
+<script>
+	function initMenu(){
+		var num = jQuery("ul#menu-menu-1 li").length;
+		var i = 12/num;
+		jQuery("ul#menu-menu-1 li").addClass("col-md-"+i);
+	}
+	initMenu();
+</script>

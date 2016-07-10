@@ -1,6 +1,6 @@
 <?php require_once(APP_ROOT.'/custom/function/post.php'); ?>
-<div id="primary" class="content-area col-lg-12 course">
-    <div class="col-lg-10 col-lg-offset-1 info">
+<div id="primary" class="content-area col-md-12 course">
+    <div class="col-md-10 col-md-offset-1 info">
         <?php
             $post =get_post();
             $tag = wp_get_post_tags($post->ID);
@@ -12,7 +12,7 @@
         <div class="content"><?=$post->post_content ?></div>
     </div>
 
-    <div class="col-lg-10 col-lg-offset-1 exam-list">
+    <div class="col-md-10 col-md-offset-1 exam-list">
         <ul>
             <?php
             $posts = getAll($catId, 'course', 1);
@@ -21,7 +21,7 @@
         </ul>
     </div>
 
-    <div class="col-lg-10 col-lg-offset-1 study-question-list">
+    <div class="col-md-10 col-md-offset-1 study-question-list">
         <input type="hidden" name="cat_id" value="<?= QUESTION ?>">
         <p class="title">本科相關資訊</p>
         <ul>

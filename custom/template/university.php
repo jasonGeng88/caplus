@@ -1,6 +1,6 @@
 <?php require_once(APP_ROOT.'/custom/function/post.php'); ?>
-<div id="primary" class="content-area col-lg-12 university">
-    <div class="col-lg-12 info  ca-block">
+<div id="primary" class="content-area col-md-12 university">
+    <div class="col-md-12 info  ca-block">
         <?php
             $post =get_post();
             $tag = wp_get_post_tags($post->ID);
@@ -13,7 +13,7 @@
         <div class="content ca-container"><?=$post->post_content ?></div>
     </div>
 
-    <div class="col-lg-12 ca-container course-list  ca-block">
+    <div class="col-md-12 ca-container course-list  ca-block">
         <p class="title">学科</p>
         <ul>
         <?php
@@ -24,7 +24,7 @@
         </ul>
     </div>
 
-    <div class="col-lg-12 requirement  ca-block">
+    <div class="col-md-12 requirement  ca-block">
         <?php
             $requirement = getIntersect([$catId, REQUIREMENT]);
         ?>
@@ -39,16 +39,16 @@
         ?>
     </div>
 
-    <div class="col-lg-12 schoolmate ca-block">
-        <div class="col-lg-12">
+    <div class="col-md-12 schoolmate ca-block">
+        <div class="col-md-12">
             <p class="title">前輩たち</p>
         </div>
         <?php
         $schoolmates = getIntersect([$catId, SCHOOLMATE]);
         if (!empty($schoolmates)) {
-            $html = '<div class="col-lg-10 col-lg-offset-1"><ul>';
+            $html = '<div class="col-md-10 col-md-offset-1"><ul>';
             foreach ($schoolmates as $key => $mate) {
-                $html .= '<li class="col-lg-2">';
+                $html .= '<li class="col-md-2">';
                 $html .= '<a href="'.$mate->guid.'"><img src="'.get_the_post_thumbnail_url($mate->ID).'" alt=""></a>';
                 $html .= '</li>';
             }
@@ -59,13 +59,13 @@
 
     </div>
 
-    <div class="col-lg-12 university-url">
+    <div class="col-md-12 university-url">
         <a href="<?=$tag[0]->name ?>">
             <span>Official Site</span>
         </a>
     </div>
 
-    <div class="col-lg-12 study-university-list ca-block">
+    <div class="col-md-12 study-university-list ca-block">
         <ul class="ca-container">
             <?php
             getAll(UNIVERSITY, "university");

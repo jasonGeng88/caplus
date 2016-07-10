@@ -1,6 +1,6 @@
 @import "ca-base";
 
-#header-top{
+#header-top.ca-pc{
   background: $white;
   height: 50px;
   margin: 0;
@@ -41,9 +41,6 @@
     padding: 0;
     height: 50px;
     line-height: 0;
-    li {
-      margin-right: 48px;
-    }
     a{
       line-height: 30px;
       padding: 0;
@@ -139,5 +136,42 @@
   }
   #top-search :-ms-input-placeholder {
     color: $black;
+  }
+}
+
+#header-top.ca-mobile{
+  background: $white;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  -webkit-box-shadow: 0px 1px 1px $grey4;
+  box-shadow: 0px 1px 1px $grey4;
+  @include font-format(4);
+  .site-branding{
+    margin: 0;
+  }
+  header#masthead{
+    margin: 0;
+    padding: 0;
+    .menu-logo{
+      height: 50px;
+      text-align: center;
+      img{
+        height: 30px;
+        width: auto;
+        margin: 10px;
+      }
+    }
+    .menu-content{
+      @include font-format(3);
+      text-align: center;
+      line-height: 50px;
+    }
+
+    .menu-btn{
+      text-align: center;
+      line-height: 50px;
+      font-size: 30px;
+    }
   }
 }

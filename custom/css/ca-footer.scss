@@ -1,5 +1,5 @@
 @import "ca-base";
-footer#colophon{
+footer#colophon.ca-pc{
   margin: 0;
   margin-top: 90px;
   padding: 0;
@@ -58,6 +58,21 @@ footer#colophon{
 
     p {
       margin: 0 0 30px;
+    }
+  }
+}
+footer#colophon.ca-mobile{
+  background: $grey5;
+  border: none;
+  padding-top: 64px;
+  padding-bottom: 88px;
+  .container{
+    @include font-format(5);
+    text-align: center;
+    color: $grey3;
+    line-height: 12px;
+    .co-name{
+      margin-bottom: 5px;
     }
   }
 }

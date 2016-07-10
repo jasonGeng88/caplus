@@ -119,30 +119,14 @@ function joinHtmlForTag(obj, type, timeType){
 
 function search(){
     jQuery(".thumbnail-search").css("display", "none");
-    jQuery("#top-search .form").css("display", "block");
+    jQuery("#top-search .form.ca-pc").css("display", "block");
 }
 
 function search_close(){
-    jQuery("#top-search .form").css("display", "none");
+    jQuery("#top-search .form.ca-pc").css("display", "none");
     jQuery(".thumbnail-search").css("display", "block");
 }
 
-function search_posts(query){
-    var url = api + '&func='+searchApi+'&search='+query;
-    jQuery.get(url, function(result){
-        result = JSON.parse(result);
-        var html = '';
-        jQuery(".search-result").html(html);
-        for(var x=0; x < result.length; x++){
-            console.log(x);
-            if(x >= 5)
-                break;
-            html += '<a href="'+result[x].guid+'"><p>'+ result[x].post_title + '</p></a>';
-        }
-        jQuery(".search-result").append(html);
-        console.log(result);
-    });
-};
 
 //portfolio hover
 function ca_portfolio(){
@@ -158,6 +142,29 @@ function ca_portfolio(){
     jQuery(".article-items .item .content").mouseout(function(){
         jQuery(this).css("box-shadow", "0 2px 2px 0 rgba(0, 0, 0, 0.1)");
     });
+}
+
+//	mobile
+function openMaskMenu(){
+    jQuery("html").css("overflow", "hidden");
+    jQuery(".ca-mask").css("display", "block");
+    jQuery(".m-menu-contain").css("display", "block");
+    jQuery(".m-search-contain").css("display", "none");
+    jQuery(".ca-mask").css("top", jQuery(window).scrollTop() + "px");
+}
+
+function openMaskSearch(){
+    jQuery("html").css("overflow", "hidden");
+    jQuery(".ca-mask").css("display", "block");
+    jQuery(".m-menu-contain").css("display", "none");
+    jQuery(".m-search-contain").css("display", "block");
+    jQuery(".ca-mask").css("top", jQuery(window).scrollTop() + "px");
+}
+function closeMask(){
+    jQuery("html").css("overflow", "auto");
+    jQuery(".ca-mask").css("display", "none");
+    jQuery(".m-menu-contain").css("display", "none");
+    jQuery(".m-search-contain").css("display", "none");
 }
 
 

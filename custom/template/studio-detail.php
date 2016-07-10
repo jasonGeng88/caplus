@@ -10,9 +10,9 @@ foreach ($urls as &$item) {
 }
 ?>
 
-<div class="col-lg-12 studio-detail ca-block">
-    <div class="col-lg-12 tab-title ca-block">
-        <div class="col-lg-10 col-lg-offset-1">
+<div class="col-md-12 studio-detail ca-block">
+    <div class="col-md-12 tab-title ca-block">
+        <div class="col-md-10 col-md-offset-1">
             <div class="name">
                 <a href="javascript:toggleTab(1)">環境&地點</a>
             </div>
@@ -27,19 +27,19 @@ foreach ($urls as &$item) {
             </div>
         </div>
     </div>
-    <div class="col-lg-10 col-lg-offset-1 tab-content item-1">
-        <div class="part-1 col-lg-12 ca-block">
+    <div class="col-md-10 col-md-offset-1 tab-content item-1">
+        <div class="part-1 col-md-12 ca-block">
             <p class="title ca-line">SOHO 設計事務所兼畫室<br>美大零距離體驗 coffee & music 和聚餐 一個不能少</p>
             <p class="content ca-line">我們将为每一位真心想来日本完成艺术梦想的孩子提供最专业的日本美术大学的个性化进学指导课 程。号称“东京五美”的武藏野美术大学、多摩美術大学、女子美術大学、東京造形大学、日本大学芸術学部，远至京都方面的美术院校都有CAplus的成员。丰富的成员资源也为我们提供个性化培训提供 了强有力的基础。我们没有后台也没有分红合作的机构，只是一群在日本学美术的年轻人聚集在一起，如果你要来留学，请先来CAplus工作室瞧瞧</p>
         </div>
-        <div class="part-2 col-lg-12 ca-block">
+        <div class="part-2 col-md-12 ca-block">
             <img src="<?=APP_URL.'/custom/images/studio-item-011.png';?>" alt="">
         </div>
-        <div class="part-3 col-lg-12 ca-block">
-            <div class="col-lg-2 left">
+        <div class="part-3 col-md-12 ca-block">
+            <div class="col-md-2 left">
                 <img src="<?=APP_URL.'/custom/images/studio-item-012.png';?>" alt="">
             </div>
-            <div class="col-lg-8 col-lg-offset-2 right ca-line">
+            <div class="col-md-8 col-md-offset-2 right ca-line">
                 <p>
                     MONA:080-3710-6088<br>
                     地下鉄東西線高田馬場駅早稲田口 4分<br>
@@ -50,20 +50,20 @@ foreach ($urls as &$item) {
                 </p>
             </div>
         </div>
-        <div class="part-4 col-lg-12 ca-block">
-            <div class="col-lg-8 col-lg-offset-4">
+        <div class="part-4 col-md-12 ca-block">
+            <div class="col-md-8 col-md-offset-4">
                 <div id="map"></div>
             </div>
         </div>
     </div>
-    <div class="col-lg-10 col-lg-offset-1 tab-content item-2">
-        <div class="part-1 col-lg-12 ca-block">
+    <div class="col-md-10 col-md-offset-1 tab-content item-2">
+        <div class="part-1 col-md-12 ca-block">
             <p class="title">漂亮話不多說<br>找老師還是靠譜得好</p>
             <p class="content ca-line">我們将为每一位真心想来日本完成艺术梦想的孩子提供最专业的日本美术大学的个性化进学指导课 程。号称“东京五美”的武藏野美术大学、多摩美術大学、女子美術大学、東京造形大学、日本大学芸術 学部,远至京都方面的美术院校都有 CAplus 的成员。丰富的成员资源也为我们提供个性化培训提供 了强有力的基础。我们没有后台也没有分红合作的机构，只是一群在日本学美术的年轻人聚集在一起，如果你要来留学，请先來 CAplus 工作室瞧瞧。</p>
         </div>
-        <div class="part-2 col-lg-12 ca-block">
-            <div class="col-lg-12 ca-block">
-                <div class="col-lg-6 brief">
+        <div class="part-2 col-md-12 ca-block">
+            <div class="col-md-12 ca-block">
+                <div class="col-md-6 brief">
                     <div class="head ca-block">
                         <div class="pic">
                             <img src="<?=APP_URL.'/custom/images/studio-item-021.png';?>" alt="">
@@ -85,7 +85,7 @@ foreach ($urls as &$item) {
                         幾年前我來到東京的時候感覺到了這個遠東國家的強大的文化吸引力，文化是在撞擊和融合下產生的產物，沒有新的文化的生成世界也就不會變得更有趣，我們作為留學生這個異文化體來到日本，並且在這個國家的學習過程中產生了產生奇妙的化學效應，我將之宣傳出來並且將所有和我有一樣想法的人聚集在一起，形成了 CAplus 這個團體。
                     </div>
                 </div>
-                <div class="col-lg-6 brief">
+                <div class="col-md-6 brief">
                     <div class="head ca-block">
                         <div class="pic">
                             <img src="<?=APP_URL.'/custom/images/studio-item-022.png';?>" alt="">
@@ -114,8 +114,8 @@ foreach ($urls as &$item) {
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12 ca-blocl">
-                <div class="col-lg-6 brief">
+            <div class="col-md-12 ca-blocl">
+                <div class="col-md-6 brief">
                     <div class="head ca-block">
                         <div class="pic">
                             <img src="<?=APP_URL.'/custom/images/studio-item-021.png';?>" alt="">
@@ -137,7 +137,7 @@ foreach ($urls as &$item) {
                         幾年前我來到東京的時候感覺到了這個遠東國家的強大的文化吸引力，文化是在撞擊和融合下產生的產物，沒有新的文化的生成世界也就不會變得更有趣，我們作為留學生這個異文化體來到日本，並且在這個國家的學習過程中產生了產生奇妙的化學效應，我將之宣傳出來並且將所有和我有一樣想法的人聚集在一起，形成了 CAplus 這個團體。
                     </div>
                 </div>
-                <div class="col-lg-6 brief">
+                <div class="col-md-6 brief">
                     <div class="head ca-block">
                         <div class="pic">
                             <img src="<?=APP_URL.'/custom/images/studio-item-022.png';?>" alt="">
@@ -168,24 +168,24 @@ foreach ($urls as &$item) {
             </div>
         </div>
     </div>
-    <div class="col-lg-10 col-lg-offset-1 tab-content item-3">
-        <div class="part-1 col-lg-12 ca-block">
+    <div class="col-md-10 col-md-offset-1 tab-content item-3">
+        <div class="part-1 col-md-12 ca-block">
             <p class="title">日本各大美術大學學部年日程</p>
             <p class="content">我們将为每一位真心想来日本完成艺术梦想的孩子提供最专业的日本美术大学的个性化进学指导课程。号称“东京五美”的武藏野美术大学、多摩美術大学、女子美術大学、東京造形大学、日本大学芸術学部，远至京都方面的美术院校都有 CAplus 的成员。丰富的成员资源也为我们提供个性化培训提供了强有力的基础。我们没有后台也没有分红合作的机构，只是一群在日本学美术的年轻人聚集在一起，如果你要来留学，请先来CAplus工作室瞧瞧。</p>
         </div>
-        <div class="part-2 col-lg-12 ca-block">
-            <div class="col-lg-7">
+        <div class="part-2 col-md-12 ca-block">
+            <div class="col-md-7">
                 <img class="pic-1" src="<?=$urls[0];?>" alt="">
             </div>
-            <div class="col-lg-12">
+            <div class="col-md-12">
                 <img class="pic-2" src="<?=$urls[1];?>" alt="">
             </div>
-            <div class="col-lg-10">
+            <div class="col-md-10">
                 <img class="pic-3" src="<?=$urls[2];?>" alt="">
                 <p class="annotation">＊  此表格為 2015 年數據，實際情況請參考官方網站</p>
             </div>
         </div>
-        <div class="part-3 col-lg-12 ca-block">
+        <div class="part-3 col-md-12 ca-block">
             <p class="title">CA+ 工作室美術進學班日程表</p>
             <div class="course">
                 <p class="name">春 季 課 程</p>
@@ -204,15 +204,15 @@ foreach ($urls as &$item) {
             </div>
         </div>
     </div>
-    <div class="col-lg-12 tab-content item-4 ca-block">
-        <div class="part-1 col-lg-12 ca-block">
-            <div class="col-lg-10 col-lg-offset-1">
+    <div class="col-md-12 tab-content item-4 ca-block">
+        <div class="part-1 col-md-12 ca-block">
+            <div class="col-md-10 col-md-offset-1">
                 <p class="title">ok 先來找我們玩呀!<br>一日無料體驗課 </p>
                 <p class="content">我們将为每一位真心想来日本完成艺术梦想的孩子提供最专业的日本美术大学的个性化进学指导课程。号称“东京五美”的武藏野美术大学、多摩美術大学、女子美術大学、東京造形大学、日本大学芸術学部，远至京都方面的美术院校都有CAplus的成员。丰富的成员资源也为我们提供个性化培训提供了强有力的基础。我们没有后台也没有分红合作的机构，只是一群在日本学美术的年轻人聚集在一起如果你要来留学，请先来CAplus工作室瞧瞧。</p>
             </div>
         </div>
-        <div class="part-2 col-lg-12 ca-block">
-            <div class="col-lg-10 col-lg-offset-1">
+        <div class="part-2 col-md-12 ca-block">
+            <div class="col-md-10 col-md-offset-1">
                 <div class="input-group">
                     <input type="text" class="email_name" name="email_name" placeholder="名字">
                 </div>

@@ -2,18 +2,18 @@
 get_header();
 ?>
 
-<div class="col-lg-12 studio ca-block">
-    <div class="col-lg-12 studio-entry ca-block">
-        <div class="col-lg-5 col-lg-offset-1 pic">
+<div class="col-md-12 studio ca-block">
+    <div class="col-md-12 studio-entry ca-block">
+        <div class="col-md-5 col-md-offset-1 pic">
             <button onclick="location.href='<?=STUDIO_DETAIL_URL;?>'">美大入試指導</button>
             <img src="<?=APP_URL.'/custom/images/studio_bg.png';?>" alt="">
             <button>設計工作室&BAR</button>
         </div>
-        <div class="col-lg-4 col-lg-offset-1 content">
+        <div class="col-md-4 col-md-offset-1 content">
             <p>我們将为每一位真心想来日本完成艺术梦想的孩子 提供最专业的日本美术大学的个性化进学指导课程。 号称“东京五美”的武藏野美术大学、多摩美術大学、 女子美術大学、東京造形大学、日本大学芸術学部,远 至京都方面的美术院校都有CAplus的成员。丰富的 成员资源也为我们提供个性化培训提供了强有力的 基础。我们没有后台也没有分红合作的机构,只是一 群在日本学美术的年轻人聚集在一起,如果你要来留 学,请先来CAplus工作室瞧瞧</p>
         </div>
     </div>
-    <div class="col-lg-12 studio-history">
+    <div class="col-md-12 studio-history">
         <ul class="timeline">
             <li class="timeline-event">
                 <label class="timeline-event-icon"></label>

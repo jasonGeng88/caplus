@@ -1,7 +1,12 @@
 .home{
   .title{
     height:20px;
-    margin-bottom: 60px;
+    @media screen and (min-width: 992px) {
+      margin-bottom: 60px;
+    }
+    @media screen and (max-width: 991px) {
+      margin-bottom: 40px;
+    }
     .name{
       text-align: center;
       z-index: 2;
@@ -17,12 +22,17 @@
     .line{
       text-decoration: line-through;
       height: 2px;
-      width: 500px;
       background: $grey4;
       margin: 0 auto;
       margin-top: -9px;
       position: relative;
       z-index: 1;
+      @media screen and (max-width: 991px) {
+        width: 90%;
+      }
+      @media screen and (min-width: 992px) {
+        width: 500px;
+      }
     }
   }
 
@@ -30,7 +40,12 @@
     img{
       width: 100%;
     }
-    margin-bottom: 60px;
+    @media screen and (min-width: 992px) {
+      margin-bottom: 60px;
+    }
+    @media screen and (max-width: 991px) {
+      margin-bottom: 30px;
+    }
   }
 
   .home-articles{
@@ -40,7 +55,12 @@
   }
 
   .home-hundred{
-    margin-bottom: 130px;
+    @media screen and (min-width: 992px) {
+      margin-bottom: 130px;
+    }
+    @media screen and (max-width: 991px) {
+      margin-bottom: 90px;
+    }
     .title{
       .name{
         color: $grey3;
@@ -77,42 +97,81 @@
     }
   }
 }
-.article-items{
-  .item{
-    .content{
-      width: 300px;
-      height: 246px;
-      border-radius: 1.7px;
-      background-color: $white;
-      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
-      border: solid 0.9px $grey4;
-      margin: 0 auto;
-      .pic{
+
+
+@media screen and (min-width: 992px) {
+  .article-items{
+    .item{
+      .content{
         width: 300px;
-        height: 150px;
+        height: 246px;
         border-radius: 1.7px;
-        img{
-          width: 100%;
-          height: 100%;
+        background-color: $white;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+        border: solid 0.9px $grey4;
+        margin: 0 auto;
+        .pic{
+          width: 300px;
+          height: 150px;
+          border-radius: 1.7px;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+          a:hover{
+            background: $white;
+          }
         }
-        a:hover{
-          background: $white;
+        .name{
+          @include font-format(3);
+          color: $grey1;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          margin-left: 20px;
+        }
+        .tag,.time{
+          @include font-format(5);
+          color: $grey3;
+          margin-bottom: 10px;
+          margin-left: 20px;
         }
       }
-      .name{
-        @include font-format(3);
-        color: $grey1;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-left: 20px;
-      }
-      .tag,.time{
-        @include font-format(5);
-        color: $grey3;
-        margin-bottom: 10px;
-        margin-left: 20px;
-      }
+      margin-bottom: 20px;
     }
-    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .article-items{
+    .item{
+      padding: 0 10px;
+      .content{
+        background-color: $white;
+        margin: 0 auto;
+        .pic{
+          width: 100%;
+          height: auto;
+          border-radius: 1.7px;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+          a:hover{
+            background: $white;
+          }
+        }
+        .name{
+          @include font-format(3);
+          color: $grey1;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          span{
+            white-space: pre;
+            line-height: 24px;
+          }
+        }
+      }
+      margin-bottom: 20px;
+    }
   }
 }

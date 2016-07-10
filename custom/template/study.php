@@ -1,9 +1,9 @@
-<div id="primary" class="content-area col-lg-12 study">
-    <div class="col-lg-10 col-lg-offset-1 study-head">
+<div id="primary" class="content-area col-md-12 study">
+    <div class="col-md-10 col-md-offset-1 study-head">
         <p><img src="/custom/images/location.png" alt=""></p>
         <p class="content">University</p>
     </div>
-    <div class="col-lg-10 col-lg-offset-1 study-university-list">
+    <div class="col-md-10 col-md-offset-1 study-university-list">
         <ul class="ca-container">
             <?php
             require_once(APP_ROOT.'/custom/function/post.php');
@@ -12,11 +12,11 @@
         </ul>
     </div>
 
-    <div class="col-lg-10 col-lg-offset-1 study-head">
+    <div class="col-md-10 col-md-offset-1 study-head">
         <p><img src="/custom/images/location.png" alt=""></p>
         <p class="content">Question</p>
     </div>
-    <div class="col-lg-10 col-lg-offset-1 study-question-list">
+    <div class="col-md-10 col-md-offset-1 study-question-list">
         <input type="hidden" name="cat_id" value="<?= QUESTION ?>">
         <ul class="ca-container">
             <?php
