@@ -17,8 +17,23 @@
       margin-bottom: 20px;
     }
   }
-  .article-items{
-    margin-top: 60px;
-    margin-bottom: 120px;
+
+  @media screen and (max-width: 991px) {
+    .article-items{
+      margin-top: 0;
+      margin-bottom: 120px;
+      .item{
+        padding: 0;
+        .name,.tag{
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .article-items{
+      margin-top: 60px;
+      margin-bottom: 120px;
+    }
   }
 }

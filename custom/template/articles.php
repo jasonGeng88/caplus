@@ -22,14 +22,14 @@ if (isset($_REQUEST['cat_id']) && $_REQUEST['cat_id'] == RECORD_ID)
 else
     $iconStr = '<span class="icon-media">';
 ?>
-<div class="col-md-12 articles ca-block">
-    <div class="col-md-12 title ca-block">
+<div class="col-md-12 col-xs-12 articles ca-block">
+    <div class="col-md-12 col-xs-12 title ca-block ca-pc">
         <div class="icon"><?=$iconStr;?></div>
         <div class="name"><?=get_cat_name($catId);?></div>
     </div>
-    <div class="col-md-10 col-md-offset-1 article-items ca-block">
+    <div class="col-md-10 col-xs-12 col-md-offset-1 article-items ca-block">
         <?php foreach ($data['data'] as $d) { ?>
-            <div class="col-md-4 item">
+            <div class="col-md-4 col-xs-12 item">
                 <div class="content">
                     <div class="ca-portfolio">
                         <div class="pic">
@@ -50,7 +50,7 @@ else
                         ?>
                         <?=implode('，', $tags);?>
                     </div>
-                    <div class="time">
+                    <div class="time ca-pc">
                         <?=get_post_meta($d['ID'], '_create_time_value', true);?>
                     </div>
                 </div>

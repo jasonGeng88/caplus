@@ -29,3 +29,9 @@
     }
   }
 }
+
+@media screen and (max-width: 991px) {
+  body #content #primary.normal-post{
+    padding: 0px 15px 0px 15px;
+  }
+}

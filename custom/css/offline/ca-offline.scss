@@ -1,40 +1,13 @@
 .offline{
-  .offline-pic{
-    margin-top: 120px;
-    width: 630px;
-  }
+
   .offline-content{
-    margin-top: 120px;
-    padding-left: 50px;
+
     .name{
       @include font-format(1);
       font-size: 26px;
       font-weight: bold;
       margin-bottom: 15px;
       font-family: lantinghei Sc;
-    }
-    .text{
-      @include font-format(5);
-      color: $grey2;
-      line-height: 2;
-      width: 320px;
-      margin-bottom: 35px;
-    }
-    .see-more{
-      margin-bottom: 20px;
-      button{
-        width: 200px;
-        height: 40px;
-        border-radius: 2px;
-        background-color: $grey1;
-        box-shadow: none;
-        text-shadow: none;
-        color: $white;
-        @include font-format(5);
-      }
-      button:hover{
-        background: $grey3;
-      }
     }
     .time,.address{
       font-size: 14px;
@@ -43,5 +16,72 @@
       text-align: justify;
       color: $grey2;
     }
+  }
+
+  @media screen and (max-width: 991px) {
+    margin-bottom: 60px;
+    .offline-pic{
+      margin-top: 0;
+    }
+    .offline-content{
+      margin-top: 40px;
+      padding: 0 20px 0 20px;
+      .text{
+        @include font-format(5);
+        color: $grey2;
+        line-height: 2;
+        margin-bottom: 60px;
+      }
+      .see-more{
+        margin-bottom: 20px;
+        button{
+          width: 100%;
+          height: 40px;
+          border-radius: 2px;
+          background-color: $grey1;
+          box-shadow: none;
+          text-shadow: none;
+          color: $white;
+          @include font-format(5);
+        }
+        button:hover{
+          background: $grey3;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .offline-pic{
+      margin-top: 120px;
+      width: 630px;
+    }
+    .offline-content{
+      margin-top: 120px;
+      padding-left: 50px;
+      .text{
+        @include font-format(5);
+        color: $grey2;
+        line-height: 2;
+        width: 320px;
+        margin-bottom: 35px;
+      }
+      .see-more{
+        margin-bottom: 20px;
+        button{
+          width: 200px;
+          height: 40px;
+          border-radius: 2px;
+          background-color: $grey1;
+          box-shadow: none;
+          text-shadow: none;
+          color: $white;
+          @include font-format(5);
+        }
+        button:hover{
+          background: $grey3;
+        }
+      }
+    }
+
   }
 }

@@ -15,15 +15,15 @@ $args = array(
 $tmp = wp_get_recent_posts($args);
 $articleUrl = $tmp[0]['guid'];
 ?>
-<div class="col-md-12 offline ca-block">
+<div class="col-md-12 col-xs-12 offline ca-block">
     <!--offline pic-->
-    <div class="col-md-5 col-md-offset-1 offline-pic ca-block">
+    <div class="col-md-5 col-md-offset-1 col-xs-12 offline-pic ca-block">
         <img src="<?=get_the_post_thumbnail_url($post->ID);?>" alt="">
     </div>
     <!--offline pic end-->
 
     <!--content-->
-    <div class="col-md-5 offline-content ca-block">
+    <div class="col-md-5 col-xs-12 offline-content ca-block">
         <div class="name">
             <?=$post->post_title;?>
         </div>

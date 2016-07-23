@@ -32,8 +32,8 @@
         </div>
 
         <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next ca-pc"></div>
+        <div class="swiper-button-prev ca-pc"></div>
     </div>
 
     <div class="magazine-slider-content">
@@ -93,6 +93,7 @@
 //            console.log(index);
             jQuery(".magazine-slider-content .item").css("display", "none");
             jQuery(".magazine-item-"+index).css("display", "block");
+            adjustHeight();
         }
         jQuery(".swiper-button-next").click(function(){
 //        swiper.unlockSwipes();
@@ -103,9 +104,20 @@
         jQuery(".swiper-button-prev").click(function(){
             sliderCustomer();
         });
+
         sliderCustomer();
 
-
+        /**
+         * 调整slider的上下位置
+         */
+        function adjustHeight(){
+            if (jQuery(window).width() < 992){
+                var maxHeight = jQuery(".swiper-slide-next .pic img").height();
+                var minHeight = jQuery(".swiper-slide-active .pic img").height();
+                jQuery(".swiper-slide").css("margin-top", (maxHeight - minHeight)/2 + "px");
+                jQuery(".swiper-slide.swiper-slide-next").css("margin-top", 0);
+            }
+        }
 
 
     </script>
