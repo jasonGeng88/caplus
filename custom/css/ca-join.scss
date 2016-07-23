@@ -40,24 +40,21 @@
   }
 }
 
-.ca-container-join {
-  width: 503px;
-  margin: auto;
-  overflow: auto;
+@media screen and (max-width: 991px) {
+  body #content #primary.ca-footer-menu{
+    margin-bottom: 197px;
+    ul.ca-container-join {
+      list-style: none;
+      padding: 0px 15px 0px 15px;
+      margin: auto;
+      overflow: auto;
+    }
+  }
 }
-
-//廢棄
-//.offline{
-//  text-align: center;
-//  .link{
-//    overflow: auto;
-//    background-image: url("/custom/images/cooperation-back.png");
-//    background-size: 100%;
-//    .item{
-//      height: 80px;
-//      @include font-format(4);
-//      color: $white;
-//      line-height: 80px;
-//    }
-//  }
-//}
+@media screen and (min-width: 992px) {
+  .ca-container-join {
+    width: 503px;
+    margin: auto;
+    overflow: auto;
+  }
+}

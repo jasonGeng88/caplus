@@ -56,3 +56,32 @@
     }
   }
 }
+
+
+@media screen and (max-width: 991px) {
+  body #content #primary.ca-footer-menu {
+    float: none;
+    margin: auto;
+    padding: 0px 15px 0px 15px;
+    .member {
+      padding: 0px 15px 0px 15px;
+      margin-bottom: 137px;
+      .pic{
+        text-align: center;
+      }
+      .boundary{
+        margin-top: 43px;
+      }
+    }
+    ul li:last-child .boundary{
+      display: none;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  #primary.ca-footer-menu {
+    float: none;
+    max-width: 1170px;
+    margin: auto;
+  }
+}
