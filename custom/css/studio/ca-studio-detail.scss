@@ -1,27 +1,4 @@
 .studio-detail{
-  .tab-title{
-    margin-top: 60px;
-    clear: both;
-    .name{
-      @include font-format(4);
-      margin-right: 56px;
-      float: left;
-      font-weight: bold;
-      a{
-        color: $grey3;
-      }
-    }
-    .name.active a{
-      color: $grey1;
-      background: $white;
-    }
-    a:hover{
-      color: $grey1;
-    }
-  }
-  .tab-content{
-    margin-top: 65px;
-  }
   .item-1{
     .part-3{
       margin-top: 100px;
@@ -43,59 +20,6 @@
       margin-top: 60px;
       #map{
         height: 235px;
-      }
-    }
-  }
-
-  .item-2{
-    .part-2{
-      .brief:nth-child(1){
-        padding-right: 45px;
-      }
-      .brief:nth-child(2){
-        padding-left: 45px;
-      }
-      .brief{
-        margin-bottom: 150px;
-        .head{
-          position: relative;
-          margin-bottom: 20px;
-          .pic{
-            width: 240px;
-            height: 160px;
-          }
-          .title{
-            position: absolute;
-            left: 317px;
-            bottom: 0;
-            .name{
-              @include font-format(4);
-              font-weight: bold;
-              color: $grey1;
-              line-height: 2.0;
-            }
-            .line {
-              width: 186px;
-              height: 1.5px;
-              border: solid 1.5px $grey1;
-            }
-            .study{
-              @include font-format(5);
-              line-height: 2.0;
-              color: $grey3;
-              span{
-                font-weight: bold;
-                color: $grey1;
-              }
-            }
-          }
-        }
-        .content{
-          @include font-format(5);
-          color: $grey2;
-          line-height: 2.0;
-          text-align: justify;
-        }
       }
     }
   }
@@ -216,6 +140,201 @@
     }
     .part-2{
       margin-top: 90px;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .tab-title{
+      margin-top: 12px;
+      clear: both;
+      .name{
+        text-align: center;
+        @include font-format(4);
+        font-weight: bold;
+        a{
+          color: $grey3;
+        }
+      }
+      .name.active a{
+        color: $grey1;
+        background: $white;
+      }
+      a:hover{
+        color: $grey1;
+      }
+    }
+    .tab-content{
+      margin-top: 60px;
+    }
+    .item-1{
+      .part-1{
+        padding: 0 20px;
+      }
+      .part-2{
+        margin-top: 30px;
+      }
+      .part-3{
+        .left{
+          text-align: center;
+        }
+        .right{
+          float: none;
+          position: relative;
+          left: 0;
+          margin-top: 30px;
+          padding: 0 20px;
+        }
+      }
+    }
+
+    .item-2{
+      .part-1{
+        padding: 0 20px;
+      }
+      .part-2{
+        .brief{
+          margin-bottom: 60px;
+          .head{
+            position: relative;
+            margin-bottom: 30px;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+          .title{
+            padding: 0 20px;
+            .name{
+              @include font-format(4);
+              font-weight: bold;
+              color: $grey1;
+              line-height: 2.0;
+            }
+            .line {
+              width: 186px;
+              height: 1.5px;
+              border: solid 1.5px $grey1;
+            }
+            .study{
+              @include font-format(5);
+              line-height: 2.0;
+              color: $grey3;
+              span{
+                font-weight: bold;
+                color: $grey1;
+              }
+            }
+          }
+          .content{
+            padding: 0 20px;
+            @include font-format(5);
+            color: $grey2;
+            line-height: 2.0;
+            text-align: justify;
+          }
+        }
+      }
+    }
+    .item-3{
+      .part-1{
+        padding: 0 20px;
+      }
+    }
+    .item-4{
+      .part-1{
+        padding: 0 20px;
+      }
+      .part-2{
+        padding: 0 20px;
+        .email-info{
+          margin-top: 30px;
+          .email_content{
+            width: 100%;
+          }
+          .btn-email{
+            margin-left: 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .tab-title{
+      margin-top: 60px;
+      clear: both;
+      .name{
+        @include font-format(4);
+        margin-right: 56px;
+        float: left;
+        font-weight: bold;
+        a{
+          color: $grey3;
+        }
+      }
+      .name.active a{
+        color: $grey1;
+        background: $white;
+      }
+      a:hover{
+        color: $grey1;
+      }
+    }
+    .tab-content{
+      margin-top: 65px;
+    }
+
+    .item-2{
+      .part-2{
+        .brief:nth-child(1){
+          padding-right: 45px;
+        }
+        .brief:nth-child(2){
+          padding-left: 45px;
+        }
+        .brief{
+          margin-bottom: 150px;
+          .head{
+            position: relative;
+            margin-bottom: 20px;
+            .pic{
+              width: 240px;
+              height: 160px;
+            }
+            .title{
+              position: absolute;
+              left: 317px;
+              bottom: 0;
+              .name{
+                @include font-format(4);
+                font-weight: bold;
+                color: $grey1;
+                line-height: 2.0;
+              }
+              .line {
+                width: 186px;
+                height: 1.5px;
+                border: solid 1.5px $grey1;
+              }
+              .study{
+                @include font-format(5);
+                line-height: 2.0;
+                color: $grey3;
+                span{
+                  font-weight: bold;
+                  color: $grey1;
+                }
+              }
+            }
+          }
+          .content{
+            @include font-format(5);
+            color: $grey2;
+            line-height: 2.0;
+            text-align: justify;
+          }
+        }
+      }
     }
   }
 }

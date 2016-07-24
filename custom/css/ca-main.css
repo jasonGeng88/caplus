@@ -765,7 +765,6 @@ body {
         background: #999999; } }
 
 .studio .studio-entry {
-  padding: 200px 0;
   background: #96cef6; }
   .studio .studio-entry .pic img {
     width: 100%;
@@ -794,12 +793,6 @@ body {
   .studio .studio-entry .pic button:hover {
     color: #333333;
     border: 2px solid #333333; }
-  .studio .studio-entry .content {
-    width: 300px;
-    color: #ffffff;
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    line-height: 24px; }
 .studio .studio-history {
   color: #666666;
   /* Styling */
@@ -837,20 +830,6 @@ body {
     top: -1.875em;
     left: 4em;
     width: 100%; }
-  .studio .studio-history .timeline-event-copy .point-item {
-    font-size: 14px;
-    line-height: 1;
-    letter-spacing: 0.09em;
-    margin-left: 286px;
-    clear: both;
-    margin-bottom: 30px;
-    overflow: hidden; }
-    .studio .studio-history .timeline-event-copy .point-item .point-name {
-      color: #999999;
-      width: 70px;
-      float: left; }
-    .studio .studio-history .timeline-event-copy .point-item .point-content {
-      float: left; }
   .studio .studio-history .timeline-event-icon {
     -moz-transition: -moz-transform 0.2s ease-in;
     -o-transition: -o-transform 0.2s ease-in;
@@ -890,26 +869,71 @@ body {
     letter-spacing: 0.1em;
     line-height: 24px;
     text-align: center; }
-
-.studio-detail .tab-title {
-  margin-top: 60px;
-  clear: both; }
-  .studio-detail .tab-title .name {
+@media screen and (max-width: 991px) {
+  .studio .studio-entry {
+    padding: 30px 0; }
+    .studio .studio-entry .content {
+      color: #ffffff;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      line-height: 24px; }
+  .studio .entry-btn {
+    padding: 0 20px;
+    border-bottom: solid 1px #e6e6e6;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.07em; }
+    .studio .entry-btn p {
+      padding-top: 20px;
+      padding-bottom: 30px;
+      margin: 0; }
+      .studio .entry-btn p span {
+        font-size: 20px;
+        line-height: 1;
+        letter-spacing: 0.03em;
+        float: right; }
+  .studio .studio-history .history-pic img {
+    width: 38px;
+    margin-left: 10px;
+    margin-top: 60px; }
+  .studio .studio-history .timeline-event-copy .point-item {
     font-size: 14px;
     line-height: 1;
     letter-spacing: 0.09em;
-    margin-right: 56px;
-    float: left;
-    font-weight: bold; }
-    .studio-detail .tab-title .name a {
-      color: #999999; }
-  .studio-detail .tab-title .name.active a {
-    color: #333333;
-    background: #ffffff; }
-  .studio-detail .tab-title a:hover {
-    color: #333333; }
-.studio-detail .tab-content {
-  margin-top: 65px; }
+    margin-left: 0px;
+    clear: both;
+    margin-bottom: 30px;
+    overflow: hidden; }
+    .studio .studio-history .timeline-event-copy .point-item .point-name {
+      color: #999999;
+      width: 70px; }
+    .studio .studio-history .timeline-event-copy .point-item .point-content {
+      line-height: 28px;
+      padding-right: 20px; } }
+@media screen and (min-width: 992px) {
+  .studio .studio-entry {
+    padding: 200px 0; }
+    .studio .studio-entry .content {
+      width: 300px;
+      color: #ffffff;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      line-height: 24px; }
+  .studio .studio-history .timeline-event-copy .point-item {
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.09em;
+    margin-left: 286px;
+    clear: both;
+    margin-bottom: 30px;
+    overflow: hidden; }
+    .studio .studio-history .timeline-event-copy .point-item .point-name {
+      color: #999999;
+      width: 70px;
+      float: left; }
+    .studio .studio-history .timeline-event-copy .point-item .point-content {
+      float: left; } }
+
 .studio-detail .item-1 .part-3 {
   margin-top: 100px;
   position: relative; }
@@ -928,47 +952,6 @@ body {
   margin-top: 60px; }
   .studio-detail .item-1 .part-4 #map {
     height: 235px; }
-.studio-detail .item-2 .part-2 .brief:nth-child(1) {
-  padding-right: 45px; }
-.studio-detail .item-2 .part-2 .brief:nth-child(2) {
-  padding-left: 45px; }
-.studio-detail .item-2 .part-2 .brief {
-  margin-bottom: 150px; }
-  .studio-detail .item-2 .part-2 .brief .head {
-    position: relative;
-    margin-bottom: 20px; }
-    .studio-detail .item-2 .part-2 .brief .head .pic {
-      width: 240px;
-      height: 160px; }
-    .studio-detail .item-2 .part-2 .brief .head .title {
-      position: absolute;
-      left: 317px;
-      bottom: 0; }
-      .studio-detail .item-2 .part-2 .brief .head .title .name {
-        font-size: 14px;
-        line-height: 1;
-        letter-spacing: 0.09em;
-        font-weight: bold;
-        color: #333333;
-        line-height: 2.0; }
-      .studio-detail .item-2 .part-2 .brief .head .title .line {
-        width: 186px;
-        height: 1.5px;
-        border: solid 1.5px #333333; }
-      .studio-detail .item-2 .part-2 .brief .head .title .study {
-        font-size: 12px;
-        letter-spacing: 0.1em;
-        line-height: 2.0;
-        color: #999999; }
-        .studio-detail .item-2 .part-2 .brief .head .title .study span {
-          font-weight: bold;
-          color: #333333; }
-  .studio-detail .item-2 .part-2 .brief .content {
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    color: #666666;
-    line-height: 2.0;
-    text-align: justify; }
 .studio-detail .item-3 .annotation {
   margin-top: 20px;
   font-size: 12px;
@@ -1068,6 +1051,149 @@ body {
   line-height: 2; }
 .studio-detail .item-1 .part-2, .studio-detail .item-2 .part-2, .studio-detail .item-3 .part-2, .studio-detail .item-4 .part-2 {
   margin-top: 90px; }
+@media screen and (max-width: 991px) {
+  .studio-detail .tab-title {
+    margin-top: 12px;
+    clear: both; }
+    .studio-detail .tab-title .name {
+      text-align: center;
+      font-size: 14px;
+      line-height: 1;
+      letter-spacing: 0.09em;
+      font-weight: bold; }
+      .studio-detail .tab-title .name a {
+        color: #999999; }
+    .studio-detail .tab-title .name.active a {
+      color: #333333;
+      background: #ffffff; }
+    .studio-detail .tab-title a:hover {
+      color: #333333; }
+  .studio-detail .tab-content {
+    margin-top: 60px; }
+  .studio-detail .item-1 .part-1 {
+    padding: 0 20px; }
+  .studio-detail .item-1 .part-2 {
+    margin-top: 30px; }
+  .studio-detail .item-1 .part-3 .left {
+    text-align: center; }
+  .studio-detail .item-1 .part-3 .right {
+    float: none;
+    position: relative;
+    left: 0;
+    margin-top: 30px;
+    padding: 0 20px; }
+  .studio-detail .item-2 .part-1 {
+    padding: 0 20px; }
+  .studio-detail .item-2 .part-2 .brief {
+    margin-bottom: 60px; }
+    .studio-detail .item-2 .part-2 .brief .head {
+      position: relative;
+      margin-bottom: 30px; }
+      .studio-detail .item-2 .part-2 .brief .head img {
+        width: 100%;
+        height: auto; }
+    .studio-detail .item-2 .part-2 .brief .title {
+      padding: 0 20px; }
+      .studio-detail .item-2 .part-2 .brief .title .name {
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0.09em;
+        font-weight: bold;
+        color: #333333;
+        line-height: 2.0; }
+      .studio-detail .item-2 .part-2 .brief .title .line {
+        width: 186px;
+        height: 1.5px;
+        border: solid 1.5px #333333; }
+      .studio-detail .item-2 .part-2 .brief .title .study {
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        line-height: 2.0;
+        color: #999999; }
+        .studio-detail .item-2 .part-2 .brief .title .study span {
+          font-weight: bold;
+          color: #333333; }
+    .studio-detail .item-2 .part-2 .brief .content {
+      padding: 0 20px;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      color: #666666;
+      line-height: 2.0;
+      text-align: justify; }
+  .studio-detail .item-3 .part-1 {
+    padding: 0 20px; }
+  .studio-detail .item-4 .part-1 {
+    padding: 0 20px; }
+  .studio-detail .item-4 .part-2 {
+    padding: 0 20px; }
+    .studio-detail .item-4 .part-2 .email-info {
+      margin-top: 30px; }
+      .studio-detail .item-4 .part-2 .email-info .email_content {
+        width: 100%; }
+      .studio-detail .item-4 .part-2 .email-info .btn-email {
+        margin-left: 0;
+        width: 100%; } }
+@media screen and (min-width: 992px) {
+  .studio-detail .tab-title {
+    margin-top: 60px;
+    clear: both; }
+    .studio-detail .tab-title .name {
+      font-size: 14px;
+      line-height: 1;
+      letter-spacing: 0.09em;
+      margin-right: 56px;
+      float: left;
+      font-weight: bold; }
+      .studio-detail .tab-title .name a {
+        color: #999999; }
+    .studio-detail .tab-title .name.active a {
+      color: #333333;
+      background: #ffffff; }
+    .studio-detail .tab-title a:hover {
+      color: #333333; }
+  .studio-detail .tab-content {
+    margin-top: 65px; }
+  .studio-detail .item-2 .part-2 .brief:nth-child(1) {
+    padding-right: 45px; }
+  .studio-detail .item-2 .part-2 .brief:nth-child(2) {
+    padding-left: 45px; }
+  .studio-detail .item-2 .part-2 .brief {
+    margin-bottom: 150px; }
+    .studio-detail .item-2 .part-2 .brief .head {
+      position: relative;
+      margin-bottom: 20px; }
+      .studio-detail .item-2 .part-2 .brief .head .pic {
+        width: 240px;
+        height: 160px; }
+      .studio-detail .item-2 .part-2 .brief .head .title {
+        position: absolute;
+        left: 317px;
+        bottom: 0; }
+        .studio-detail .item-2 .part-2 .brief .head .title .name {
+          font-size: 14px;
+          line-height: 1;
+          letter-spacing: 0.09em;
+          font-weight: bold;
+          color: #333333;
+          line-height: 2.0; }
+        .studio-detail .item-2 .part-2 .brief .head .title .line {
+          width: 186px;
+          height: 1.5px;
+          border: solid 1.5px #333333; }
+        .studio-detail .item-2 .part-2 .brief .head .title .study {
+          font-size: 12px;
+          letter-spacing: 0.1em;
+          line-height: 2.0;
+          color: #999999; }
+          .studio-detail .item-2 .part-2 .brief .head .title .study span {
+            font-weight: bold;
+            color: #333333; }
+    .studio-detail .item-2 .part-2 .brief .content {
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      color: #666666;
+      line-height: 2.0;
+      text-align: justify; } }
 
 .study .study-head p {
   margin-top: 60px;
