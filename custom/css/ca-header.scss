@@ -161,6 +161,10 @@
         width: auto;
         margin: 10px;
       }
+      span{
+        line-height: 50px;
+        font-size: 30px;
+      }
     }
     .menu-content{
       @include font-format(3);

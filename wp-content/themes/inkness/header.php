@@ -73,13 +73,37 @@ require_once(APP_ROOT.'/custom/config/global.php');
 		<header id="masthead" class="ca-mobile col-xs-12" role="banner">
 			<div class="site-branding col-xs-12">
 
-				<?php if((of_get_option('logo', true) != "") && (of_get_option('logo', true) != 1) ) { ?>
+				<?php
+					if((of_get_option('logo', true) != "") && (of_get_option('logo', true) != 1) ) {
+						$menuFlag = false;
+						$url = 'http://'.$_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+						$menuUrls = [];
+						$menu1 = wp_get_nav_menu_items('Menu 1');
+						$menu2 = wp_get_nav_menu_items('menu2');
+						foreach ($menu1 as $item) {
+							$menuUrls[] = $item->url;
+						}
+						foreach ($menu2 as $item) {
+							$menuUrls[] = $item->url;
+						}
+						if(in_array($url, $menuUrls)){
+							$menuFlag = true;
+						}
+				?>
 
 				<div class="menu-logo col-xs-2">
+					<?php
+						if($menuFlag){
+					?>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 						<?php
 						echo "<img src='".of_get_option('logo', true)."' title='".esc_attr(get_bloginfo( 'name','display' ) )."'>";
 						}
+						else {?>
+							<a href="javascript:window.history.back();"><span class="icon-back"></span></a>
+						<?php
+						}
+					}
 						?>
 					</a>
 				</div>
