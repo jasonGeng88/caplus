@@ -84,3 +84,74 @@
     }
   }
 }
+
+@media screen and (max-width: 991px) {
+  .study{
+    .study-head{
+      p{
+        margin-top: 25px;
+      }
+    }
+  }
+  .study-university-list {
+    margin-top: 60px;
+    ul{
+      padding: 0 20px;
+      li{
+        list-style: none;
+        margin-bottom: 40px;
+        p{
+          float: left;
+          margin: 0;
+        }
+        .item-name{
+          width: 90%;
+          margin-left: 0;
+          margin-right: 0;
+          line-height: 28px;
+          @include font-format(4);
+        }
+      }
+    }
+  }
+  //question
+  .study-question-list {
+    .title{
+      margin-bottom: 60px;
+    }
+    ul{
+      margin: 0;
+      padding: 0 20px;
+      li{
+        list-style: none;
+        margin-bottom: 30px;
+        overflow: auto;
+        p{
+          float: left;
+          margin: 0;
+        }
+        .item-name{
+          width: 80%;
+          margin-right: 24px;
+          line-height: 28px;
+          @include font-format(4);
+
+        }
+        .item-link{
+          span{
+            @include font-format(1);
+          }
+          img{
+            width: 22px;
+          }
+        }
+        a:hover{
+          color: $grey3;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+
+}

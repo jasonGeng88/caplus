@@ -71,14 +71,14 @@ function joinHtmlForList($posts, $type){
     $html = '';
     if ($type == "university") {
         foreach ($posts as $item) {
-            $html .= '<li class="col-md-3"><a href="'.$item->guid.'">';
+            $html .= '<li class="col-md-3 col-xs-6"><a href="'.$item->guid.'">';
             $html .= '<p class="item-name">'.$item->post_title.'</p>';
             $html .= '<p class="item-link"><span class="icon-more"></span></p>';
             $html .= '</a></li>';
         }
     }elseif($type == "question"){
         foreach ($posts as $item) {
-            $html .= '<li class="col-md-6"><a href="' . $item->guid . '">';
+            $html .= '<li class="col-md-6 col-xs-12"><a href="' . $item->guid . '">';
             $html .= '<p class="item-name">' . $item->post_title . '</p>';
             $html .= '<p class="item-link"><span class="icon-arrow-right"></span></p>';
             $html .= '</a></li>';

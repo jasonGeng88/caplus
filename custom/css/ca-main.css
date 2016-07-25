@@ -1262,6 +1262,56 @@ body {
       .study-question-list ul li a:hover {
         color: #999999; }
 
+@media screen and (max-width: 991px) {
+  .study .study-head p {
+    margin-top: 25px; }
+
+  .study-university-list {
+    margin-top: 60px; }
+    .study-university-list ul {
+      padding: 0 20px; }
+      .study-university-list ul li {
+        list-style: none;
+        margin-bottom: 40px; }
+        .study-university-list ul li p {
+          float: left;
+          margin: 0; }
+        .study-university-list ul li .item-name {
+          width: 90%;
+          margin-left: 0;
+          margin-right: 0;
+          line-height: 28px;
+          font-size: 14px;
+          line-height: 1;
+          letter-spacing: 0.09em; }
+
+  .study-question-list .title {
+    margin-bottom: 60px; }
+  .study-question-list ul {
+    margin: 0;
+    padding: 0 20px; }
+    .study-question-list ul li {
+      list-style: none;
+      margin-bottom: 30px;
+      overflow: auto; }
+      .study-question-list ul li p {
+        float: left;
+        margin: 0; }
+      .study-question-list ul li .item-name {
+        width: 80%;
+        margin-right: 24px;
+        line-height: 28px;
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0.09em; }
+      .study-question-list ul li .item-link span {
+        font-size: 20px;
+        line-height: 1;
+        letter-spacing: 0.03em; }
+      .study-question-list ul li .item-link img {
+        width: 22px; }
+      .study-question-list ul li a:hover {
+        color: #999999; } }
 .university .info p {
   padding: 0;
   margin: 0;
