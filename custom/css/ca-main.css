@@ -1434,6 +1434,108 @@ body {
   .university .university-url a span {
     border-bottom: #000000 solid 2px;
     padding-bottom: 16px; }
+@media screen and (max-width: 991px) {
+  .university .info p {
+    padding: 0;
+    margin: 0;
+    text-align: left; }
+  .university .info .title {
+    margin-top: 16px;
+    margin-bottom: 20px;
+    padding: 0 20px; }
+  .university .info .second-title {
+    margin-bottom: 20px;
+    padding: 0 20px; }
+  .university .course-list p.title {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    background: #000000;
+    border-radius: 22px;
+    color: #ffffff;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    line-height: 44px;
+    font-weight: bold;
+    margin: 40px 0 0 20px; }
+  .university .course-list ul {
+    margin: 0;
+    margin-top: 30px; }
+    .university .course-list ul li {
+      padding: 0 20px;
+      overflow: auto;
+      list-style: none;
+      font-weight: bold; }
+      .university .course-list ul li .item-name {
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0.09em;
+        width: 80%;
+        margin-right: 0px; }
+      .university .course-list ul li .item-link {
+        font-size: 18px;
+        line-height: 1;
+        letter-spacing: 0.05em;
+        float: right; }
+      .university .course-list ul li p {
+        float: left;
+        line-height: 28px; }
+  .university .requirement {
+    margin-top: 60px; }
+    .university .requirement p {
+      text-align: center; }
+    .university .requirement .title {
+      font-size: 14px;
+      line-height: 1;
+      letter-spacing: 0.09em;
+      margin-bottom: 30px;
+      font-weight: bold; }
+    .university .requirement .content {
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      line-height: 24px;
+      padding: 0 40px; }
+    .university .requirement .requirement-link {
+      margin: auto;
+      margin-top: 30px;
+      margin-bottom: 120px;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      width: 100px;
+      height: 30px;
+      border-radius: 3px;
+      line-height: 30px;
+      background: #000000;
+      font-weight: bold; }
+      .university .requirement .requirement-link p {
+        margin: 0;
+        padding: 0;
+        color: #ffffff; }
+  .university .schoolmate .title {
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.09em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 45px;
+    font-weight: bold; }
+  .university .schoolmate ul {
+    margin: 0;
+    overflow: auto; }
+    .university .schoolmate ul li {
+      list-style: none;
+      margin-bottom: 60px;
+      text-align: center; }
+      .university .schoolmate ul li img {
+        width: 88px;
+        height: 88px;
+        border-radius: 44px; }
+      .university .schoolmate ul li img:hover {
+        border: 1px solid #000000;
+        background: #ffffff; }
+      .university .schoolmate ul li a:hover {
+        background: #ffffff; } }
 
 .course .info p {
   padding: 0;

@@ -1,6 +1,6 @@
 <?php require_once(APP_ROOT.'/custom/function/post.php'); ?>
 <div id="primary" class="content-area col-md-12 university">
-    <div class="col-md-12 info  ca-block">
+    <div class="col-md-12 info ca-block">
         <?php
             $post =get_post();
             $tag = wp_get_post_tags($post->ID);
@@ -10,7 +10,7 @@
         <p class="title"><?=$post->post_title ?></p>
         <p class="second-title"><?=$tag[1]->name ?></p>
         <p class="pic"><img src="<?=$imageUrl ?>" alt=""></p>
-        <div class="content ca-container"><?=$post->post_content ?></div>
+        <div class="content ca-container ca-pc"><?=$post->post_content ?></div>
     </div>
 
     <div class="col-md-12 ca-container course-list  ca-block">
@@ -48,7 +48,7 @@
         if (!empty($schoolmates)) {
             $html = '<div class="col-md-10 col-md-offset-1"><ul>';
             foreach ($schoolmates as $key => $mate) {
-                $html .= '<li class="col-md-2">';
+                $html .= '<li class="col-md-2 col-xs-4">';
                 $html .= '<a href="'.$mate->guid.'"><img src="'.get_the_post_thumbnail_url($mate->ID).'" alt=""></a>';
                 $html .= '</li>';
             }
@@ -65,7 +65,21 @@
         </a>
     </div>
 
-    <div class="col-md-12 study-university-list ca-block">
+    <div class="col-md-12 study-university-list ca-block ca-pc">
+        <ul class="ca-container">
+            <?php
+            getAll(UNIVERSITY, "university");
+            ?>
+        </ul>
+    </div>
+
+<!--    todo-->
+    <div class="col-md-12 study-university-list ca-block ca-mobile">
+        <select name="" id="">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+        </select>
         <ul class="ca-container">
             <?php
             getAll(UNIVERSITY, "university");
