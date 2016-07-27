@@ -167,4 +167,12 @@ function closeMask(){
     jQuery(".m-search-contain").css("display", "none");
 }
 
+//mobile select
+function mobileSelect() {
+    jQuery(".mobile-select").change(function () {
+        var url = jQuery(".mobile-select").val();
+        if (url == 0) return;
+        window.location.href = url;
+    });
+}
 

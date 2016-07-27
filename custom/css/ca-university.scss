@@ -264,6 +264,9 @@
         }
       }
     }
+    .university-url{
+      @include font-format(3);
+    }
   }
   @media screen and (min-width: 992px) {
   }

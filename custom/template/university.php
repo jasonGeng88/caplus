@@ -73,18 +73,15 @@
         </ul>
     </div>
 
-<!--    todo-->
-    <div class="col-md-12 study-university-list ca-block ca-mobile">
-        <select name="" id="">
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-        </select>
-        <ul class="ca-container">
+    <div class="col-xs-12 study-university-list ca-block ca-mobile">
+        <div class="ca-container">
             <?php
-            getAll(UNIVERSITY, "university");
+            getAllBySelect(UNIVERSITY, "university");
             ?>
-        </ul>
+        </div>
     </div>
 
 </div><!-- #primary -->
+<script>
+    mobileSelect();
+</script>

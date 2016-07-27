@@ -33,6 +33,15 @@
     <div class="add-more">
         <p><button onclick="addMore()" class="btn-more">more</button></p>
     </div>
+
+<!--   mobile-->
+    <div class="col-xs-12 study-course-list ca-block ca-mobile">
+        <div class="ca-container">
+            <?php
+            getAllBySelect(COURSE, "course");
+            ?>
+        </div>
+    </div>
 </div><!-- #primary -->
 <script>
     var i = 1;
@@ -46,4 +55,5 @@
             jQuery(".study-question-list ul").append(result);
         });
     };
+    mobileSelect();
 </script>

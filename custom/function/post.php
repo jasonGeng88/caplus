@@ -96,4 +96,47 @@ function joinHtmlForList($posts, $type){
 }
 
 
+//mobile css is select option
+function getAllBySelect($category, $type, $noPaging=true, $offset=1){
+    $posts = query_posts(array(
+        'category__in' => array($category),
+//        'showposts' => 2,
+        'posts_per_page' => QUESTION_PAGE,
+        'paged' => $offset,
+        'nopaging' => $noPaging
+    ));
+    echo joinHtmlForSelect($posts, $type);
+}
+
+function joinHtmlForSelect($posts, $type){
+    $html = '';
+    if ($type == "university") {
+        $html .= '<select class="col-xs-10 mobile-select">';
+        $html .= '<option value="0">選擇其他美術大学</option>';
+        foreach ($posts as $item) {
+            $html .= '<option value="'.$item->guid.'">'.$item->post_title.'</option>';
+        }
+        $html .= '</select>';
+        $html .= '<div class="col-xs-2 mobile-select-arrow"><i class="fa fa-arrows-v"></i></div>';
+    }elseif($type == "question"){
+        foreach ($posts as $item) {
+            $html .= '<li class="col-md-6 col-xs-12"><a href="' . $item->guid . '">';
+            $html .= '<p class="item-name">' . $item->post_title . '</p>';
+            $html .= '<p class="item-link"><span class="icon-arrow-right"></span></p>';
+            $html .= '</a></li>';
+        }
+    }elseif($type == "course"){
+        $html .= '<select class="col-xs-10 mobile-select">';
+        $html .= '<option value="0">選擇其他學科</option>';
+        foreach ($posts as $item) {
+            $html .= '<option value="'.$item->guid.'">'.$item->post_title.'</option>';
+        }
+        $html .= '</select>';
+        $html .= '<div class="col-xs-2 mobile-select-arrow"><i class="fa fa-arrows-v"></i></div>';
+    }
+
+    return $html;
+}
+
+
 
