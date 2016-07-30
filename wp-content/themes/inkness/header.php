@@ -86,6 +86,7 @@ require_once(APP_ROOT.'/custom/config/global.php');
 						foreach ($menu2 as $item) {
 							$menuUrls[] = $item->url;
 						}
+						$menuUrls[] = APP_URL.'/';
 						if(in_array($url, $menuUrls)){
 							$menuFlag = true;
 						}

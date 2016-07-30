@@ -1468,6 +1468,9 @@ body {
     margin: 0;
     text-align: left; }
   .university .info .title {
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0.03em;
     margin-top: 16px;
     margin-bottom: 20px;
     padding: 0 20px; }
@@ -1584,16 +1587,6 @@ body {
   font-size: 12px;
   letter-spacing: 0.1em;
   margin-bottom: 40px; }
-.course .info .content {
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  margin-top: 43px;
-  margin-bottom: 120px;
-  overflow: auto;
-  height: 145px; }
-  .course .info .content p {
-    line-height: 28px;
-    text-align: left; }
 .course .exam-list {
   font-weight: bold; }
   .course .exam-list p.title {
@@ -1624,6 +1617,74 @@ body {
       .course .exam-list ul li p {
         float: left;
         line-height: 28px; }
+@media screen and (max-width: 991px) {
+  .course .info p {
+    padding: 0;
+    margin: 0;
+    text-align: left; }
+  .course .info .title {
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    padding: 0 20px; }
+  .course .info .pic {
+    padding: 0 20px; }
+  .course .info .content {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+    margin-bottom: 120px;
+    padding: 0 20px; }
+    .course .info .content p:first-child {
+      text-align: left !important;
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 20px; }
+    .course .info .content p {
+      line-height: 28px;
+      text-align: left; }
+  .course .exam-list {
+    font-weight: bold;
+    padding: 0 20px; }
+    .course .exam-list ul {
+      margin: 0; }
+      .course .exam-list ul li {
+        overflow: auto;
+        list-style: none; }
+        .course .exam-list ul li .item-name {
+          font-size: 14px;
+          line-height: 1;
+          letter-spacing: 0.09em;
+          width: 80%;
+          margin-right: 24px;
+          margin-bottom: 40px; }
+        .course .exam-list ul li .item-link {
+          font-size: 20px;
+          line-height: 1;
+          letter-spacing: 0.03em; }
+        .course .exam-list ul li p {
+          float: left;
+          line-height: 28px; }
+  .course .study-question-list .title {
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.07em;
+    text-align: left;
+    padding: 0 20px;
+    margin-bottom: 48px; } }
+@media screen and (min-width: 992px) {
+  .course .info .content {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    margin-top: 43px;
+    margin-bottom: 120px;
+    overflow: auto;
+    height: 145px; }
+    .course .info .content p {
+      line-height: 28px;
+      text-align: left; } }
 
 .normal-post .title {
   font-size: 20px;

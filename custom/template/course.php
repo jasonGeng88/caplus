@@ -23,7 +23,8 @@
 
     <div class="col-md-10 col-md-offset-1 study-question-list">
         <input type="hidden" name="cat_id" value="<?= QUESTION ?>">
-        <p class="title">本科相關資訊</p>
+        <p class="title ca-pc">本科相關資訊</p>
+        <p class="title ca-mobile"><span class="icon-more"></span>本科相關資訊</p>
         <ul>
             <?php
             getAll(QUESTION, 'question', false, 1);
