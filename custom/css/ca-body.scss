@@ -148,7 +148,8 @@ body{
   display: none;
   background: $blue1;
   z-index: 1000;
-  position: absolute;
+  //position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
