@@ -148,6 +148,7 @@ function ca_portfolio(){
 function openMaskMenu(){
     jQuery("html").css("overflow", "hidden");
     jQuery("body").css("overflow", "hidden");
+    jQuery("body").css("height", jQuery(window).height());
     jQuery(".ca-mask").css("display", "block");
     jQuery(".m-menu-contain").css("display", "block");
     jQuery(".m-search-contain").css("display", "none");
@@ -157,6 +158,7 @@ function openMaskMenu(){
 function openMaskSearch(){
     jQuery("html").css("overflow", "hidden");
     jQuery("body").css("overflow", "hidden");
+    jQuery("body").css("height", jQuery(window).height());
     jQuery(".ca-mask").css("display", "block");
     jQuery(".m-menu-contain").css("display", "none");
     jQuery(".m-search-contain").css("display", "block");
@@ -167,6 +169,7 @@ function openUniversityContent(){
     console.log("openUniversityContent")
     jQuery("html").css("overflow", "hidden");
     jQuery("body").css("overflow", "hidden");
+    jQuery("body").css("height", jQuery(window).height());
     jQuery(".university-des-mask").css("display", "block");
     jQuery(".university-des-mask").css("top", jQuery(window).scrollTop() + "px");
 }
@@ -174,6 +177,7 @@ function openUniversityContent(){
 function closeMask(){
     jQuery("html").css("overflow", "auto");
     jQuery("body").css("overflow", "auto");
+    jQuery("body").css("height", "100%");
     jQuery(".ca-mask").css("display", "none");
     jQuery(".m-menu-contain").css("display", "none");
     jQuery(".m-search-contain").css("display", "none");
