@@ -521,6 +521,24 @@ body {
       margin-bottom: 30px; }
 
 @media screen and (max-width: 991px) {
+  body {
+    font-family: "Source Han Sans Regular";
+    background: #ffffff; }
+    body a {
+      color: #000000; }
+    body a:hover,
+    body a:focus,
+    body a:active {
+      color: #000000;
+      background: #ffffff;
+      text-decoration: none; }
+    body a.yellow:hover,
+    body a.yellow:focus,
+    body a.yellow:active {
+      color: #000000;
+      background: #ffffff;
+      text-decoration: none; }
+
   .ca-pc {
     display: none; }
 

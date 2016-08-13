@@ -293,6 +293,27 @@ body{
 }
 
 @media screen and (max-width: 991px) {
+  body{
+    font-family: $ff-zh-r;
+    a {
+      color: $black;
+    }
+    background: $white;
+    a:hover,
+    a:focus,
+    a:active {
+      color: $black;
+      background: $white;
+      text-decoration: none;
+    }
+    a.yellow:hover,
+    a.yellow:focus,
+    a.yellow:active {
+      color: $black;
+      background: $white;
+      text-decoration: none;
+    }
+  }
   .ca-pc {
     display:none;
   }
