@@ -152,7 +152,7 @@ function openMaskMenu(){
     jQuery(".ca-mask").css("display", "block");
     jQuery(".m-menu-contain").css("display", "block");
     jQuery(".m-search-contain").css("display", "none");
-    jQuery(".ca-mask").css("top", jQuery(window).scrollTop() + "px");
+    //jQuery(".ca-mask").css("top", jQuery(window).scrollTop() + "px");
 }
 
 function openMaskSearch(){
@@ -162,7 +162,7 @@ function openMaskSearch(){
     jQuery(".ca-mask").css("display", "block");
     jQuery(".m-menu-contain").css("display", "none");
     jQuery(".m-search-contain").css("display", "block");
-    jQuery(".ca-mask").css("top", jQuery(window).scrollTop() + "px");
+    //jQuery(".ca-mask").css("top", jQuery(window).scrollTop() + "px");
 }
 
 function openUniversityContent(){
@@ -171,7 +171,7 @@ function openUniversityContent(){
     jQuery("body").css("overflow", "hidden");
     jQuery("body").css("height", jQuery(window).height());
     jQuery(".university-des-mask").css("display", "block");
-    jQuery(".university-des-mask").css("top", jQuery(window).scrollTop() + "px");
+    //jQuery(".university-des-mask").css("top", jQuery(window).scrollTop() + "px");
 }
 
 function closeMask(){
