@@ -24,6 +24,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-switch:before {
+  content: "\e919"; }
+
+.icon-cube:before {
+  content: "\e91a"; }
+
 .icon-workshop:before {
   content: "\e915"; }
 
@@ -529,7 +535,7 @@ body {
     line-height: 1;
     letter-spacing: 0.05em;
     height: 80px;
-    background-color: #333333;
+    background-color: rgba(51, 51, 51, 0);
     color: #ffffff;
     border: none;
     border-radius: 0;
@@ -542,7 +548,10 @@ body {
     box-sizing: border-box;
     -webkit-appearance: none;
     -moz-appearance: none;
-    padding: 0.5em 3.5em 0.5em 1em; }
+    padding: 0.5em 3.5em 0.5em 1em;
+    z-index: 99;
+    position: absolute;
+    width: 100%; }
 
   .mobile-select-arrow {
     background-color: #333333;
@@ -550,7 +559,12 @@ body {
     text-align: center;
     height: 80px;
     font-size: 20px;
-    line-height: 80px; } }
+    line-height: 80px;
+    z-index: 1;
+    float: right; }
+
+  .m-select-container {
+    background-color: #333333; } }
 @media screen and (min-width: 992px) {
   .ca-pc {
     display: block; }
@@ -1339,7 +1353,11 @@ body {
       .study-question-list ul li .item-link img {
         width: 22px; }
       .study-question-list ul li a:hover {
-        color: #999999; } }
+        color: #999999; }
+
+  .mobile-select-arrow .icon-switch {
+    font-size: 35px;
+    line-height: 80px; } }
 .university .info p {
   padding: 0;
   margin: 0;
@@ -1673,7 +1691,15 @@ body {
     letter-spacing: 0.07em;
     text-align: left;
     padding: 0 20px;
-    margin-bottom: 48px; } }
+    margin-bottom: 48px; }
+    .course .study-question-list .title .title-icon {
+      font-size: 35px;
+      height: 35px;
+      width: 35px;
+      float: left; }
+    .course .study-question-list .title .title-des {
+      height: 35px;
+      line-height: 35px; } }
 @media screen and (min-width: 992px) {
   .course .info .content {
     font-size: 12px;
@@ -1685,6 +1711,14 @@ body {
     .course .info .content p {
       line-height: 28px;
       text-align: left; } }
+
+.ca-mask.ca-block.university-des-mask {
+  background: rgba(0, 0, 0, 0.82); }
+  .ca-mask.ca-block.university-des-mask .university-des {
+    color: #ffffff;
+    line-height: 20px;
+    height: 400px;
+    overflow: auto; }
 
 .normal-post .title {
   font-size: 20px;

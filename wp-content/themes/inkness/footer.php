@@ -35,6 +35,24 @@
 	
 </div><!-- #page -->
 
+<div class="col-xs-12 ca-mask ca-block ca-mobile university-des-mask">
+	<div class="col-xs-12 m-header ca-block">
+		<div class="col-xs-6 m-logo">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+				<img src="<?=APP_URL;?>/custom/images/logo-white.png" alt="">
+			</a>
+		</div>
+		<div class="col-xs-6 m-close">
+			<a onclick="javascript:closeMask()">
+				<span class="icon-close"></span>
+			</a>
+		</div>
+	</div>
+	<div class="col-xs-12 ca-block university-des">
+		<?=$post->post_content ?>
+	</div>
+</div>
+
 <!--mask mobile-->
 <div class="col-xs-12 ca-mask ca-block">
 	<div class="col-xs-12 m-header ca-block">

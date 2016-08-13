@@ -305,7 +305,7 @@ body{
   select.mobile-select{
     @include font-format(2);
     height: 80px;
-    background-color: $grey1;
+    background-color: rgba(51, 51, 51, 0);
     color: $white;
     border: none;
     border-radius: 0;
@@ -319,6 +319,9 @@ body{
     -webkit-appearance: none;
     -moz-appearance: none;
     padding: 0.5em 3.5em 0.5em 1em;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
   }
   .mobile-select-arrow{
     background-color: $grey1;
@@ -327,6 +330,11 @@ body{
     height: 80px;
     font-size: 20px;
     line-height: 80px;
+    z-index: 1;
+    float: right;
+  }
+  .m-select-container{
+    background-color: $grey1;
   }
 }
 @media screen and (min-width: 992px) {

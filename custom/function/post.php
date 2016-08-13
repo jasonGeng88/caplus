@@ -117,7 +117,7 @@ function joinHtmlForSelect($posts, $type){
             $html .= '<option value="'.$item->guid.'">'.$item->post_title.'</option>';
         }
         $html .= '</select>';
-        $html .= '<div class="col-xs-2 mobile-select-arrow"><i class="fa fa-arrows-v"></i></div>';
+        $html .= '<div class="col-xs-2 mobile-select-arrow"><span class="icon-switch"></div>';
     }elseif($type == "question"){
         foreach ($posts as $item) {
             $html .= '<li class="col-md-6 col-xs-12"><a href="' . $item->guid . '">';
@@ -132,7 +132,7 @@ function joinHtmlForSelect($posts, $type){
             $html .= '<option value="'.$item->guid.'">'.$item->post_title.'</option>';
         }
         $html .= '</select>';
-        $html .= '<div class="col-xs-2 mobile-select-arrow"><i class="fa fa-arrows-v"></i></div>';
+        $html .= '<div class="col-xs-2 mobile-select-arrow"><span class="icon-switch"></div>';
     }
 
     return $html;

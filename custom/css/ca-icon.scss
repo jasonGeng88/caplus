@@ -24,6 +24,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-switch:before {
+  content: "\e919";
+}
+.icon-cube:before {
+  content: "\e91a";
+}
 .icon-workshop:before {
   content: "\e915";
 }

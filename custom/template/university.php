@@ -9,7 +9,8 @@
         ?>
         <p class="title"><?=$post->post_title ?></p>
         <p class="second-title"><?=$tag[1]->name ?></p>
-        <p class="pic"><img src="<?=$imageUrl ?>" alt=""></p>
+        <p class="pic ca-pc"><img src="<?=$imageUrl ?>" alt=""></p>
+        <p class="pic ca-mobile"><img src="<?=$imageUrl ?>" alt="" onclick="javascript:openUniversityContent()"></p>
         <div class="content ca-container ca-pc"><?=$post->post_content ?></div>
     </div>
 
@@ -74,7 +75,7 @@
     </div>
 
     <div class="col-xs-12 study-university-list ca-block ca-mobile">
-        <div class="ca-container">
+        <div class="ca-container m-select-container">
             <?php
             getAllBySelect(UNIVERSITY, "university");
             ?>
@@ -84,4 +85,7 @@
 </div><!-- #primary -->
 <script>
     mobileSelect();
+    function showContent(){
+       jQuery(".university-des-mask").css("display", "block");
+    }
 </script>

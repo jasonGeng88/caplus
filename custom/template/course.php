@@ -24,7 +24,10 @@
     <div class="col-md-10 col-md-offset-1 study-question-list">
         <input type="hidden" name="cat_id" value="<?= QUESTION ?>">
         <p class="title ca-pc">本科相關資訊</p>
-        <p class="title ca-mobile"><span class="icon-more"></span>本科相關資訊</p>
+        <div class="title ca-mobile">
+            <div class="title-icon"><span class="icon-cube"></span></div>
+            <div class="title-des">本科相關資訊</div>
+        </div>
         <ul>
             <?php
             getAll(QUESTION, 'question', false, 1);
@@ -37,7 +40,7 @@
 
 <!--   mobile-->
     <div class="col-xs-12 study-course-list ca-block ca-mobile">
-        <div class="ca-container">
+        <div class="ca-container m-select-container">
             <?php
             getAllBySelect(COURSE, "course");
             ?>

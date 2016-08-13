@@ -167,6 +167,13 @@ function closeMask(){
     jQuery(".m-search-contain").css("display", "none");
 }
 
+function openUniversityContent(){
+    console.log("openUniversityContent")
+    jQuery("html").css("overflow", "hidden");
+    jQuery(".university-des-mask").css("display", "block");
+    jQuery(".university-des-mask").css("top", jQuery(window).scrollTop() + "px");
+}
+
 //mobile select
 function mobileSelect() {
     jQuery(".mobile-select").change(function () {
