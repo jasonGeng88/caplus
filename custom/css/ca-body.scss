@@ -303,14 +303,14 @@ body{
     a:focus,
     a:active {
       color: $black;
-      background: $white;
+      background: none;
       text-decoration: none;
     }
     a.yellow:hover,
     a.yellow:focus,
     a.yellow:active {
       color: $black;
-      background: $white;
+      background: none;
       text-decoration: none;
     }
   }

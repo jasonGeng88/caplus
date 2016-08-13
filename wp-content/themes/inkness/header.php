@@ -76,7 +76,7 @@ require_once(APP_ROOT.'/custom/config/global.php');
 				<?php
 					if((of_get_option('logo', true) != "") && (of_get_option('logo', true) != 1) ) {
 						$menuFlag = false;
-						$url = 'http://'.$_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+						$url = 'http://'.$_SERVER['SERVER_ADDR'] . $_SERVER['REQUEST_URI'];
 						$menuUrls = [];
 						$menu1 = wp_get_nav_menu_items('Menu 1');
 						$menu2 = wp_get_nav_menu_items('menu2');

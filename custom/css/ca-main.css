@@ -530,13 +530,13 @@ body {
     body a:focus,
     body a:active {
       color: #000000;
-      background: #ffffff;
+      background: none;
       text-decoration: none; }
     body a.yellow:hover,
     body a.yellow:focus,
     body a.yellow:active {
       color: #000000;
-      background: #ffffff;
+      background: none;
       text-decoration: none; }
 
   .ca-pc {
