@@ -10,7 +10,7 @@ function getAll($category, $type, $noPaging=true, $offset=1 )
 {
     $posts = query_posts(array(
         'category__in' => array($category),
-//        'showposts' => 2,
+        'showposts' => 10,
         'posts_per_page' => QUESTION_PAGE,
         'paged' => $offset,
         'nopaging' => $noPaging

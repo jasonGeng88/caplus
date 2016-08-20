@@ -21,7 +21,7 @@
                         <div class="pic">
                         <img src="'.$item->img_url.'"/>
                         </div>
-                        <div class="title">
+                        <div class="title ca-pc">
                         '.$item->post_title.'
                         </div>
                         </div>';
@@ -41,6 +41,7 @@
         $html = '';
         foreach ($posts as $key => $item) {
             $html .= '<div class="item magazine-item-'.$key.' ca-line">
+                        <div class="title ca-mobile">'.$item->post_title.'</div>
                       '.$item->post_content.'
                         </div>';
         }
@@ -51,49 +52,12 @@
     <!-- Swiper JS -->
     <script src="../bower_components/swiper/dist/js/swiper.min.js"></script>
     <script>
-        jQuery(".swiper-button-next").append('<span class="icon-continue"></span>');
-        jQuery(".swiper-button-prev").append('<span class="icon-back"></span>');
-        var sliderCustomer = function(){};
-        <!-- Initialize Swiper -->
-        var appendNumber = 3;
-        var prependNumber = 1;
-        var swiper = new Swiper('.swiper-container', {
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            slidesPerView: 3,
-            centeredSlides: false,
-            paginationClickable: false,
-            loop: true,
-            spaceBetween: 0,
-            autoplay: 5000,
-            onAutoplay: function(swiper){
-                sliderCustomer();
-            },
-            onTouchMove: function(swiper){
-                sliderCustomer();
-            },
-            onSlideChangeEnd: function(swiper){
-                sliderCustomer();
-            },
-            onTransitionEnd: function(swiper){
-                sliderCustomer();
-            },
-            onInit: function(swiper){
-                sliderCustomer();
-            },
-            onLazyImageReady: function(swiper){
-                sliderCustomer();
-            },
 
-        });
-
-
-        sliderCustomer = function(){
+        var sliderCustomer = function(){
             var index = jQuery(".swiper-slide-next").attr("ca-slider-index");
 //            console.log(index);
             jQuery(".magazine-slider-content .item").css("display", "none");
             jQuery(".magazine-item-"+index).css("display", "block");
-            adjustHeight();
         }
         jQuery(".swiper-button-next").click(function(){
 //        swiper.unlockSwipes();
@@ -105,19 +69,79 @@
             sliderCustomer();
         });
 
+        var swiperPc = function () {
+            jQuery(".swiper-button-next").append('<span class="icon-continue"></span>');
+            jQuery(".swiper-button-prev").append('<span class="icon-back"></span>');
+            <!-- Initialize Swiper -->
+            var appendNumber = 3;
+            var prependNumber = 1;
+            var swiper = new Swiper('.swiper-container', {
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                slidesPerView: 3,
+                centeredSlides: false,
+                paginationClickable: false,
+                loop: true,
+                spaceBetween: 0,
+                autoplay: 5000,
+                onAutoplay: function(swiper){
+                    sliderCustomer();
+                },
+                onTouchMove: function(swiper){
+                    sliderCustomer();
+                },
+                onSlideChangeEnd: function(swiper){
+                    sliderCustomer();
+                },
+                onTransitionEnd: function(swiper){
+                    sliderCustomer();
+                },
+                onInit: function(swiper){
+                    sliderCustomer();
+                },
+                onLazyImageReady: function(swiper){
+                    sliderCustomer();
+                },
+
+            });
+        };
+        
+        var swiperMobile = function () {
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+                loop: true,
+                spaceBetween: 0,
+                autoplay: 5000,
+                onAutoplay: function(swiper){
+                    sliderCustomer();
+                },
+                onTouchMove: function(swiper){
+                    sliderCustomer();
+                },
+                onSlideChangeEnd: function(swiper){
+                    sliderCustomer();
+                },
+                onTransitionEnd: function(swiper){
+                    sliderCustomer();
+                },
+                onInit: function(swiper){
+                    sliderCustomer();
+                },
+                onLazyImageReady: function(swiper){
+                    sliderCustomer();
+                },
+            });
+        };
+
+        if (jQuery(window).width() < 992){
+            swiperMobile();
+        }else{
+            swiperPc();
+        }
+
         sliderCustomer();
 
-        /**
-         * 调整slider的上下位置
-         */
-        function adjustHeight(){
-            if (jQuery(window).width() < 992){
-                var maxHeight = jQuery(".swiper-slide-next .pic img").height();
-                var minHeight = jQuery(".swiper-slide-active .pic img").height();
-                jQuery(".swiper-slide").css("margin-top", (maxHeight - minHeight)/2 + "px");
-                jQuery(".swiper-slide.swiper-slide-next").css("margin-top", 0);
-            }
-        }
 
 
     </script>

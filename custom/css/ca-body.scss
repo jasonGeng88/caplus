@@ -242,15 +242,15 @@ body{
 #header-search{
   position: fixed;
   z-index: 999;
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
   background: $grey1;
-  border-radius: 20px;
+  border-radius: 35px;
   right: 20px;
   bottom: 35px;
   text-align: center;
-  line-height: 40px;
+  line-height: 35px;
   span{
     color: $white;
   }

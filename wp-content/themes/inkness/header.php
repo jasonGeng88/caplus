@@ -76,18 +76,23 @@ require_once(APP_ROOT.'/custom/config/global.php');
 				<?php
 					if((of_get_option('logo', true) != "") && (of_get_option('logo', true) != 1) ) {
 						$menuFlag = false;
-						$url = 'http://'.$_SERVER['SERVER_ADDR'] . $_SERVER['REQUEST_URI'];
+						$url = $_SERVER['REQUEST_URI'];
+//						$url = 'http://'.$_SERVER['SERVER_ADDR'] . $_SERVER['REQUEST_URI'];
+//				echo $url;
 						$menuUrls = [];
 						$menu1 = wp_get_nav_menu_items('Menu 1');
 						$menu2 = wp_get_nav_menu_items('menu2');
+
 						foreach ($menu1 as $item) {
-							$menuUrls[] = $item->url;
+							$menuUrls[] = '/'.substr($item->url, strrpos($item->url, '?'));
 						}
 						foreach ($menu2 as $item) {
-							$menuUrls[] = $item->url;
+							$menuUrls[] = '/'.substr($item->url, strrpos($item->url, '?'));
 						}
-						$menuUrls[] = APP_URL.'/';
-						if(in_array($url, $menuUrls)){
+						$menuUrls[] = '/';
+//						$menuUrls[] = APP_URL.'/';
+//				var_dump($menuUrls);die;
+				if(in_array($url, $menuUrls)){
 							$menuFlag = true;
 						}
 				?>

@@ -26,6 +26,9 @@
     .offline-content{
       margin-top: 40px;
       padding: 0 20px 0 20px;
+      .name{
+        line-height: 35px;
+      }
       .text{
         @include font-format(5);
         color: $grey2;
