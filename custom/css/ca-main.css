@@ -1847,7 +1847,7 @@ body {
   .magazine .swiper-slide .pic, .magazine .swiper-slide .title {
     text-align: center; }
   .magazine .swiper-container .swiper-slide img {
-    width: 100%;
+    width: 80%;
     height: auto; }
   .magazine .swiper-container .swiper-slide-next img {
     width: 280px;
