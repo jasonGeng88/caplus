@@ -71,6 +71,7 @@
       display: block;
     }
     .magazine-slider-content{
+      padding: 0 20px;
       .title{
         text-align: center;
         @include font-format(1);

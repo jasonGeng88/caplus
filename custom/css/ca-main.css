@@ -1877,16 +1877,18 @@ body {
     line-height: 1;
     letter-spacing: 0.05em;
     display: block; }
-  .magazine .magazine-slider-content .title {
-    text-align: center;
-    font-size: 20px;
-    line-height: 1;
-    letter-spacing: 0.03em;
-    margin: 0 0 10px 0; }
-  .magazine .magazine-slider-content .item {
-    margin-top: 65px;
-    margin-bottom: 85px;
-    display: none; } }
+  .magazine .magazine-slider-content {
+    padding: 0 20px; }
+    .magazine .magazine-slider-content .title {
+      text-align: center;
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: 0.03em;
+      margin: 0 0 10px 0; }
+    .magazine .magazine-slider-content .item {
+      margin-top: 65px;
+      margin-bottom: 85px;
+      display: none; } }
 @media screen and (min-width: 992px) {
   .magazine .swiper-slide .pic, .magazine .swiper-slide .title {
     text-align: center; }
