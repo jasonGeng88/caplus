@@ -22,7 +22,7 @@ $GLOBALS['ca-index'] = 0;
 if (php_uname('n') == 'cc-m.local') {
     define('APP_URL', 'http://www.localca.com');
 }else{
-    define('APP_URL', 'http://45.63.121.127');
+    define('APP_URL', 'http://139.162.42.27');
 }
 
 require( APP_ROOT . '/custom/config/global.php' );
