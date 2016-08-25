@@ -27,8 +27,8 @@
 	define('DB_USER', 'root');
 
 	/** MySQL database password */
-//	define('DB_PASSWORD', 'cp1994');
-	define('DB_PASSWORD', '111111');
+	define('DB_PASSWORD', 'cp1994');
+//	define('DB_PASSWORD', '111111');
 
 	/** MySQL hostname */
 //	define('DB_HOST', 'mysql.sql77.eznowdata.com');
