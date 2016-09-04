@@ -35,3 +35,19 @@
     padding: 0px 15px 0px 15px;
   }
 }
+@media screen and (min-width: 992px) {
+  body #content #primary.normal-post{
+    max-width: 970px;
+    padding: 0px 15px 0px 15px;
+    float: none;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body #content #primary.normal-post{
+    max-width: 1170px;
+    padding: 0px 15px 0px 15px;
+    float: none;
+    margin: auto;
+  }
+}
