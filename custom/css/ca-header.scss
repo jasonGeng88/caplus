@@ -50,11 +50,14 @@
         vertical-align: middle;
       }
     }
-    li:hover > a, li.current-menu-item a{
+    li:hover > a{
       //border-bottom: $black solid 2px;
       //padding-bottom: 16px;
       color: $black;
       background: $yellow;
+    }
+    li.current-menu-item a{
+      color: $black;
     }
   }
 

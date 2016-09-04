@@ -143,9 +143,11 @@
       #header-top.ca-pc #site-navigation a span {
         font-size: 24px;
         vertical-align: middle; }
-    #header-top.ca-pc #site-navigation li:hover > a, #header-top.ca-pc #site-navigation li.current-menu-item a {
+    #header-top.ca-pc #site-navigation li:hover > a {
       color: #000000;
       background: #FFFF00; }
+    #header-top.ca-pc #site-navigation li.current-menu-item a {
+      color: #000000; }
   #header-top.ca-pc #top-search {
     margin: 0;
     padding: 0;
