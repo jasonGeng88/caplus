@@ -6,14 +6,14 @@
  */
 ?>
 <div class="row search-form form ca-pc">
-	<div class="search-form">
-		<label class="col-md-10">
-			<span class="screen-reader-text"><?php _ex( 'Search for:', 'label', 'inkness' ); ?></span>
-			<input type="text" class="search-field" placeholder="<?php echo esc_attr_x( '搜索...', 'placeholder', 'inkness' ); ?>" value="<?php echo esc_attr( get_search_query() ); ?>" name="s">
-		</label>
-		<button type="button" onclick="javascript:search_close();" class="btn btn-default col-md-2"><span class="icon-close"></span></button>
-	</div>
-	<div class="search-result"></div>
+<!--	<div class="search-form">-->
+<!--		<label class="col-md-10">-->
+<!--			<span class="screen-reader-text">--><?php //_ex( 'Search for:', 'label', 'inkness' ); ?><!--</span>-->
+<!--			<input type="text" class="search-field" placeholder="--><?php //echo esc_attr_x( '搜索...', 'placeholder', 'inkness' ); ?><!--" value="--><?php //echo esc_attr( get_search_query() ); ?><!--" name="s">-->
+<!--		</label>-->
+<!--		<button type="button" onclick="javascript:search_close();" class="btn btn-default col-md-2"><span class="icon-close"></span></button>-->
+<!--	</div>-->
+<!--	<div class="search-result"></div>-->
 </div>
 
 <div class="form ca-mobile">
@@ -64,19 +64,21 @@
 	});
 
 //pc
-	jQuery("#top-search.ca-pc .ca-pc label input").keyup(function(e) {
-		var s = jQuery("#top-search.ca-pc .ca-pc input[name='s']").val();
+	jQuery("#top-search.ca-pc .search-container input").keyup(function(e) {
+		var s = jQuery("#top-search.ca-pc .search-container input[name='q']").val();
 		createApi('<?=SEARCH_ACT;?>', {search: s}, function (result) {
 			result = JSON.parse(result);
 			if (result.code == 200){
 //				console.log(result);
 				var html = '';
 				var data = result.data;
-				jQuery("#top-search.ca-pc .ca-pc .search-result").html(html);
-				if(data.length > 0 )
-					jQuery("#top-search.ca-pc .ca-pc .search-result").css("display", "block");
-				else
-					jQuery("#top-search.ca-pc .ca-pc .search-result").css("display", "none");
+				jQuery("#top-search.ca-pc .search-result").html(html);
+				if(data.length > 0 ){
+					jQuery("#top-search.ca-pc .search-result").css("display", "block");
+				}
+				else{
+					jQuery("#top-search.ca-pc .search-result").css("display", "none");
+				}
 
 				for(var x=0; x < data.length; x++){
 					console.log(x);
@@ -84,9 +86,15 @@
 						break;
 					html += '<a href="'+data[x].guid+'"><p>'+ data[x].post_title + '</p></a>';
 				}
-				jQuery("#top-search.ca-pc .ca-pc .search-result").append(html);
+				jQuery("#top-search.ca-pc .search-result").append(html);
 //				console.log(result);
 			}
 		});
+	});
+	jQuery("#top-search.ca-pc .search-container input[name='q']").blur(function () {
+		window.timer = setTimeout(function () {
+			jQuery("#top-search.ca-pc .search-result").css("display", "none");
+			jQuery("#top-search.ca-pc .search-container input[name='q']").val("");
+		}, 500);
 	});
 </script>

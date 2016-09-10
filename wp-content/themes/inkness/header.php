@@ -58,9 +58,15 @@ require_once(APP_ROOT.'/custom/config/global.php');
 			</div>
 
 			<div id="top-search" class="col-md-3 col-xs-12 ca-pc">
-				<a href="javascript:search();" class="thumbnail-search">
-					<img src="/custom/images/search.png" alt="">
-				</a>
+				<form class="search-container">
+					<input id="search-box" type="text" class="search-box" name="q" />
+					<label for="search-box"><span class="icon-search"></span></label>
+					<input type="submit" id="search-submit" />
+					<div class="search-result"></div>
+				</form>
+<!--				<a href="javascript:search();" class="thumbnail-search">-->
+<!--					<img src="/custom/images/search.png" alt="">-->
+<!--				</a>-->
 				<?php get_search_form(); ?>
 			</div>
 
@@ -175,4 +181,5 @@ require_once(APP_ROOT.'/custom/config/global.php');
 		jQuery("ul#menu-menu-1 li").addClass("col-md-"+i);
 	}
 	initMenu();
+	document.addEventListener("touchstart", function(){}, true);
 </script>
