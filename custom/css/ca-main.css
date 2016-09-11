@@ -218,7 +218,7 @@
         #header-top.ca-pc #top-search form.search-container .search-box:hover {
           color: white;
           background: #c8c8c8;
-          box-shadow: 0 0 0 5px #3d4752; }
+          box-shadow: 0 0 0 5px #ffffff; }
           #header-top.ca-pc #top-search form.search-container .search-box:hover + label .icon-search {
             color: white; }
         #header-top.ca-pc #top-search form.search-container .search-box:focus {
