@@ -51,10 +51,10 @@
       }
     }
     li:hover > a{
-      //border-bottom: $black solid 2px;
+      border-bottom: $white solid 1px;
       //padding-bottom: 16px;
       color: $black;
-      background: $yellow;
+      background: $white;
     }
     li.current-menu-item a{
       color: $black;

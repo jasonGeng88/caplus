@@ -144,8 +144,9 @@
         font-size: 24px;
         vertical-align: middle; }
     #header-top.ca-pc #site-navigation li:hover > a {
+      border-bottom: #ffffff solid 1px;
       color: #000000;
-      background: #FFFF00; }
+      background: #ffffff; }
     #header-top.ca-pc #site-navigation li.current-menu-item a {
       color: #000000; }
   #header-top.ca-pc #top-search {
