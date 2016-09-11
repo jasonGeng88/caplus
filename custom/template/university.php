@@ -11,10 +11,10 @@
         <p class="second-title"><?=$tag[1]->name ?></p>
         <p class="pic ca-pc"><img src="<?=$imageUrl ?>" alt=""></p>
         <p class="pic ca-mobile"><img src="<?=$imageUrl ?>" alt="" onclick="javascript:openUniversityContent()"></p>
-        <div class="content ca-container ca-pc"><?=$post->post_content ?></div>
+        <div class="content col-md-10 col-md-offset-1 ca-pc"><?=$post->post_content ?></div>
     </div>
 
-    <div class="col-md-12 ca-container course-list  ca-block">
+    <div class="col-md-10 col-md-offset-1 course-list  ca-block ca-pc">
         <p class="title">学科</p>
         <ul>
         <?php
@@ -22,6 +22,17 @@
         $html = joinHtmlForList($posts, "course");
         echo $html;
         ?>
+        </ul>
+    </div>
+
+    <div class="col-md-10 col-md-offset-1 course-list  ca-block ca-mobile">
+        <p class="title">学科</p>
+        <ul>
+            <?php
+            $posts = getIntersect([$catId, COURSE]);
+            $html = joinHtmlForList($posts, "course");
+            echo $html;
+            ?>
         </ul>
     </div>
 
@@ -66,7 +77,7 @@
         </a>
     </div>
 
-    <div class="col-md-12 study-university-list ca-block ca-pc">
+    <div class="col-md-10 col-md-offset-1 study-university-list ca-block ca-pc">
         <ul class="ca-container">
             <?php
             getAll(UNIVERSITY, "university");
