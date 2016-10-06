@@ -82,6 +82,8 @@ if (php_uname('n') != 'cc-m.local') {
 	 */
 	define('WP_DEBUG', false);
 
+//	define('WPLANG', 'zh_CN');
+
 	/* That's all, stop editing! Happy blogging. */
 
 	/** Absolute path to the WordPress directory. */
